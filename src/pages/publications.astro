@@ -12,7 +12,9 @@ import Layout from '../layouts/Layout.astro';
                     ><span>n</span><span>s</span>
                 </span>
             </h1>
-            <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">Books and publications on DevOps, SRE, ChatOps, and incident management practices.</p>
+            <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
+                Books and publications on DevOps, SRE, ChatOps, and incident management practices that have shaped modern operations culture.
+            </p>
         </div>
     </section>
 
@@ -25,100 +27,170 @@ import Layout from '../layouts/Layout.astro';
                 </span>
             </h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="project-card">
-                    <div class="mb-4">
-                        <div class="w-full h-48 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center">
-                            <span class="text-4xl">📚</span>
+                <!-- 97 Things Every SRE Should Know -->
+                <div class="project-card group">
+                    <div class="mb-6 relative overflow-hidden rounded-lg">
+                        <div
+                            class="w-full h-64 bg-gradient-to-br from-orange-500/20 to-red-600/20 rounded-lg flex items-center justify-center border-2 border-orange-500/30 group-hover:border-orange-500/60 transition-all duration-300"
+                        >
+                            <div class="text-center p-4">
+                                <div class="text-6xl mb-2">📚</div>
+                                <div class="text-sm font-bold text-orange-400">O'REILLY</div>
+                                <div class="text-xs text-orange-300 mt-1">97 Things Series</div>
+                            </div>
                         </div>
                     </div>
-                    <h3 class="mb-4 gradient-text">97 Things Every SRE Should Know</h3>
-                    <p class="mb-4 text-text-muted">Collective Wisdom • Site Reliability Engineering</p>
-                    <p class="mb-6">Contributed insights and best practices for modern site reliability engineering.</p>
-                    <div class="flex gap-4">
-                        <a href="/publications/97-things-sre" class="btn">Learn More</a>
-                        <a href="#" class="btn btn-outline">View Book</a>
+                    <h3 class="mb-4 gradient-text text-lg font-bold">97 Things Every SRE Should Know</h3>
+                    <p class="mb-3 text-text-muted text-sm">Collective Wisdom from the Experts • O'Reilly Media</p>
+                    <p class="mb-6 text-sm leading-relaxed">
+                        A comprehensive collection of 97 concise and actionable insights from industry experts, covering everything from SRE fundamentals to
+                        advanced practices. Features contributions from Google, Netflix, and other leading tech companies.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="/publications/97-things-sre" class="btn text-sm">Learn More</a>
+                        <a href="https://www.oreilly.com/library/view/97-things-every/9781492081487/" target="_blank" class="btn btn-outline text-sm"
+                            >View on O'Reilly</a
+                        >
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="mb-4">
-                        <div class="w-full h-48 bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg flex items-center justify-center">
-                            <span class="text-4xl">🔧</span>
+                <!-- DevOps For Dummies -->
+                <div class="project-card group">
+                    <div class="mb-6 relative overflow-hidden rounded-lg">
+                        <div
+                            class="w-full h-64 bg-gradient-to-br from-yellow-500/20 to-orange-600/20 rounded-lg flex items-center justify-center border-2 border-yellow-500/30 group-hover:border-yellow-500/60 transition-all duration-300"
+                        >
+                            <div class="text-center p-4">
+                                <div class="text-6xl mb-2">🔧</div>
+                                <div class="text-sm font-bold text-yellow-400">FOR DUMMIES</div>
+                                <div class="text-xs text-yellow-300 mt-1">Wiley Publishing</div>
+                            </div>
                         </div>
                     </div>
-                    <h3 class="mb-4 gradient-text-secondary">DevOps For Dummies</h3>
-                    <p class="mb-4 text-text-muted">Comprehensive Guide • DevOps Practices</p>
-                    <p class="mb-6">A complete guide to DevOps culture, practices, and implementation strategies.</p>
-                    <div class="flex gap-4">
-                        <a href="/publications/devops-for-dummies" class="btn btn-secondary">Learn More</a>
-                        <a href="#" class="btn btn-outline">View Book</a>
+                    <h3 class="mb-4 gradient-text-secondary text-lg font-bold">DevOps For Dummies</h3>
+                    <p class="mb-3 text-text-muted text-sm">Technical Editor • Emily Freeman (Author) • Wiley Publishing</p>
+                    <p class="mb-6 text-sm leading-relaxed">
+                        Served as Technical Editor for this comprehensive guide to DevOps culture and practices. The book helps teams understand the DevOps
+                        philosophy, adapt to rapid development cycles, and implement collaborative engineering practices.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="/publications/devops-for-dummies" class="btn btn-secondary text-sm">Learn More</a>
+                        <a
+                            href="https://www.dummies.com/book/technology/programming-web-design/general-programming-web-design/devops-for-dummies-281681/"
+                            target="_blank"
+                            class="btn btn-outline text-sm">View on Dummies</a
+                        >
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="mb-4">
-                        <div class="w-full h-48 bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg flex items-center justify-center">
-                            <span class="text-4xl">💬</span>
+                <!-- ChatOps -->
+                <div class="project-card group">
+                    <div class="mb-6 relative overflow-hidden rounded-lg">
+                        <div
+                            class="w-full h-64 bg-gradient-to-br from-blue-500/20 to-purple-600/20 rounded-lg flex items-center justify-center border-2 border-blue-500/30 group-hover:border-blue-500/60 transition-all duration-300"
+                        >
+                            <div class="text-center p-4">
+                                <div class="text-6xl mb-2">💬</div>
+                                <div class="text-sm font-bold text-blue-400">O'REILLY</div>
+                                <div class="text-xs text-blue-300 mt-1">Report Series</div>
+                            </div>
                         </div>
                     </div>
-                    <h3 class="mb-4 gradient-text">ChatOps For Dummies</h3>
-                    <p class="mb-4 text-text-muted">Communication • Automation • Operations</p>
-                    <p class="mb-6">Implementing ChatOps to streamline team communication and operational workflows.</p>
-                    <div class="flex gap-4">
-                        <a href="/publications/chatops-for-dummies" class="btn">Learn More</a>
-                        <a href="#" class="btn btn-outline">View Book</a>
+                    <h3 class="mb-4 gradient-text text-lg font-bold">ChatOps</h3>
+                    <p class="mb-3 text-text-muted text-sm">Communication • Automation • Operations</p>
+                    <p class="mb-6 text-sm leading-relaxed">
+                        A 75-page report exploring how ChatOps transforms IT operations through persistent group chat. Learn how to implement chat-driven
+                        workflows, automation, and collaborative operations that increase efficiency and transparency.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="/publications/chatops-for-dummies" class="btn text-sm">Learn More</a>
+                        <a href="https://www.oreilly.com/library/view/chatops/9781492042891/" target="_blank" class="btn btn-outline text-sm"
+                            >View on O'Reilly</a
+                        >
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="mb-4">
-                        <div class="w-full h-48 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center">
-                            <span class="text-4xl">🗨️</span>
+                <!-- Chat in Operations -->
+                <div class="project-card group">
+                    <div class="mb-6 relative overflow-hidden rounded-lg">
+                        <div
+                            class="w-full h-64 bg-gradient-to-br from-green-500/20 to-teal-600/20 rounded-lg flex items-center justify-center border-2 border-green-500/30 group-hover:border-green-500/60 transition-all duration-300"
+                        >
+                            <div class="text-center p-4">
+                                <div class="text-6xl mb-2">🗨️</div>
+                                <div class="text-sm font-bold text-green-400">OPERATIONS</div>
+                                <div class="text-xs text-green-300 mt-1">Team Communication</div>
+                            </div>
                         </div>
                     </div>
-                    <h3 class="mb-4 gradient-text-secondary">Chat in Operations</h3>
-                    <p class="mb-4 text-text-muted">Team Communication • Operational Excellence</p>
-                    <p class="mb-6">Leveraging chat platforms for improved operational communication and collaboration.</p>
-                    <div class="flex gap-4">
-                        <a href="/publications/chat-in-operations" class="btn btn-secondary">Learn More</a>
-                        <a href="#" class="btn btn-outline">View Book</a>
+                    <h3 class="mb-4 gradient-text-secondary text-lg font-bold">Chat in Operations</h3>
+                    <p class="mb-3 text-text-muted text-sm">Team Communication • Operational Excellence</p>
+                    <p class="mb-6 text-sm leading-relaxed">
+                        Exploring how chat platforms revolutionize operational communication and collaboration. Focuses on building transparent, efficient
+                        communication patterns that enhance incident response and daily operations.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="/publications/chat-in-operations" class="btn btn-secondary text-sm">Learn More</a>
+                        <a href="#" class="btn btn-outline text-sm">View Book</a>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="mb-4">
-                        <div class="w-full h-48 bg-gradient-to-br from-secondary/20 to-primary/20 rounded-lg flex items-center justify-center">
-                            <span class="text-4xl">🔍</span>
+                <!-- Post-Incident Reviews -->
+                <div class="project-card group">
+                    <div class="mb-6 relative overflow-hidden rounded-lg">
+                        <div
+                            class="w-full h-64 bg-gradient-to-br from-red-500/20 to-pink-600/20 rounded-lg flex items-center justify-center border-2 border-red-500/30 group-hover:border-red-500/60 transition-all duration-300"
+                        >
+                            <div class="text-center p-4">
+                                <div class="text-6xl mb-2">🔍</div>
+                                <div class="text-sm font-bold text-red-400">O'REILLY</div>
+                                <div class="text-xs text-red-300 mt-1">Report Series</div>
+                            </div>
                         </div>
                     </div>
-                    <h3 class="mb-4 gradient-text">Post Incident Analysis</h3>
-                    <p class="mb-4 text-text-muted">Incident Management • Learning Culture</p>
-                    <p class="mb-6">Building effective post-incident analysis processes for continuous improvement.</p>
-                    <div class="flex gap-4">
-                        <a href="/publications/post-incident-analysis" class="btn">Learn More</a>
-                        <a href="#" class="btn btn-outline">View Book</a>
+                    <h3 class="mb-4 gradient-text text-lg font-bold">Post-Incident Reviews</h3>
+                    <p class="mb-3 text-text-muted text-sm">Incident Management • Learning Culture • O'Reilly Media</p>
+                    <p class="mb-6 text-sm leading-relaxed">
+                        An updated approach to post-incident reviews that embraces the human element and encourages continuous improvement. Moves beyond
+                        traditional Root Cause Analysis to focus on learning, transparency, and system resilience.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="/publications/post-incident-reviews" class="btn text-sm">Learn More</a>
+                        <a href="https://www.oreilly.com/library/view/post-incident-reviews/9781491986998/" target="_blank" class="btn btn-outline text-sm"
+                            >View on O'Reilly</a
+                        >
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="mb-4">
-                        <div class="w-full h-48 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-lg flex items-center justify-center">
-                            <span class="text-4xl">🚀</span>
+                <!-- The VictorOps Journey to SRE -->
+                <div class="project-card group">
+                    <div class="mb-6 relative overflow-hidden rounded-lg">
+                        <div
+                            class="w-full h-64 bg-gradient-to-br from-purple-500/20 to-indigo-600/20 rounded-lg flex items-center justify-center border-2 border-purple-500/30 group-hover:border-purple-500/60 transition-all duration-300"
+                        >
+                            <div class="text-center p-4">
+                                <div class="text-6xl mb-2">🚀</div>
+                                <div class="text-sm font-bold text-purple-400">VICTOROPS</div>
+                                <div class="text-xs text-purple-300 mt-1">Journey to SRE</div>
+                            </div>
                         </div>
                     </div>
-                    <h3 class="mb-4 gradient-text-secondary">The VictorOps Journey to SRE</h3>
-                    <p class="mb-4 text-text-muted">Transformation • Site Reliability Engineering</p>
-                    <p class="mb-6">The evolution from traditional operations to modern site reliability engineering practices.</p>
-                    <div class="flex gap-4">
-                        <a href="/publications/victorops-journey-sre" class="btn btn-secondary">Learn More</a>
-                        <a href="#" class="btn btn-outline">View Book</a>
+                    <h3 class="mb-4 gradient-text-secondary text-lg font-bold">The VictorOps Journey to SRE</h3>
+                    <p class="mb-3 text-text-muted text-sm">Transformation • Site Reliability Engineering</p>
+                    <p class="mb-6 text-sm leading-relaxed">
+                        The evolution from traditional operations to modern site reliability engineering practices. Chronicles the transformation journey,
+                        lessons learned, and practical strategies for adopting SRE principles.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="/publications/victorops-journey-sre" class="btn btn-secondary text-sm">Learn More</a>
+                        <a href="#" class="btn btn-outline text-sm">View Book</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Writing Topics Section -->
+    <!-- Writing Impact Section -->
     <section class="section">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="mb-16">
@@ -127,24 +199,45 @@ import Layout from '../layouts/Layout.astro';
                 </span>
                 <br />
                 <span class="scattered-letters">
-                    <span>T</span><span>o</span><span>p</span><span>i</span><span>c</span><span>s</span>
+                    <span>I</span><span>m</span><span>p</span><span>a</span><span>c</span><span>t</span>
                 </span>
             </h2>
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
                 <div class="project-card">
                     <div class="text-4xl mb-4 gradient-text">🛠️</div>
                     <h3 class="mb-4 gradient-text">DevOps Culture</h3>
-                    <p>Building collaborative cultures that bridge development and operations teams.</p>
+                    <p class="text-sm">Building collaborative cultures that bridge development and operations teams through shared practices and tools.</p>
                 </div>
                 <div class="project-card">
                     <div class="text-4xl mb-4 gradient-text-secondary">⚡</div>
                     <h3 class="mb-4 gradient-text-secondary">Site Reliability</h3>
-                    <p>Implementing SRE practices for scalable, reliable, and maintainable systems.</p>
+                    <p class="text-sm">Implementing SRE practices for scalable, reliable, and maintainable systems with measurable service level objectives.</p>
                 </div>
                 <div class="project-card">
                     <div class="text-4xl mb-4 gradient-text">🤖</div>
                     <h3 class="mb-4 gradient-text">ChatOps & Automation</h3>
-                    <p>Streamlining operations through chat-driven workflows and intelligent automation.</p>
+                    <p class="text-sm">Streamlining operations through chat-driven workflows, intelligent automation, and transparent collaboration.</p>
+                </div>
+            </div>
+            <div class="bg-surface/50 rounded-lg p-8 border border-primary/20">
+                <h3 class="text-xl mb-4 gradient-text">Published Insights</h3>
+                <p class="text-text-muted mb-4">
+                    These publications have reached thousands of practitioners worldwide, contributing to the evolution of modern operations practices and
+                    helping teams build more reliable, efficient systems.
+                </p>
+                <div class="flex justify-center gap-8 text-sm text-text-muted">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold gradient-text">6</div>
+                        <div>Publications</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold gradient-text-secondary">1000+</div>
+                        <div>Pages Written</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold gradient-text">50+</div>
+                        <div>Expert Contributors</div>
+                    </div>
                 </div>
             </div>
         </div>

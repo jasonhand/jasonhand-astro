@@ -1,146 +1,244 @@
-# Jason Hand's Personal Website
+# Jason Hand - Personal Website
 
-A modern personal website built with Astro.js, Tailwind CSS, and deployed on Netlify. This project leverages Netlify's platform features including Edge Functions, Image CDN, and Blob Store for optimal performance.
+A modern, interactive personal website built with Astro.js, showcasing work in developer relations, publications, podcasts, and innovative demo applications.
 
-## 🚀 Tech Stack
+## 🚀 Live Site
 
-- **Framework**: [Astro.js](https://astro.build/) - Fast, content-focused web framework
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- **UI Components**: React (for interactive components)
-- **Deployment**: [Netlify](https://netlify.com/) - Modern web platform
+Visit the live site at: [Your Domain Here]
+
+## ✨ Features
+
+### Interactive Components
+
+- **Theme Toggle**: 4 beautiful color themes (Candycode, Ocean, Sunset, Forest)
+- **Skills Filter**: Interactive filtering and search for technical skills
+- **Mobile-Optimized Navigation**: Responsive design with mobile-first approach
+- **Smooth Animations**: Scattered letter animations and hover effects
+
+### Content Sections
+
+- **Publications**: 6 books and reports including O'Reilly publications
+- **Podcasts**: Community Pulse, After Pulse, and AI Tools Lab episodes
+- **Datadog Work**: Conference talks, live streams, and AI research
+- **Demo Apps**: Interactive experiments and proof-of-concepts
+- **Videos**: YouTube channel integration
+- **Art Gallery**: Creative visual work
+
+### Technical Features
+
+- **Static Site Generation**: Fast loading with Astro.js
+- **Islands Architecture**: Interactive components only where needed
+- **Responsive Design**: Mobile-first with Tailwind CSS
+- **SEO Optimized**: Meta tags, structured data, and performance
+- **PWA Ready**: Service worker and manifest support
+
+## 🛠 Tech Stack
+
+- **Framework**: [Astro.js](https://astro.build/) v5.5+
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) v4.0+
+- **Interactive Components**: [React](https://reactjs.org/) (Islands)
+- **Deployment**: [Netlify](https://netlify.com/)
 - **Package Manager**: npm
-- **TypeScript**: Full TypeScript support
+- **Language**: TypeScript
 
-## 🛠️ Development Commands
-
-All commands are run from the root of the project:
-
-| Command             | Action                                                      |
-| :------------------ | :---------------------------------------------------------- |
-| `npm install`       | Installs dependencies                                       |
-| `npm run dev`       | Starts local dev server at `localhost:4321`                 |
-| `netlify dev`       | Starts dev server with Netlify features at `localhost:8888` |
-| `npm run build`     | Build your production site to `./dist/`                     |
-| `npm run preview`   | Preview your build locally, before deploying                |
-| `npm run astro ...` | Run CLI commands like `astro add`, `astro check`            |
-
-## 🏗️ Project Structure
+## 📁 Project Structure
 
 ```
-/
-├── public/             # Static assets (images, icons, etc.)
-├── src/
-│   ├── assets/         # Processed assets
-│   ├── components/     # Reusable UI components
-│   ├── layouts/        # Page layouts
-│   ├── pages/          # File-based routing
-│   ├── styles/         # Global CSS and Tailwind config
-│   └── utils/          # Utility functions
-├── astro.config.mjs    # Astro configuration
-└── package.json        # Dependencies and scripts
+src/
+├── components/          # Reusable components
+│   ├── SkillsFilter.tsx    # Interactive skills filtering
+│   ├── ThemeToggle.tsx     # Theme switching component
+│   ├── Header.astro        # Site navigation
+│   └── Footer.astro        # Site footer
+├── layouts/             # Page layouts
+│   └── Layout.astro        # Base layout with SEO
+├── pages/               # Route pages
+│   ├── index.astro         # Homepage
+│   ├── about.astro         # About page
+│   ├── publications.astro  # Books and publications
+│   ├── podcasts.astro      # Podcast episodes
+│   ├── videos.astro        # YouTube content
+│   ├── demo-apps.astro     # Interactive demos
+│   ├── art.astro           # Art gallery
+│   ├── projects.astro      # Datadog work overview
+│   ├── datadog/            # Datadog-specific pages
+│   └── publications/       # Individual book pages
+├── styles/              # Global styles
+│   └── globals.css         # Tailwind and custom CSS
+└── assets/              # Static assets
+public/
+├── images/              # Image assets
+├── favicon.ico          # Site favicon
+└── site.webmanifest     # PWA manifest
 ```
 
-## 🎨 Customization Guide
+## 🎨 Design System
 
-### Getting Started with Your Personal Website
+### Color Themes
 
-1. **Update Site Information**
+- **Candycode**: Pink and purple gradients
+- **Ocean**: Blue and teal tones
+- **Sunset**: Orange and red hues
+- **Forest**: Green and earth tones
 
-   - Modify `src/layouts/Layout.astro` to update the site title and meta information
-   - Replace favicon and other icons in the `public/` directory
+### Typography
 
-2. **Customize the Homepage**
+- **Headings**: Scattered letter animations
+- **Body**: Clean, readable sans-serif
+- **Code**: Monospace for technical content
 
-   - Edit `src/pages/index.astro` to create your personal landing page
-   - Add your bio, skills, projects, and contact information
+### Components
 
-3. **Styling Options**
+- **Project Cards**: Hover effects and gradients
+- **Buttons**: Multiple variants with smooth transitions
+- **Navigation**: Mobile-responsive with theme integration
 
-   - The site uses Tailwind CSS for styling
-   - Customize colors and themes in `src/styles/globals.css`
-   - Modify the Tailwind configuration for your brand colors
+## 📚 Content
 
-4. **Add New Pages**
-   - Create new `.astro` files in `src/pages/` for additional pages
-   - Common pages: About, Projects, Blog, Contact
+### Publications
 
-### Available Styling Templates & Themes
+- **97 Things Every SRE Should Know** (Contributor - Chapter 38)
+- **DevOps For Dummies** (Technical Editor)
+- **ChatOps** (Author - O'Reilly Report)
+- **Post-Incident Reviews** (Author - O'Reilly Report)
+- **Chat in Operations** (Author)
+- **The VictorOps Journey to SRE** (Author)
 
-Since this project uses Tailwind CSS, you have several options for styling:
+### Podcasts
 
-1. **Built-in Tailwind Components**
+- **The Community Pulse**: Developer relations and community building
+- **After Pulse**: Extended discussions and follow-ups
+- **AI Tools Lab**: Experimental AI conversations
 
-   - The current setup includes custom button styles and layout components
-   - Modify `src/styles/globals.css` to customize the design system
+### Datadog Work
 
-2. **Tailwind UI Components** (Recommended)
+- **AI Tools Lab**: Experimental AI research and tools
+- **Conference Talks**: Speaking at major tech conferences
+- **Live Streams**: Educational content and community engagement
+- **DASH Conference**: Annual user conference contributions
 
-   - [Tailwind UI](https://tailwindui.com/) - Official component library
-   - [Headless UI](https://headlessui.com/) - Unstyled, accessible components
+## 🚀 Getting Started
 
-3. **Free Tailwind Templates**
+### Prerequisites
 
-   - [Tailwind Starter Kit](https://www.creative-tim.com/learning-lab/tailwind-starter-kit)
-   - [HyperUI](https://hyperui.dev/) - Free Tailwind CSS components
-   - [Tailwind Components](https://tailwindcomponents.com/) - Community components
+- Node.js 18+
+- npm or yarn
 
-4. **Astro Themes**
-   - Browse [Astro Themes](https://astro.build/themes/) for complete theme options
-   - Many are free and can be adapted to your needs
+### Installation
 
-### Content Recommendations
-
-Consider adding these sections to your personal website:
-
-- **Hero Section**: Brief introduction and call-to-action
-- **About**: Your background, experience, and interests
-- **Projects**: Showcase your work with descriptions and links
-- **Skills**: Technical skills and expertise areas
-- **Blog**: Share thoughts and tutorials (optional)
-- **Contact**: Ways to get in touch
-
-## 🚀 Deployment
-
-### Netlify Deployment
-
-This site is optimized for Netlify deployment:
-
-1. **Automatic Deployments**: Push to main branch triggers deployment
-2. **Preview Deployments**: Pull requests get preview URLs
-3. **Edge Functions**: Server-side functionality at the edge
-4. **Image Optimization**: Automatic image processing and CDN
-
-### Local Development with Netlify Features
-
-For full functionality (edge functions, blob store), use Netlify CLI:
+1. Clone the repository:
 
 ```bash
-# Install Netlify CLI globally
-npm install netlify-cli@latest -g
-
-# Link to your Netlify site (optional)
-netlify link
-
-# Start development server with Netlify features
-netlify dev
+git clone [repository-url]
+cd jasonhand-astro
 ```
 
-## 📝 Next Steps
+2. Install dependencies:
 
-1. **Personalize Content**: Update the homepage with your information
-2. **Choose a Design**: Pick a styling approach from the options above
-3. **Add Pages**: Create additional pages for your content
-4. **Optimize**: Add proper meta tags, alt text, and SEO optimization
-5. **Deploy**: Push to your repository and deploy to Netlify
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:4321](http://localhost:4321) in your browser
+
+### Available Scripts
+
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run astro        # Run Astro CLI commands
+netlify dev          # Start with Netlify features
+```
+
+## 🌐 Deployment
+
+The site is deployed on Netlify with automatic deployments from the main branch.
+
+### Netlify Features Used
+
+- **Edge Functions**: Dynamic content processing
+- **Image CDN**: Optimized image delivery
+- **Form Handling**: Contact form processing
+- **Branch Previews**: Preview deployments for PRs
+
+### Environment Variables
+
+```bash
+# Add any required environment variables
+NETLIFY_SITE_ID=your-site-id
+```
+
+## 🔧 Customization
+
+### Adding New Themes
+
+1. Update `src/components/ThemeToggle.tsx`
+2. Add CSS custom properties in `src/styles/globals.css`
+3. Test across all components
+
+### Adding New Content
+
+1. Create new pages in `src/pages/`
+2. Update navigation in `src/components/Header.astro`
+3. Add appropriate images to `public/images/`
+
+### Modifying Skills
+
+1. Update the skills data in `src/components/SkillsFilter.tsx`
+2. Organize by categories (technical, soft, leadership)
+
+## 📱 Mobile Experience
+
+- **Responsive Design**: Mobile-first approach
+- **Touch Interactions**: Optimized for touch devices
+- **Performance**: Fast loading on mobile networks
+- **Navigation**: Collapsible mobile menu
+
+## 🔍 SEO & Performance
+
+- **Meta Tags**: Comprehensive SEO meta tags
+- **Structured Data**: JSON-LD for rich snippets
+- **Performance**: Optimized images and minimal JavaScript
+- **Accessibility**: ARIA labels and semantic HTML
+- **Core Web Vitals**: Optimized for Google's metrics
 
 ## 🤝 Contributing
 
-This is a personal website project, but feel free to:
+This is a personal website, but suggestions and feedback are welcome:
 
-- Report issues or bugs
-- Suggest improvements
-- Share your own customizations
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+
+- **Website**: [Your Domain]
+- **Email**: [Your Email]
+- **LinkedIn**: [linkedin.com/in/jasonhand24](https://linkedin.com/in/jasonhand24)
+- **GitHub**: [github.com/jasonhand](https://github.com/jasonhand)
+- **YouTube**: [youtube.com/@jhand](https://youtube.com/@jhand)
+
+## 🙏 Acknowledgments
+
+- **Astro.js Team**: For the amazing framework
+- **Tailwind CSS**: For the utility-first CSS framework
+- **Netlify**: For hosting and deployment
+- **O'Reilly Media**: For publishing opportunities
+- **Community Pulse**: For podcast collaboration
+- **Datadog**: For supporting developer relations work
+
+---
+
+Built with ❤️ using Astro.js and deployed on Netlify.
