@@ -1,0 +1,124 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="DevOps For Dummies - Jason Hand">
+    <!-- Breadcrumb -->
+    <nav class="max-w-6xl mx-auto mb-8">
+        <ol class="flex items-center space-x-2 text-sm text-text-muted">
+            <li><a href="/" class="hover:text-primary">Home</a></li>
+            <li>/</li>
+            <li><a href="/publications" class="hover:text-primary">Publications</a></li>
+            <li>/</li>
+            <li class="text-text">DevOps For Dummies</li>
+        </ol>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h1 class="mb-8">
+                        <span class="scattered-letters">
+                            <span>D</span><span>e</span><span>v</span><span>O</span><span>p</span><span>s</span>
+                        </span>
+                        <br />
+                        <span class="scattered-letters">
+                            <span>F</span><span>o</span><span>r</span>
+                        </span>
+                        <br />
+                        <span class="scattered-letters">
+                            <span>D</span><span>u</span><span>m</span><span>m</span><span>i</span><span>e</span><span>s</span>
+                        </span>
+                    </h1>
+                    <p class="text-xl mb-8 text-text-muted">
+                        A comprehensive guide to DevOps culture, practices, and implementation strategies for modern software delivery.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="btn btn-lg btn-secondary">View Book</a>
+                        <a href="#" class="btn btn-lg btn-outline">Purchase</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-full h-96 bg-gradient-to-br from-secondary/20 to-accent/20 rounded-2xl flex items-center justify-center">
+                        <span class="text-8xl">🔧</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Details Section -->
+    <section class="section">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="mb-12 gradient-text-secondary">About This Book</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="mb-6 gradient-text">Overview</h3>
+                    <p class="mb-6">
+                        "DevOps For Dummies" provides a comprehensive introduction to DevOps culture, practices, and tools. This book breaks down complex
+                        concepts into digestible insights for teams looking to transform their software delivery processes.
+                    </p>
+                    <p class="mb-6">
+                        As an author, I focus on the cultural and organizational aspects of DevOps transformation, emphasizing the human elements that make
+                        technical implementations successful.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="mb-6 gradient-text-secondary">Key Topics</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="text-secondary">•</span>
+                            <span>DevOps Culture and Mindset</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-secondary">•</span>
+                            <span>Continuous Integration/Deployment</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-secondary">•</span>
+                            <span>Infrastructure as Code</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-secondary">•</span>
+                            <span>Monitoring and Observability</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-secondary">•</span>
+                            <span>Team Collaboration</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-secondary">•</span>
+                            <span>Organizational Transformation</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Publications -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-12">
+                <span class="scattered-letters">
+                    <span>R</span><span>e</span><span>l</span><span>a</span><span>t</span><span>e</span><span>d</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="/publications/chatops-for-dummies" class="project-card group">
+                    <div class="text-4xl mb-4">💬</div>
+                    <h3 class="mb-4 gradient-text">ChatOps For Dummies</h3>
+                    <p>Implementing ChatOps to streamline team communication and operational workflows.</p>
+                </a>
+                <a href="/publications/chat-in-operations" class="project-card group">
+                    <div class="text-4xl mb-4">🗨️</div>
+                    <h3 class="mb-4 gradient-text-secondary">Chat in Operations</h3>
+                    <p>Leveraging chat platforms for improved operational communication.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</Layout>
+

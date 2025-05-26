@@ -1,0 +1,173 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="97 Things Every SRE Should Know - Jason Hand">
+    <!-- Breadcrumb -->
+    <nav class="max-w-6xl mx-auto mb-8">
+        <ol class="flex items-center space-x-2 text-sm text-text-muted">
+            <li><a href="/" class="hover:text-primary">Home</a></li>
+            <li>/</li>
+            <li><a href="/publications" class="hover:text-primary">Publications</a></li>
+            <li>/</li>
+            <li class="text-text">97 Things Every SRE Should Know</li>
+        </ol>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h1 class="mb-8">
+                        <span class="scattered-letters">
+                            <span>9</span><span>7</span>
+                        </span>
+                        <br />
+                        <span class="scattered-letters">
+                            <span>T</span><span>h</span><span>i</span><span>n</span><span>g</span><span>s</span>
+                        </span>
+                        <br />
+                        <span class="scattered-letters">
+                            <span>S</span><span>R</span><span>E</span>
+                        </span>
+                    </h1>
+                    <p class="text-xl mb-8 text-text-muted">
+                        Collective wisdom from the site reliability engineering community, featuring insights and best practices for modern operations.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="btn btn-lg">View Book</a>
+                        <a href="#" class="btn btn-lg btn-outline">Purchase</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-full h-96 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl flex items-center justify-center">
+                        <span class="text-8xl">📚</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Details Section -->
+    <section class="section">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="mb-12 gradient-text">About This Book</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="mb-6 gradient-text-secondary">Overview</h3>
+                    <p class="mb-6">
+                        "97 Things Every SRE Should Know" is a comprehensive collection of insights, tips, and best practices from experienced site reliability
+                        engineers around the world. This collaborative effort brings together the collective wisdom of the SRE community.
+                    </p>
+                    <p class="mb-6">
+                        As a contributor to this publication, I shared insights on incident management, operational excellence, and building resilient systems
+                        that can handle the demands of modern software delivery.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="mb-6 gradient-text">Key Topics</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary">•</span>
+                            <span>Site Reliability Engineering Principles</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary">•</span>
+                            <span>Incident Response and Management</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary">•</span>
+                            <span>Monitoring and Observability</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary">•</span>
+                            <span>Automation and Tooling</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary">•</span>
+                            <span>Team Culture and Practices</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary">•</span>
+                            <span>Scalability and Performance</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Contribution Section -->
+    <section class="section">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="mb-12 gradient-text-secondary">My Contribution</h2>
+            <div class="project-card">
+                <h3 class="mb-6 gradient-text">Incident Management Excellence</h3>
+                <p class="mb-6">
+                    My contribution focuses on building effective incident management processes that not only resolve issues quickly but also create learning
+                    opportunities for continuous improvement. I explore the human side of incident response and how to build resilient teams.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="mb-4 text-lg font-semibold">Key Insights</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2">
+                                <span class="text-secondary">→</span>
+                                <span>Blameless post-incident reviews</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-secondary">→</span>
+                                <span>Effective communication during incidents</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-secondary">→</span>
+                                <span>Building learning cultures</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="mb-4 text-lg font-semibold">Practical Applications</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2">
+                                <span class="text-accent">✓</span>
+                                <span>Incident response playbooks</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-accent">✓</span>
+                                <span>Team coordination strategies</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-accent">✓</span>
+                                <span>Continuous improvement processes</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Publications -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-12">
+                <span class="scattered-letters">
+                    <span>R</span><span>e</span><span>l</span><span>a</span><span>t</span><span>e</span><span>d</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="/publications/post-incident-analysis" class="project-card group">
+                    <div class="text-4xl mb-4">🔍</div>
+                    <h3 class="mb-4 gradient-text">Post Incident Analysis</h3>
+                    <p>Deep dive into effective post-incident analysis processes and learning cultures.</p>
+                </a>
+                <a href="/publications/victorops-journey-sre" class="project-card group">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="mb-4 gradient-text-secondary">The VictorOps Journey to SRE</h3>
+                    <p>Transformation story from traditional operations to modern SRE practices.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</Layout>

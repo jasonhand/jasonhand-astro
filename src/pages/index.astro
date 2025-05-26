@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import ContextAlert from '../components/ContextAlert.astro';
 import Markdown from '../components/Markdown.astro';
+import SkillsFilter from '../components/SkillsFilter';
 
 const explainer = `
 Undergoing a complete rebuild.
@@ -94,60 +95,7 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
 
     <!-- Skills Section -->
     <section id="skills" class="section">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="mb-16">
-                <span class="scattered-letters">
-                    <span>S</span><span>k</span><span>i</span><span>l</span><span>l</span><span>s</span>
-                </span>
-            </h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="project-card">
-                    <div class="text-4xl mb-4 gradient-text">⚡</div>
-                    <h3 class="mb-4 gradient-text">Frontend</h3>
-                    <p>React, Astro, TypeScript, Tailwind CSS, Next.js</p>
-                </div>
-                <div class="project-card">
-                    <div class="text-4xl mb-4 gradient-text-secondary">🚀</div>
-                    <h3 class="mb-4 gradient-text-secondary">Backend</h3>
-                    <p>Node.js, Python, APIs, Databases, Cloud Services</p>
-                </div>
-                <div class="project-card">
-                    <div class="text-4xl mb-4 gradient-text">🎨</div>
-                    <h3 class="mb-4 gradient-text">Design</h3>
-                    <p>UI/UX, Figma, Design Systems, User Experience</p>
-                </div>
-                <div class="project-card">
-                    <div class="text-4xl mb-4 gradient-text-secondary">⚙️</div>
-                    <h3 class="mb-4 gradient-text-secondary">DevOps</h3>
-                    <p>CI/CD, Docker, Kubernetes, Infrastructure as Code</p>
-                </div>
-                <div class="project-card">
-                    <div class="text-4xl mb-4 gradient-text">🤖</div>
-                    <h3 class="mb-4 gradient-text">Artificial Intelligence</h3>
-                    <p>Machine Learning, LLMs, AI Tools, Automation</p>
-                </div>
-                <div class="project-card">
-                    <div class="text-4xl mb-4 gradient-text-secondary">🔧</div>
-                    <h3 class="mb-4 gradient-text-secondary">Site Reliability Engineering</h3>
-                    <p>Monitoring, Observability, Incident Response, SLOs</p>
-                </div>
-                <div class="project-card">
-                    <div class="text-4xl mb-4 gradient-text">👥</div>
-                    <h3 class="mb-4 gradient-text">Developer Relations</h3>
-                    <p>Community Building, Technical Advocacy, Content Creation</p>
-                </div>
-                <div class="project-card">
-                    <div class="text-4xl mb-4 gradient-text-secondary">🎤</div>
-                    <h3 class="mb-4 gradient-text-secondary">Public Speaking</h3>
-                    <p>Conference Talks, Workshops, Technical Presentations</p>
-                </div>
-                <div class="project-card">
-                    <div class="text-4xl mb-4 gradient-text">🌱</div>
-                    <h3 class="mb-4 gradient-text">Mentorship</h3>
-                    <p>Career Guidance, Technical Coaching, Knowledge Sharing</p>
-                </div>
-            </div>
-        </div>
+        <SkillsFilter client:load />
     </section>
 
     <!-- Connect Section -->
@@ -267,7 +215,7 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
         </div>
     </section>
 
-    <!-- Demo Apps Section -->
+    <!-- Demos Section -->
     <section id="demo-apps" class="section">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-center mb-8">

@@ -1,0 +1,177 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Videos - Jason Hand">
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="mb-8">
+                <span class="scattered-letters">
+                    <span>V</span><span>i</span><span>d</span><span>e</span><span>o</span><span>s</span>
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
+                Educational content on DevOps, SRE, incident management, and modern operational practices.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.youtube.com/@jhand/videos" target="_blank" rel="noopener noreferrer" class="btn btn-lg"> Browse All Videos </a>
+                <a href="#featured-videos" class="btn btn-lg btn-outline"> Explore Below </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video Section -->
+    <section class="section" id="featured-videos">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>F</span><span>e</span><span>a</span><span>t</span><span>u</span><span>r</span><span>e</span><span>d</span>
+                </span>
+            </h2>
+
+            <!-- Main Featured Video -->
+            <div class="mb-16">
+                <div class="project-card">
+                    <div
+                        class="aspect-video mb-6 rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center relative group hover:scale-105 transition-transform duration-300 cursor-pointer"
+                        onclick="window.open('https://www.youtube.com/@jhand/videos', '_blank')"
+                    >
+                        <div class="text-center p-8">
+                            <div class="text-6xl mb-4">📺</div>
+                            <h3 class="text-2xl font-bold mb-4 gradient-text">@jhand on YouTube</h3>
+                            <p class="text-text-muted mb-6">Explore my latest videos on DevOps, SRE, and operational excellence</p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a
+                                    href="https://www.youtube.com/@jhand/videos"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-lg"
+                                    onclick="event.stopPropagation()"
+                                >
+                                    🎬 Browse All Videos
+                                </a>
+                                <a
+                                    href="https://www.youtube.com/@jhand?sub_confirmation=1"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-lg btn-outline"
+                                    onclick="event.stopPropagation()"
+                                >
+                                    🔔 Subscribe
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="mb-4 gradient-text text-2xl">YouTube Channel</h3>
+                        <p class="text-lg text-text-muted mb-6">
+                            Visit my YouTube channel for educational videos covering DevOps practices, incident management, and operational excellence.
+                        </p>
+                        <a href="https://www.youtube.com/@jhand?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            Subscribe & Watch More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Topics Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>T</span><span>o</span><span>p</span><span>i</span><span>c</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">🛠️</div>
+                    <h3 class="mb-4 gradient-text">DevOps Practices</h3>
+                    <p class="mb-4">Deep dives into DevOps culture, automation, and continuous delivery practices.</p>
+                    <ul class="text-sm text-text-muted space-y-1">
+                        <li>• CI/CD Implementation</li>
+                        <li>• Infrastructure as Code</li>
+                        <li>• Team Collaboration</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text-secondary">⚡</div>
+                    <h3 class="mb-4 gradient-text-secondary">Site Reliability Engineering</h3>
+                    <p class="mb-4">SRE principles, monitoring strategies, and building resilient systems.</p>
+                    <ul class="text-sm text-text-muted space-y-1">
+                        <li>• Service Level Objectives</li>
+                        <li>• Error Budgets</li>
+                        <li>• Observability</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">🚨</div>
+                    <h3 class="mb-4 gradient-text">Incident Management</h3>
+                    <p class="mb-4">Effective incident response, post-mortems, and learning from failures.</p>
+                    <ul class="text-sm text-text-muted space-y-1">
+                        <li>• Incident Response</li>
+                        <li>• Blameless Post-mortems</li>
+                        <li>• Learning Culture</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text-secondary">💬</div>
+                    <h3 class="mb-4 gradient-text-secondary">ChatOps & Communication</h3>
+                    <p class="mb-4">Implementing ChatOps for better team communication and automation.</p>
+                    <ul class="text-sm text-text-muted space-y-1">
+                        <li>• Chat-driven Workflows</li>
+                        <li>• Bot Integration</li>
+                        <li>• Team Transparency</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">📊</div>
+                    <h3 class="mb-4 gradient-text">Monitoring & Observability</h3>
+                    <p class="mb-4">Building comprehensive monitoring and observability strategies.</p>
+                    <ul class="text-sm text-text-muted space-y-1">
+                        <li>• Metrics & Alerting</li>
+                        <li>• Distributed Tracing</li>
+                        <li>• Performance Monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text-secondary">🎯</div>
+                    <h3 class="mb-4 gradient-text-secondary">Operational Excellence</h3>
+                    <p class="mb-4">Best practices for achieving operational excellence in modern organizations.</p>
+                    <ul class="text-sm text-text-muted space-y-1">
+                        <li>• Process Improvement</li>
+                        <li>• Team Efficiency</li>
+                        <li>• Quality Assurance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="project-card">
+                <h2 class="mb-8">
+                    <span class="scattered-letters">
+                        <span>S</span><span>u</span><span>b</span><span>s</span><span>c</span><span>r</span><span>i</span><span>b</span><span>e</span>
+                    </span>
+                </h2>
+                <p class="text-xl mb-8 text-text-muted">Stay updated with the latest videos on DevOps, SRE, and operational best practices.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://www.youtube.com/@jhand?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-lg">
+                        🔔 Subscribe on YouTube
+                    </a>
+                    <a href="/publications" class="btn btn-lg btn-outline"> 📚 Read My Books </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
