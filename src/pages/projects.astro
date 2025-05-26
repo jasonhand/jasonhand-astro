@@ -2,18 +2,83 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Projects - Jason Hand">
+<Layout title="Datadog - Jason Hand">
     <!-- Hero Section -->
-    <section class="section-hero">
-        <div class="max-w-4xl mx-auto text-center">
+    <section class="section-hero relative">
+        <!-- Background Logo -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none" style="transform: translateY(20px);">
+            <img src="/images/ai-tools-lab-logo.png" alt="AI Tools Lab Logo" class="w-96 md:w-[32rem] lg:w-[40rem] h-auto opacity-10 select-none" />
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
             <h1 class="mb-8">
                 <span class="scattered-letters">
-                    <span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>s</span>
+                    <span>D</span><span>a</span><span>t</span><span>a</span><span>d</span><span>o</span><span>g</span>
                 </span>
             </h1>
             <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
-                Production-ready applications and solutions that solve real-world problems with modern technologies.
+                My work at Datadog, building observability solutions and empowering developers with monitoring and analytics tools.
             </p>
+        </div>
+    </section>
+
+    <!-- Datadog Activities Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>A</span><span>c</span><span>t</span><span>i</span><span>v</span><span>i</span><span>t</span><span>i</span><span>e</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AI Tools Lab -->
+                <div class="project-card group cursor-pointer" onclick="window.location.href='/datadog/ai-tools-lab'">
+                    <div class="text-4xl mb-4 gradient-text">🧪</div>
+                    <h3 class="mb-4 gradient-text">AI Tools Lab</h3>
+                    <p class="mb-4">Experimental AI tools and applications showcasing the future of observability and developer productivity.</p>
+                    <a href="/datadog/ai-tools-lab" class="btn btn-outline">Explore Lab</a>
+                </div>
+
+                <!-- Conference Talks -->
+                <div class="project-card group cursor-pointer" onclick="window.location.href='/datadog/conference-talks'">
+                    <div class="text-4xl mb-4 gradient-text-secondary">🎤</div>
+                    <h3 class="mb-4 gradient-text-secondary">Conference Talks</h3>
+                    <p class="mb-4">Speaking at major tech conferences including Microsoft Build, Google Next, AWS re:Invent, and more.</p>
+                    <a href="/datadog/conference-talks" class="btn btn-outline">View Talks</a>
+                </div>
+
+                <!-- Webinars -->
+                <div class="project-card group cursor-pointer" onclick="window.location.href='/datadog/webinars'">
+                    <div class="text-4xl mb-4 gradient-text">📹</div>
+                    <h3 class="mb-4 gradient-text">Webinars</h3>
+                    <p class="mb-4">Educational webinars in partnership with Google, Microsoft, AWS, and other technology leaders.</p>
+                    <a href="/datadog/webinars" class="btn btn-outline">Watch Webinars</a>
+                </div>
+
+                <!-- Datadog On -->
+                <div class="project-card group cursor-pointer" onclick="window.location.href='/datadog/datadog-on'">
+                    <div class="text-4xl mb-4 gradient-text-secondary">📺</div>
+                    <h3 class="mb-4 gradient-text-secondary">Datadog On</h3>
+                    <p class="mb-4">Educational content series covering data science, generative AI chatbots, and observability best practices.</p>
+                    <a href="/datadog/datadog-on" class="btn btn-outline">Watch Series</a>
+                </div>
+
+                <!-- Live Streams -->
+                <div class="project-card group cursor-pointer" onclick="window.location.href='/datadog/live-streams'">
+                    <div class="text-4xl mb-4 gradient-text">🔴</div>
+                    <h3 class="mb-4 gradient-text">Live Streams</h3>
+                    <p class="mb-4">Interactive live streaming sessions including AI Native DevCon and community-driven content.</p>
+                    <a href="/datadog/live-streams" class="btn btn-outline">Join Streams</a>
+                </div>
+
+                <!-- DASH Conference -->
+                <div class="project-card group cursor-pointer" onclick="window.location.href='/datadog/dash'">
+                    <div class="text-4xl mb-4 gradient-text-secondary">🏆</div>
+                    <h3 class="mb-4 gradient-text-secondary">DASH</h3>
+                    <p class="mb-4">Datadog's annual user conference bringing together the observability community for learning and networking.</p>
+                    <a href="/datadog/dash" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -22,17 +87,16 @@ import Layout from '../layouts/Layout.astro';
         <div class="max-w-6xl mx-auto">
             <div class="grid md:grid-cols-2 gap-16 items-center mb-20">
                 <div>
-                    <h2 class="mb-8 gradient-text">Building Solutions</h2>
+                    <h2 class="mb-8 gradient-text">Datadog Experience</h2>
                     <p class="mb-6">
-                        Each project represents a journey from concept to deployment, showcasing different aspects of modern web development and problem-solving
-                        approaches.
+                        At Datadog, I work on building world-class observability solutions that help organizations monitor, troubleshoot, and optimize their
+                        applications and infrastructure.
                     </p>
                     <p class="mb-6">
-                        From e-commerce platforms to healthcare dashboards, these applications demonstrate expertise across various domains and technologies.
+                        From developer tools to enterprise-scale monitoring platforms, my work focuses on creating intuitive experiences that make complex data
+                        accessible and actionable.
                     </p>
-                    <p>
-                        Every project is built with scalability, performance, and user experience in mind, using industry best practices and cutting-edge tools.
-                    </p>
+                    <p>Every solution is built with scalability, reliability, and developer experience in mind, serving millions of users worldwide.</p>
                 </div>
                 <div class="relative">
                     <div class="w-full h-96 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl flex items-center justify-center">
@@ -48,204 +112,165 @@ import Layout from '../layouts/Layout.astro';
         <div class="max-w-6xl mx-auto">
             <h2 class="text-center mb-16">
                 <span class="scattered-letters">
-                    <span>F</span><span>e</span><span>a</span><span>t</span><span>u</span><span>r</span><span>e</span><span>d</span>
+                    <span>K</span><span>e</span><span>y</span>
                 </span>
                 <br />
                 <span class="scattered-letters">
-                    <span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>s</span>
+                    <span>C</span><span>o</span><span>n</span><span>t</span><span>r</span><span>i</span><span>b</span><span>u</span><span>t</span><span>i</span
+                    ><span>o</span><span>n</span><span>s</span>
                 </span>
             </h2>
             <div class="grid gap-12">
-                <!-- E-Commerce Platform -->
+                <!-- Observability Platform -->
                 <div class="project-card">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                         <div>
                             <div class="w-full h-64 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center mb-6">
-                                <span class="text-6xl">🌐</span>
+                                <span class="text-6xl">📊</span>
                             </div>
                         </div>
                         <div>
-                            <h3 class="mb-4 gradient-text text-3xl">E-Commerce Platform</h3>
-                            <p class="mb-4 text-text-muted">Next.js • Stripe • PostgreSQL • Tailwind CSS • Vercel</p>
+                            <h3 class="mb-4 gradient-text text-3xl">Observability Platform</h3>
+                            <p class="mb-4 text-text-muted">React • TypeScript • D3.js • WebSockets • Microservices</p>
                             <p class="mb-6 text-lg">
-                                A comprehensive e-commerce solution featuring product management, secure payment processing, inventory tracking, and an
-                                intuitive admin dashboard. Built with performance and scalability in mind.
+                                Building next-generation monitoring and observability tools that provide real-time insights into application performance,
+                                infrastructure health, and user experience.
                             </p>
                             <div class="mb-6">
                                 <h4 class="mb-3 font-semibold gradient-text">Key Features:</h4>
                                 <ul class="list-disc list-inside space-y-1 text-text-muted">
-                                    <li>Secure payment processing with Stripe integration</li>
-                                    <li>Real-time inventory management</li>
-                                    <li>Responsive design for all devices</li>
-                                    <li>SEO-optimized product pages</li>
-                                    <li>Admin dashboard with analytics</li>
+                                    <li>Real-time metrics and alerting systems</li>
+                                    <li>Interactive data visualization dashboards</li>
+                                    <li>Distributed tracing and APM</li>
+                                    <li>Log aggregation and analysis</li>
+                                    <li>Infrastructure monitoring and mapping</li>
                                 </ul>
                             </div>
-                            <div class="flex gap-4">
-                                <a href="#" class="btn btn-lg">View Live Site</a>
-                                <a href="#" class="btn btn-lg btn-outline">Source Code</a>
-                                <a href="#" class="btn btn-lg btn-secondary">Case Study</a>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="https://www.datadoghq.com/" target="_blank" rel="noopener noreferrer" class="btn btn-lg">View Platform</a>
+                                <a href="https://docs.datadoghq.com/" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-outline">Documentation</a>
+                                <a href="https://www.datadoghq.com/blog/" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-secondary">Blog</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Task Management App -->
+                <!-- Developer Tools -->
                 <div class="project-card">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                         <div class="md:order-2">
                             <div class="w-full h-64 bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg flex items-center justify-center mb-6">
-                                <span class="text-6xl">📱</span>
+                                <span class="text-6xl">🛠️</span>
                             </div>
                         </div>
                         <div class="md:order-1">
-                            <h3 class="mb-4 gradient-text-secondary text-3xl">Task Management App</h3>
-                            <p class="mb-4 text-text-muted">React Native • Node.js • MongoDB • Socket.io • AWS</p>
+                            <h3 class="mb-4 gradient-text-secondary text-3xl">Developer Tools & SDKs</h3>
+                            <p class="mb-4 text-text-muted">JavaScript • Python • Go • REST APIs • GraphQL</p>
                             <p class="mb-6 text-lg">
-                                Cross-platform mobile application for team collaboration with real-time synchronization, offline functionality, and intuitive
-                                task management workflows.
+                                Creating developer-first tools and SDKs that make it easy to integrate monitoring and observability into any application or
+                                infrastructure.
                             </p>
                             <div class="mb-6">
                                 <h4 class="mb-3 font-semibold gradient-text-secondary">Key Features:</h4>
                                 <ul class="list-disc list-inside space-y-1 text-text-muted">
-                                    <li>Real-time collaboration with WebSocket</li>
-                                    <li>Offline-first architecture</li>
-                                    <li>Push notifications and reminders</li>
-                                    <li>Team management and permissions</li>
-                                    <li>Cross-platform compatibility (iOS/Android)</li>
+                                    <li>Multi-language SDK support</li>
+                                    <li>Comprehensive API documentation</li>
+                                    <li>Interactive code examples</li>
+                                    <li>Developer-friendly onboarding</li>
+                                    <li>Community-driven integrations</li>
                                 </ul>
                             </div>
-                            <div class="flex gap-4">
-                                <a href="#" class="btn btn-lg btn-secondary">Download App</a>
-                                <a href="#" class="btn btn-lg btn-outline">Source Code</a>
-                                <a href="#" class="btn btn-lg">Case Study</a>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="https://docs.datadoghq.com/developers/" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-secondary"
+                                    >Developer Docs</a
+                                >
+                                <a href="https://github.com/DataDog" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-outline">GitHub</a>
+                                <a href="https://www.datadoghq.com/integrations/" target="_blank" rel="noopener noreferrer" class="btn btn-lg">Integrations</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Healthcare Dashboard -->
+                <!-- Security & Compliance -->
                 <div class="project-card">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                         <div>
                             <div class="w-full h-64 bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg flex items-center justify-center mb-6">
-                                <span class="text-6xl">🏥</span>
+                                <span class="text-6xl">🔒</span>
                             </div>
                         </div>
                         <div>
-                            <h3 class="mb-4 gradient-text text-3xl">Healthcare Dashboard</h3>
-                            <p class="mb-4 text-text-muted">Vue.js • Python • FastAPI • Chart.js • Docker</p>
+                            <h3 class="mb-4 gradient-text text-3xl">Security & Compliance</h3>
+                            <p class="mb-4 text-text-muted">Security Monitoring • SIEM • Threat Detection • Compliance</p>
                             <p class="mb-6 text-lg">
-                                Medical data visualization platform designed for healthcare professionals, featuring HIPAA compliance, advanced analytics, and
-                                intuitive patient data management.
+                                Building security monitoring solutions that help organizations detect threats, investigate incidents, and maintain compliance
+                                across their infrastructure.
                             </p>
                             <div class="mb-6">
                                 <h4 class="mb-3 font-semibold gradient-text">Key Features:</h4>
                                 <ul class="list-disc list-inside space-y-1 text-text-muted">
-                                    <li>HIPAA-compliant data handling</li>
-                                    <li>Interactive data visualizations</li>
-                                    <li>Patient record management</li>
-                                    <li>Advanced reporting and analytics</li>
-                                    <li>Role-based access control</li>
+                                    <li>Real-time threat detection and alerting</li>
+                                    <li>Security information and event management</li>
+                                    <li>Compliance monitoring and reporting</li>
+                                    <li>Incident investigation workflows</li>
+                                    <li>Integration with security tools</li>
                                 </ul>
                             </div>
-                            <div class="flex gap-4">
-                                <a href="#" class="btn btn-lg">View Demo</a>
-                                <a href="#" class="btn btn-lg btn-outline">Documentation</a>
-                                <a href="#" class="btn btn-lg btn-secondary">Case Study</a>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="https://www.datadoghq.com/product/security-platform/" target="_blank" rel="noopener noreferrer" class="btn btn-lg"
+                                    >Security Platform</a
+                                >
+                                <a href="https://docs.datadoghq.com/security/" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-outline"
+                                    >Security Docs</a
+                                >
+                                <a
+                                    href="https://www.datadoghq.com/blog/tag/security/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-lg btn-secondary">Security Blog</a
+                                >
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Learning Management System -->
+                <!-- AI & Machine Learning -->
                 <div class="project-card">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                         <div class="md:order-2">
                             <div class="w-full h-64 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center mb-6">
-                                <span class="text-6xl">🎓</span>
+                                <span class="text-6xl">🤖</span>
                             </div>
                         </div>
                         <div class="md:order-1">
-                            <h3 class="mb-4 gradient-text-secondary text-3xl">Learning Management System</h3>
-                            <p class="mb-4 text-text-muted">Astro • Supabase • TypeScript • Tailwind CSS • Netlify</p>
+                            <h3 class="mb-4 gradient-text-secondary text-3xl">AI & Machine Learning</h3>
+                            <p class="mb-4 text-text-muted">Machine Learning • Anomaly Detection • Predictive Analytics • AI</p>
                             <p class="mb-6 text-lg">
-                                Modern educational platform with course management, progress tracking, interactive learning modules, and comprehensive analytics
-                                for educators and students.
+                                Leveraging AI and machine learning to provide intelligent insights, anomaly detection, and predictive analytics for modern
+                                observability platforms.
                             </p>
                             <div class="mb-6">
                                 <h4 class="mb-3 font-semibold gradient-text-secondary">Key Features:</h4>
                                 <ul class="list-disc list-inside space-y-1 text-text-muted">
-                                    <li>Interactive course builder</li>
-                                    <li>Student progress tracking</li>
-                                    <li>Quiz and assessment tools</li>
-                                    <li>Video content integration</li>
-                                    <li>Certification management</li>
+                                    <li>Intelligent anomaly detection</li>
+                                    <li>Predictive alerting and forecasting</li>
+                                    <li>Automated root cause analysis</li>
+                                    <li>ML-powered insights and recommendations</li>
+                                    <li>Adaptive monitoring thresholds</li>
                                 </ul>
                             </div>
-                            <div class="flex gap-4">
-                                <a href="#" class="btn btn-lg btn-secondary">Try Platform</a>
-                                <a href="#" class="btn btn-lg btn-outline">Source Code</a>
-                                <a href="#" class="btn btn-lg">Case Study</a>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="https://www.datadoghq.com/product/watchdog/" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-secondary"
+                                    >Watchdog AI</a
+                                >
+                                <a href="https://docs.datadoghq.com/watchdog/" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-outline"
+                                    >AI Docs</a
+                                >
+                                <a href="https://www.datadoghq.com/blog/tag/machine-learning/" target="_blank" rel="noopener noreferrer" class="btn btn-lg"
+                                    >ML Blog</a
+                                >
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technologies Section -->
-    <section class="section">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-center mb-16">
-                <span class="scattered-letters">
-                    <span>T</span><span>e</span><span>c</span><span>h</span><span>n</span><span>o</span><span>l</span><span>o</span><span>g</span><span>i</span
-                    ><span>e</span><span>s</span>
-                </span>
-            </h2>
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="project-card text-center">
-                    <div class="text-4xl mb-4 gradient-text">⚛️</div>
-                    <h3 class="mb-4 gradient-text">Frontend</h3>
-                    <div class="space-y-2 text-sm">
-                        <div>React • Vue.js • Astro</div>
-                        <div>Next.js • Nuxt.js</div>
-                        <div>TypeScript • JavaScript</div>
-                        <div>Tailwind CSS • SCSS</div>
-                    </div>
-                </div>
-
-                <div class="project-card text-center">
-                    <div class="text-4xl mb-4 gradient-text-secondary">🔧</div>
-                    <h3 class="mb-4 gradient-text-secondary">Backend</h3>
-                    <div class="space-y-2 text-sm">
-                        <div>Node.js • Python</div>
-                        <div>FastAPI • Express</div>
-                        <div>PostgreSQL • MongoDB</div>
-                        <div>Redis • GraphQL</div>
-                    </div>
-                </div>
-
-                <div class="project-card text-center">
-                    <div class="text-4xl mb-4 gradient-text">☁️</div>
-                    <h3 class="mb-4 gradient-text">Cloud & DevOps</h3>
-                    <div class="space-y-2 text-sm">
-                        <div>AWS • Vercel • Netlify</div>
-                        <div>Docker • Kubernetes</div>
-                        <div>CI/CD • GitHub Actions</div>
-                        <div>Monitoring & Analytics</div>
-                    </div>
-                </div>
-
-                <div class="project-card text-center">
-                    <div class="text-4xl mb-4 gradient-text-secondary">📱</div>
-                    <h3 class="mb-4 gradient-text-secondary">Mobile & Tools</h3>
-                    <div class="space-y-2 text-sm">
-                        <div>React Native • Flutter</div>
-                        <div>PWA • WebAssembly</div>
-                        <div>Figma • Storybook</div>
-                        <div>Testing • Performance</div>
                     </div>
                 </div>
             </div>
@@ -255,11 +280,45 @@ import Layout from '../layouts/Layout.astro';
     <!-- CTA Section -->
     <section class="section">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="mb-8 gradient-text">Explore More</h2>
-            <p class="text-xl mb-12">Discover experimental applications and innovative demos that showcase cutting-edge technologies and creative solutions.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <h2 class="mb-8 gradient-text">Explore My Work</h2>
+            <p class="text-xl mb-12">Discover my experimental applications, developer relations activities, and creative projects beyond my work at Datadog.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                 <a href="/demo-apps" class="btn btn-lg">Explore Demos</a>
                 <a href="/devrel" class="btn btn-lg btn-outline">Developer Relations</a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="border-t border-gray-800 pt-12">
+                <h3 class="mb-6 gradient-text-secondary">Follow My Datadog Journey</h3>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="https://youtube.com/@jhand" target="_blank" rel="noopener noreferrer" class="text-text-muted hover:text-primary transition-colors">
+                        📺 YouTube
+                    </a>
+                    <a
+                        href="https://github.com/jasonhand"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-secondary transition-colors"
+                    >
+                        💻 GitHub
+                    </a>
+                    <a
+                        href="https://www.tiktok.com/@jason.hand"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-accent transition-colors"
+                    >
+                        🎵 TikTok
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/jasonhand24"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-primary transition-colors"
+                    >
+                        💼 LinkedIn
+                    </a>
+                </div>
             </div>
         </div>
     </section>

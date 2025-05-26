@@ -1,0 +1,228 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="After Pulse - Jason Hand">
+    <!-- Breadcrumb -->
+    <nav class="max-w-6xl mx-auto px-6 py-4">
+        <div class="flex items-center space-x-2 text-sm text-text-muted">
+            <a href="/" class="hover:text-primary transition-colors">Home</a>
+            <span>→</span>
+            <a href="/podcasts" class="hover:text-primary transition-colors">Podcasts</a>
+            <span>→</span>
+            <span class="text-primary">After Pulse</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- After Pulse Logo -->
+            <div class="mb-8">
+                <img src="/images/AfterPulse.png" alt="After Pulse Logo" class="mx-auto h-24 md:h-32 w-auto" />
+            </div>
+
+            <h1 class="mb-8">
+                <span class="scattered-letters">
+                    <span>A</span><span>f</span><span>t</span><span>e</span><span>r</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>P</span><span>u</span><span>l</span><span>s</span><span>e</span>
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
+                Extended discussions and follow-up conversations from The Community Pulse episodes, diving deeper into the topics that matter.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="max-w-4xl mx-auto">
+            <div class="project-card">
+                <h2 class="mb-8 gradient-text text-3xl">About After Pulse</h2>
+                <p class="mb-6 text-lg">
+                    After Pulse provides extended conversations and deeper dives into the topics explored in The Community Pulse. These episodes offer
+                    additional insights, follow-up discussions, and expanded perspectives on developer relations and community building.
+                </p>
+                <p class="mb-8">
+                    Think of After Pulse as the "director's cut" of our main episodes - where we can explore nuances, share additional stories, and provide more
+                    context to the conversations that shape the DevRel community.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                    <a href="/podcasts/community-pulse" class="btn btn-lg">Main Episodes</a>
+                    <a href="https://www.communitypulse.io/" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-outline">Community Pulse</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episodes Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>A</span><span>f</span><span>t</span><span>e</span><span>r</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>E</span><span>p</span><span>i</span><span>s</span><span>o</span><span>d</span><span>e</span><span>s</span>
+                </span>
+            </h2>
+
+            <div class="grid gap-8">
+                <!-- After Pulse: Community Conferences -->
+                <div class="project-card">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <div class="w-full h-64 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center mb-6">
+                                <span class="text-6xl">🎪</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="mb-4 gradient-text text-3xl">Community Conferences</h3>
+                            <p class="mb-4 text-text-muted">After Pulse • Extended Discussion</p>
+                            <p class="mb-6 text-lg">
+                                An extended conversation diving deeper into the world of community conferences - exploring the behind-the-scenes aspects,
+                                organizational challenges, and the evolving landscape of tech events.
+                            </p>
+                            <div class="mb-6">
+                                <h4 class="mb-3 font-semibold gradient-text">Extended Topics:</h4>
+                                <ul class="list-disc list-inside space-y-1 text-text-muted">
+                                    <li>Conference planning and logistics</li>
+                                    <li>Speaker selection and diversity</li>
+                                    <li>Virtual vs. in-person experiences</li>
+                                    <li>Community building through events</li>
+                                    <li>Measuring conference success</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="https://www.communitypulse.io/90ap" target="_blank" rel="noopener noreferrer" class="btn btn-lg">Listen Now</a>
+                                <a
+                                    href="https://www.communitypulse.io/90-community-conferences"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-lg btn-outline">Main Episode</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- After Pulse: Bouncing from DevRel -->
+                <div class="project-card">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="md:order-2">
+                            <div class="w-full h-64 bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg flex items-center justify-center mb-6">
+                                <span class="text-6xl">🚪</span>
+                            </div>
+                        </div>
+                        <div class="md:order-1">
+                            <h3 class="mb-4 gradient-text-secondary text-3xl">Bouncing from DevRel</h3>
+                            <p class="mb-4 text-text-muted">After Pulse • Extended Discussion</p>
+                            <p class="mb-6 text-lg">
+                                A deeper exploration of career transitions in developer relations, including personal stories, industry insights, and practical
+                                advice for those considering their next steps.
+                            </p>
+                            <div class="mb-6">
+                                <h4 class="mb-3 font-semibold gradient-text-secondary">Extended Topics:</h4>
+                                <ul class="list-disc list-inside space-y-1 text-text-muted">
+                                    <li>Recognizing burnout signs</li>
+                                    <li>Transitioning skills to new roles</li>
+                                    <li>Industry changes and adaptations</li>
+                                    <li>Personal growth and reflection</li>
+                                    <li>Building resilience in tech careers</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="https://www.communitypulse.io/89ap" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-secondary"
+                                    >Listen Now</a
+                                >
+                                <a
+                                    href="https://www.communitypulse.io/89-bouncing-from-devrel"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-lg btn-outline">Main Episode</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Coming Soon Section -->
+    <section class="section">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="project-card">
+                <div class="text-6xl mb-6">🎧</div>
+                <h2 class="mb-6 gradient-text">More Episodes Coming</h2>
+                <p class="text-xl mb-8">
+                    After Pulse continues to expand with more extended discussions and follow-up conversations. Stay tuned for deeper dives into the topics that
+                    shape our community.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/podcasts/community-pulse" class="btn btn-lg">Main Episodes</a>
+                    <a href="/podcasts" class="btn btn-lg btn-outline">All Podcasts</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="mb-8 gradient-text">Subscribe & Follow</h2>
+            <p class="text-xl mb-12">Get notified when new After Pulse episodes are released and join the extended conversations.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="https://www.communitypulse.io/" target="_blank" rel="noopener noreferrer" class="btn btn-lg">Community Pulse</a>
+                <a href="/podcasts" class="btn btn-lg btn-outline">All Podcasts</a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="border-t border-gray-800 pt-12">
+                <h3 class="mb-6 gradient-text-secondary">Connect & Discuss</h3>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="https://youtube.com/@jhand" target="_blank" rel="noopener noreferrer" class="text-text-muted hover:text-primary transition-colors">
+                        📺 YouTube
+                    </a>
+                    <a
+                        href="https://github.com/jasonhand"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-secondary transition-colors"
+                    >
+                        💻 GitHub
+                    </a>
+                    <a
+                        href="https://www.tiktok.com/@jason.hand"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-accent transition-colors"
+                    >
+                        🎵 TikTok
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/jasonhand24"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-primary transition-colors"
+                    >
+                        💼 LinkedIn
+                    </a>
+                    <a
+                        href="https://open.spotify.com/show/3I7g5W9fMSgpWu38zZMjet"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-secondary transition-colors"
+                    >
+                        🎧 Spotify
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

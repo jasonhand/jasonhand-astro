@@ -1,0 +1,184 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Podcasts - Jason Hand">
+    <!-- Hero Section -->
+    <section class="section-hero relative">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h1 class="mb-8">
+                <span class="scattered-letters">
+                    <span>P</span><span>o</span><span>d</span><span>c</span><span>a</span><span>s</span><span>t</span><span>s</span>
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
+                Exploring technology, community, and developer relations through engaging podcast conversations and discussions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Podcast Shows Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-8">
+                <span class="scattered-letters">
+                    <span>S</span><span>h</span><span>o</span><span>w</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AI Tools Lab -->
+                <div class="project-card group cursor-pointer" onclick="window.location.href='/podcasts/ai-tools-lab'">
+                    <div class="mb-4">
+                        <img src="/images/ai-tools-lab-logo.png" alt="AI Tools Lab Logo" class="w-16 h-16 object-contain" />
+                    </div>
+                    <h3 class="mb-4 gradient-text">AI Tools Lab</h3>
+                    <p class="mb-4">Experimental discussions about AI tools, applications, and the future of technology in developer workflows.</p>
+                    <a href="/podcasts/ai-tools-lab" class="btn btn-outline">View Episodes</a>
+                </div>
+
+                <!-- The Community Pulse -->
+                <div class="project-card group cursor-pointer" onclick="window.location.href='/podcasts/community-pulse'">
+                    <div class="mb-4">
+                        <img src="/images/CommunityPulse.png" alt="The Community Pulse Logo" class="w-16 h-16 object-contain" />
+                    </div>
+                    <h3 class="mb-4 gradient-text-secondary">The Community Pulse</h3>
+                    <p class="mb-4">Deep conversations about developer relations, community building, and the evolving tech landscape.</p>
+                    <a href="/podcasts/community-pulse" class="btn btn-outline">View Episodes</a>
+                </div>
+
+                <!-- After Pulse -->
+                <div class="project-card group cursor-pointer" onclick="window.location.href='/podcasts/after-pulse'">
+                    <div class="mb-4">
+                        <img src="/images/AfterPulse.png" alt="After Pulse Logo" class="w-16 h-16 object-contain" />
+                    </div>
+                    <h3 class="mb-4 gradient-text">After Pulse</h3>
+                    <p class="mb-4">Extended discussions and follow-up conversations from The Community Pulse episodes.</p>
+                    <a href="/podcasts/after-pulse" class="btn btn-outline">View Episodes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Episodes Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>F</span><span>e</span><span>a</span><span>t</span><span>u</span><span>r</span><span>e</span><span>d</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>E</span><span>p</span><span>i</span><span>s</span><span>o</span><span>d</span><span>e</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid gap-8">
+                <!-- Latest Community Pulse Episode -->
+                <div class="project-card">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <div class="w-full h-64 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center mb-6">
+                                <span class="text-6xl">🎙️</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="mb-4 gradient-text text-3xl">Vibing on Vibe Coding</h3>
+                            <p class="mb-4 text-text-muted">The Community Pulse • Episode 97</p>
+                            <p class="mb-6 text-lg">
+                                Exploring the concept of "vibe coding" and how the atmosphere and energy of development environments impact productivity and
+                                creativity.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="https://www.communitypulse.io/97-vibe-coding" target="_blank" rel="noopener noreferrer" class="btn btn-lg"
+                                    >Listen Now</a
+                                >
+                                <a href="/podcasts/community-pulse" class="btn btn-lg btn-outline">More Episodes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevRel Foundation Episode -->
+                <div class="project-card">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="md:order-2">
+                            <div class="w-full h-64 bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg flex items-center justify-center mb-6">
+                                <span class="text-6xl">🏛️</span>
+                            </div>
+                        </div>
+                        <div class="md:order-1">
+                            <h3 class="mb-4 gradient-text-secondary text-3xl">The DevRel Foundation</h3>
+                            <p class="mb-4 text-text-muted">The Community Pulse • Episode 93</p>
+                            <p class="mb-6 text-lg">
+                                Discussing the establishment and importance of the DevRel Foundation in supporting and advancing the developer relations
+                                community.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a
+                                    href="https://www.communitypulse.io/93-the-devrel-foundation"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-lg btn-secondary">Listen Now</a
+                                >
+                                <a href="/podcasts/community-pulse" class="btn btn-lg btn-outline">All Episodes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="mb-8 gradient-text">Subscribe & Follow</h2>
+            <p class="text-xl mb-12">Stay updated with the latest episodes and join the conversation about technology, community, and developer relations.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="https://www.communitypulse.io/" target="_blank" rel="noopener noreferrer" class="btn btn-lg">Community Pulse</a>
+                <a href="/about" class="btn btn-lg btn-outline">About Me</a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="border-t border-gray-800 pt-12">
+                <h3 class="mb-6 gradient-text-secondary">Connect & Listen</h3>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="https://youtube.com/@jhand" target="_blank" rel="noopener noreferrer" class="text-text-muted hover:text-primary transition-colors">
+                        📺 YouTube
+                    </a>
+                    <a
+                        href="https://github.com/jasonhand"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-secondary transition-colors"
+                    >
+                        💻 GitHub
+                    </a>
+                    <a
+                        href="https://www.tiktok.com/@jason.hand"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-accent transition-colors"
+                    >
+                        🎵 TikTok
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/jasonhand24"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-primary transition-colors"
+                    >
+                        💼 LinkedIn
+                    </a>
+                    <a
+                        href="https://open.spotify.com/show/3I7g5W9fMSgpWu38zZMjet"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-secondary transition-colors"
+                    >
+                        🎧 Spotify
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

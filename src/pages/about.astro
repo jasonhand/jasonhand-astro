@@ -4,8 +4,13 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="About - Jason Hand">
     <!-- Hero Section -->
-    <section class="section-hero">
-        <div class="max-w-4xl mx-auto text-center">
+    <section class="section-hero relative">
+        <!-- Background Image -->
+        <div class="absolute top-0 right-0 bottom-0 flex items-center pointer-events-none" style="transform: translateY(20px);">
+            <img src="/images/About.png" alt="Jason Hand" class="w-72 md:w-96 lg:w-[30rem] h-auto opacity-20 select-none soft-fade-image" />
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
             <h1 class="mb-8">
                 <span class="scattered-letters">
                     <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>
@@ -136,7 +141,7 @@ import Layout from '../layouts/Layout.astro';
             <h2 class="mb-8 gradient-text">Explore My Work</h2>
             <p class="text-xl mb-12">Discover the projects and innovations I've been working on across different domains and technologies.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <a href="/projects" class="btn btn-lg">View My Projects</a>
+                <a href="/projects" class="btn btn-lg">View My Datadog Work</a>
                 <a href="/demo-apps" class="btn btn-lg btn-outline">Explore Demos</a>
             </div>
 
@@ -176,3 +181,12 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 </Layout>
+
+<style>
+    .soft-fade-image {
+        filter: blur(0.5px);
+        mask: radial-gradient(ellipse at center, black 60%, transparent 100%);
+        -webkit-mask: radial-gradient(ellipse at center, black 60%, transparent 100%);
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    }
+</style>

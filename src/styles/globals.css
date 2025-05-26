@@ -230,15 +230,16 @@
         }
     }
 
-    /* Section spacing like candycode */
+    /* Section spacing - minimal 10px max */
     .section {
-        @apply py-20 md:py-32;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
-    /* Hero section with minimal top padding */
+    /* Hero section with minimal padding */
     .section-hero {
-        @apply pb-20 md:pb-32;
         padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     /* Gradient text effect */

@@ -4,21 +4,22 @@ import Logo from '../components/Logo.astro';
 const navItems = [
     { linkText: 'Home', href: '/' },
     { linkText: 'About', href: '/about' },
-    { linkText: 'Projects', href: '/projects' },
+    { linkText: 'Datadog', href: '/projects' },
+    { linkText: 'Podcasts', href: '/podcasts' },
     { linkText: 'DevRel', href: '/devrel' },
     { linkText: 'Demo Apps', href: '/demo-apps' },
     { linkText: 'Art', href: '/art' }
 ];
 ---
 
-<nav class="flex items-center justify-between gap-4 pt-8 sm:pt-12" style="padding-bottom: 0;">
+<nav class="flex items-center justify-between gap-4 py-2">
     <!-- Logo and Profile (Mobile) -->
     <div class="flex items-center gap-3">
         <!-- Profile Image (Mobile Only) -->
         <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/50 md:hidden">
             <img src="/images/Jhand_AI_Profile.png" alt="Jason Hand" class="w-full h-full object-cover" />
         </div>
-        <a href="/" class="text-2xl font-bold gradient-text hover:scale-105 transition-transform">JH</a>
+        <a href="/" class="text-2xl font-bold gradient-text hover:scale-105 transition-transform">j:hand</a>
     </div>
 
     <!-- Desktop Navigation -->
@@ -52,7 +53,7 @@ const navItems = [
                     <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/50">
                         <img src="/images/Jhand_AI_Profile.png" alt="Jason Hand" class="w-full h-full object-cover" />
                     </div>
-                    <span class="text-2xl font-bold gradient-text">JH</span>
+                    <span class="text-2xl font-bold gradient-text">j:hand</span>
                 </div>
                 <button id="mobile-menu-close" class="p-2 hover:bg-surface rounded-lg transition-colors" aria-label="Close mobile menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

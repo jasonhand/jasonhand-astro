@@ -1,0 +1,226 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Webinars - Datadog - Jason Hand">
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- Breadcrumb -->
+            <div class="mb-6">
+                <a href="/projects" class="text-text-muted hover:text-primary transition-colors">Datadog</a>
+                <span class="text-text-muted mx-2">→</span>
+                <span class="text-text">Webinars</span>
+            </div>
+
+            <h1 class="mb-8">
+                <span class="scattered-letters">
+                    <span>W</span><span>e</span><span>b</span><span>i</span><span>n</span><span>a</span><span>r</span><span>s</span>
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
+                Educational webinars in partnership with Google, Microsoft, AWS, and other technology leaders.
+            </p>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center mb-20">
+                <div>
+                    <h2 class="mb-8 gradient-text">Educational Content</h2>
+                    <p class="mb-6">
+                        I regularly host and participate in educational webinars with major technology partners, sharing insights on observability, monitoring,
+                        and modern development practices.
+                    </p>
+                    <p class="mb-6">
+                        These collaborative sessions bring together expertise from multiple organizations to provide comprehensive, practical guidance for
+                        developers and operations teams.
+                    </p>
+                    <p>Each webinar is designed to be interactive, educational, and immediately actionable for participants.</p>
+                </div>
+                <div class="relative">
+                    <div class="w-full h-96 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl flex items-center justify-center">
+                        <span class="text-6xl gradient-text">📹</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Webinars Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>P</span><span>a</span><span>r</span><span>t</span><span>n</span><span>e</span><span>r</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>W</span><span>e</span><span>b</span><span>i</span><span>n</span><span>a</span><span>r</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Google Partnership -->
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">🔍</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text">Webinars with Google</h3>
+                    <p class="mb-4 text-text-muted">GCP • Kubernetes • Cloud Native • SRE</p>
+                    <p class="mb-6">
+                        "Observability in Google Cloud: Best Practices for GKE and Beyond" - Joint session covering monitoring strategies for Google Cloud
+                        Platform.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="btn">Watch Recording</a>
+                        <a href="#" class="btn btn-outline">Register for Next</a>
+                    </div>
+                </div>
+
+                <!-- Microsoft Partnership -->
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-gradient-to-br from-secondary/30 to-accent/30 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">🪟</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text-secondary">Webinars with Microsoft</h3>
+                    <p class="mb-4 text-text-muted">Azure • .NET • DevOps • AI</p>
+                    <p class="mb-6">
+                        "Azure Monitoring Mastery: From Application Insights to Full Observability" - Comprehensive guide to monitoring Azure applications.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="btn btn-secondary">Watch Recording</a>
+                        <a href="#" class="btn btn-outline">Register for Next</a>
+                    </div>
+                </div>
+
+                <!-- AWS Partnership -->
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-gradient-to-br from-accent/30 to-primary/30 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">☁️</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text">Webinars with AWS</h3>
+                    <p class="mb-4 text-text-muted">EC2 • Lambda • EKS • CloudWatch</p>
+                    <p class="mb-6">
+                        "Serverless Observability on AWS: Monitoring Lambda and Beyond" - Deep dive into observability for AWS serverless architectures.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="btn">Watch Recording</a>
+                        <a href="#" class="btn btn-outline">Register for Next</a>
+                    </div>
+                </div>
+
+                <!-- Multi-Partner Sessions -->
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-gradient-to-br from-primary/30 to-accent/30 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">🤝</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text-secondary">Multi-Cloud Observability</h3>
+                    <p class="mb-4 text-text-muted">Hybrid Cloud • Multi-Cloud • Strategy</p>
+                    <p class="mb-6">"Observability Across Clouds: Strategies for Multi-Cloud Environments" - Joint session with multiple cloud providers.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="btn btn-secondary">Watch Recording</a>
+                        <a href="#" class="btn btn-outline">Register for Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Webinars Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>U</span><span>p</span><span>c</span><span>o</span><span>m</span><span>i</span><span>n</span><span>g</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>S</span><span>e</span><span>s</span><span>s</span><span>i</span><span>o</span><span>n</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">🚀</div>
+                    <h3 class="mb-4 gradient-text">AI-Powered Monitoring</h3>
+                    <p class="mb-4 text-text-muted">March 2025 • with Google</p>
+                    <p class="mb-4">Exploring how AI is transforming observability and monitoring practices.</p>
+                    <a href="#" class="btn btn-outline">Register Now</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text-secondary">🔒</div>
+                    <h3 class="mb-4 gradient-text-secondary">Security Observability</h3>
+                    <p class="mb-4 text-text-muted">April 2025 • with Microsoft</p>
+                    <p class="mb-4">Integrating security monitoring with application observability.</p>
+                    <a href="#" class="btn btn-outline">Register Now</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">📊</div>
+                    <h3 class="mb-4 gradient-text">Cost Optimization</h3>
+                    <p class="mb-4 text-text-muted">May 2025 • with AWS</p>
+                    <p class="mb-4">Using observability data to optimize cloud costs and resource usage.</p>
+                    <a href="#" class="btn btn-outline">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="mb-8 gradient-text">Join Our Webinars</h2>
+            <p class="text-xl mb-12">
+                Stay updated on upcoming webinars and access our library of recorded sessions covering the latest in observability and monitoring.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="#" class="btn btn-lg">Subscribe to Updates</a>
+                <a href="/projects" class="btn btn-lg btn-outline">Back to Datadog</a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="border-t border-gray-800 pt-12">
+                <h3 class="mb-6 gradient-text-secondary">Follow Our Webinar Series</h3>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="https://youtube.com/@jhand" target="_blank" rel="noopener noreferrer" class="text-text-muted hover:text-primary transition-colors">
+                        📺 YouTube
+                    </a>
+                    <a
+                        href="https://github.com/jasonhand"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-secondary transition-colors"
+                    >
+                        💻 GitHub
+                    </a>
+                    <a
+                        href="https://www.tiktok.com/@jason.hand"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-accent transition-colors"
+                    >
+                        🎵 TikTok
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/jasonhand24"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-primary transition-colors"
+                    >
+                        💼 LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
