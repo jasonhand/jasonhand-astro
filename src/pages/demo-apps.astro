@@ -1,0 +1,235 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Demo Apps - Jason Hand">
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="mb-8">
+                <span class="scattered-letters">
+                    <span>D</span><span>e</span><span>m</span><span>o</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>A</span><span>p</span><span>p</span><span>s</span>
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
+                Interactive demonstrations and experimental applications showcasing modern web technologies and innovative solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center mb-20">
+                <div>
+                    <h2 class="mb-8 gradient-text">Experimental Playground</h2>
+                    <p class="mb-6">
+                        These demo applications serve as a testing ground for new technologies, design patterns, and development approaches. Each app explores
+                        different aspects of modern web development.
+                    </p>
+                    <p class="mb-6">
+                        From AI integrations to cutting-edge UI frameworks, these demos showcase what's possible when creativity meets technology.
+                    </p>
+                    <p>Feel free to explore, interact, and get inspired by these experimental projects that push the boundaries of web development.</p>
+                </div>
+                <div class="relative">
+                    <div class="w-full h-96 bg-gradient-to-br from-secondary/20 to-accent/20 rounded-2xl flex items-center justify-center">
+                        <span class="text-6xl gradient-text-secondary">🚀</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>C</span><span>a</span><span>t</span><span>e</span><span>g</span><span>o</span><span>r</span><span>i</span><span>e</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">🤖</div>
+                    <h3 class="mb-4 gradient-text">AI & ML</h3>
+                    <p>Artificial intelligence integrations, machine learning demos, and smart applications.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text-secondary">🎨</div>
+                    <h3 class="mb-4 gradient-text-secondary">UI/UX</h3>
+                    <p>Interactive interfaces, animation experiments, and user experience innovations.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">⚡</div>
+                    <h3 class="mb-4 gradient-text">Performance</h3>
+                    <p>Speed optimizations, efficient algorithms, and performance benchmarking tools.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text-secondary">🔧</div>
+                    <h3 class="mb-4 gradient-text-secondary">Developer Tools</h3>
+                    <p>Productivity tools, code generators, and development utilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Demos Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>F</span><span>e</span><span>a</span><span>t</span><span>u</span><span>r</span><span>e</span><span>d</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>D</span><span>e</span><span>m</span><span>o</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">🎯</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text">AI-Powered Code Assistant</h3>
+                    <p class="mb-4 text-text-muted">React • OpenAI API • TypeScript</p>
+                    <p class="mb-6">An intelligent code completion and suggestion tool that helps developers write better code faster using AI.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="btn">Try Demo</a>
+                        <a href="#" class="btn btn-outline">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-gradient-to-br from-secondary/30 to-accent/30 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">🎨</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text-secondary">Interactive Design System</h3>
+                    <p class="mb-4 text-text-muted">Astro • Tailwind • Storybook</p>
+                    <p class="mb-6">A living design system with interactive components, real-time customization, and automatic documentation.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="btn btn-secondary">Try Demo</a>
+                        <a href="#" class="btn btn-outline">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-gradient-to-br from-accent/30 to-primary/30 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">⚡</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text">Real-time Collaboration Tool</h3>
+                    <p class="mb-4 text-text-muted">WebSockets • Node.js • Redis</p>
+                    <p class="mb-6">A collaborative workspace where multiple users can edit documents, share ideas, and communicate in real-time.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="btn">Try Demo</a>
+                        <a href="#" class="btn btn-outline">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-gradient-to-br from-primary/30 to-accent/30 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">📊</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text-secondary">Data Visualization Dashboard</h3>
+                    <p class="mb-4 text-text-muted">D3.js • React • GraphQL</p>
+                    <p class="mb-6">An interactive dashboard for visualizing complex datasets with customizable charts and real-time updates.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="btn btn-secondary">Try Demo</a>
+                        <a href="#" class="btn btn-outline">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-gradient-to-br from-secondary/30 to-primary/30 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">🎮</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text">WebGL Game Engine</h3>
+                    <p class="mb-4 text-text-muted">WebGL • Three.js • TypeScript</p>
+                    <p class="mb-6">A lightweight 3D game engine running in the browser with physics simulation and interactive gameplay.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="btn">Try Demo</a>
+                        <a href="#" class="btn btn-outline">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-gradient-to-br from-accent/30 to-secondary/30 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">🔐</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text-secondary">Blockchain Wallet Interface</h3>
+                    <p class="mb-4 text-text-muted">Web3.js • Ethereum • React</p>
+                    <p class="mb-6">A secure and user-friendly interface for managing cryptocurrency transactions and blockchain interactions.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="btn btn-secondary">Try Demo</a>
+                        <a href="#" class="btn btn-outline">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experimental Features Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>E</span><span>x</span><span>p</span><span>e</span><span>r</span><span>i</span><span>m</span><span>e</span><span>n</span><span>t</span
+                    ><span>a</span><span>l</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">🧪</div>
+                    <h3 class="mb-4 gradient-text">WebAssembly Performance</h3>
+                    <p class="mb-4">Exploring the performance benefits of WebAssembly for computationally intensive web applications.</p>
+                    <a href="#" class="btn btn-outline">Explore</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text-secondary">🌐</div>
+                    <h3 class="mb-4 gradient-text-secondary">Progressive Web Apps</h3>
+                    <p class="mb-4">Advanced PWA features including offline functionality, push notifications, and native-like experiences.</p>
+                    <a href="#" class="btn btn-outline">Explore</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">🎯</div>
+                    <h3 class="mb-4 gradient-text">Edge Computing</h3>
+                    <p class="mb-4">Leveraging edge functions and distributed computing for ultra-fast, globally distributed applications.</p>
+                    <a href="#" class="btn btn-outline">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="mb-8 gradient-text">Explore & Experiment</h2>
+            <p class="text-xl mb-12">These demos are constantly evolving, showcasing the latest technologies and innovative approaches to web development.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/projects" class="btn btn-lg">View All Projects</a>
+                <a href="/devrel" class="btn btn-lg btn-outline">Developer Relations</a>
+            </div>
+        </div>
+    </section>
+</Layout>

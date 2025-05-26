@@ -1,0 +1,112 @@
+# Cursor Rules for Astro Personal Website
+
+## Project Overview
+
+This is a personal website built with Astro.js, using Tailwind CSS for styling and deployed on Netlify. The project leverages Netlify's platform features including Edge Functions, Image CDN, and Blob Store.
+
+## Tech Stack
+
+-   **Framework**: Astro.js v5.5+
+-   **Styling**: Tailwind CSS v4.0+
+-   **UI Components**: React (for interactive components)
+-   **Deployment**: Netlify
+-   **Package Manager**: npm
+-   **TypeScript**: Enabled
+
+## Code Style & Standards
+
+### File Naming
+
+-   Use kebab-case for file names: `my-component.astro`
+-   Use PascalCase for component names in code: `MyComponent`
+-   Use camelCase for variables and functions
+
+### Astro Specific
+
+-   Prefer `.astro` files for static components
+-   Use React components (`.tsx`) only when interactivity is needed
+-   Keep frontmatter at the top of `.astro` files
+-   Use Astro's built-in features (Image, SEO, etc.) when possible
+
+### CSS & Styling
+
+-   Use Tailwind CSS classes primarily
+-   Custom CSS should go in `src/styles/globals.css`
+-   Use CSS custom properties for theme variables
+-   Follow mobile-first responsive design
+
+### TypeScript
+
+-   Use strict TypeScript configuration
+-   Define interfaces for component props
+-   Prefer type imports: `import type { Props } from './types'`
+
+### Performance
+
+-   Optimize images using Astro's Image component
+-   Use static generation where possible
+-   Leverage Netlify's Edge Functions for dynamic content
+-   Minimize client-side JavaScript
+
+## Development Workflow
+
+### Commands
+
+-   `npm run dev` - Start development server
+-   `netlify dev` - Start with Netlify features
+-   `npm run build` - Build for production
+-   `npm run preview` - Preview production build
+
+### File Structure
+
+```
+src/
+├── components/     # Reusable components
+├── layouts/        # Page layouts
+├── pages/          # Route pages
+├── styles/         # Global styles
+├── assets/         # Static assets
+└── utils/          # Utility functions
+```
+
+### Best Practices
+
+-   Keep components small and focused
+-   Use semantic HTML
+-   Ensure accessibility (ARIA labels, alt text, etc.)
+-   Test on multiple devices and browsers
+-   Optimize for Core Web Vitals
+
+## Content Guidelines
+
+-   Write clear, concise copy
+-   Use proper heading hierarchy (h1 → h2 → h3)
+-   Include alt text for all images
+-   Ensure good contrast ratios
+-   Make content scannable with bullet points and short paragraphs
+
+## SEO Considerations
+
+-   Include meta descriptions for all pages
+-   Use structured data where appropriate
+-   Optimize page titles
+-   Ensure fast loading times
+-   Use semantic HTML structure
+
+## Deployment
+
+-   All changes should be tested locally first
+-   Use feature branches for new features
+-   Deploy previews are available on Netlify
+-   Production deploys happen automatically on main branch
+
+## AI Assistant Guidelines
+
+When helping with this project:
+
+1. Prioritize Astro-native solutions over external libraries
+2. Suggest Tailwind classes for styling
+3. Consider performance implications
+4. Maintain consistency with existing code patterns
+5. Ensure accessibility in all suggestions
+6. Test suggestions work with the current tech stack

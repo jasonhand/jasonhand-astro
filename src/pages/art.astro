@@ -1,0 +1,221 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Art - Jason Hand">
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="mb-8">
+                <span class="scattered-letters">
+                    <span>A</span><span>r</span><span>t</span>
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
+                Creative expressions across different mediums, from digital compositions to analog craftsmanship.
+            </p>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center mb-20">
+                <div>
+                    <h2 class="mb-8 gradient-text">Creative Journey</h2>
+                    <p class="mb-6">
+                        Art has always been a parallel passion alongside technology. Whether it's composing music, creating digital artwork, or working with
+                        traditional mediums, creativity fuels innovation.
+                    </p>
+                    <p class="mb-6">
+                        Each medium offers unique challenges and opportunities for expression, from the precision of digital tools to the organic nature of
+                        analog processes.
+                    </p>
+                    <p>Explore different facets of my artistic work, spanning multiple disciplines and creative approaches.</p>
+                </div>
+                <div class="relative">
+                    <div class="w-full h-96 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl flex items-center justify-center">
+                        <span class="text-6xl gradient-text">🎨</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Art Categories Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>C</span><span>a</span><span>t</span><span>e</span><span>g</span><span>o</span><span>r</span><span>i</span><span>e</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Music -->
+                <div class="project-card group cursor-pointer" onclick="window.location.href='/art/music'">
+                    <div class="mb-6">
+                        <div
+                            class="w-full h-48 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-300"
+                        >
+                            <span class="text-6xl">🎵</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text text-2xl">Music</h3>
+                    <p class="mb-6">Compositions, soundscapes, and musical explorations across various genres and styles.</p>
+                    <div class="flex gap-4">
+                        <a href="/art/music" class="btn">Explore Music</a>
+                    </div>
+                </div>
+
+                <!-- Digital -->
+                <div class="project-card group cursor-pointer" onclick="window.location.href='/art/digital'">
+                    <div class="mb-6">
+                        <div
+                            class="w-full h-48 bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-300"
+                        >
+                            <span class="text-6xl">💻</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text-secondary text-2xl">Digital</h3>
+                    <p class="mb-6">Digital artwork, generative art, and creative coding projects that blend technology with artistic expression.</p>
+                    <div class="flex gap-4">
+                        <a href="/art/digital" class="btn btn-secondary">Explore Digital</a>
+                    </div>
+                </div>
+
+                <!-- Analog -->
+                <div class="project-card group cursor-pointer" onclick="window.location.href='/art/analog'">
+                    <div class="mb-6">
+                        <div
+                            class="w-full h-48 bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-300"
+                        >
+                            <span class="text-6xl">🖌️</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text text-2xl">Analog</h3>
+                    <p class="mb-6">Traditional mediums including painting, drawing, sculpture, and hands-on creative processes.</p>
+                    <div class="flex gap-4">
+                        <a href="/art/analog" class="btn">Explore Analog</a>
+                    </div>
+                </div>
+
+                <!-- Other -->
+                <div class="project-card group cursor-pointer" onclick="window.location.href='/art/other'">
+                    <div class="mb-6">
+                        <div
+                            class="w-full h-48 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-300"
+                        >
+                            <span class="text-6xl">✨</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text-secondary text-2xl">Other</h3>
+                    <p class="mb-6">Experimental works, mixed media, installations, and creative projects that don't fit traditional categories.</p>
+                    <div class="flex gap-4">
+                        <a href="/art/other" class="btn btn-secondary">Explore Other</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Works Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>F</span><span>e</span><span>a</span><span>t</span><span>u</span><span>r</span><span>e</span><span>d</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>W</span><span>o</span><span>r</span><span>k</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-40 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-lg flex items-center justify-center">
+                            <span class="text-3xl">🎼</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-3 gradient-text">Ambient Soundscape</h3>
+                    <p class="mb-4 text-sm">Latest musical composition exploring atmospheric textures</p>
+                    <div class="flex gap-2">
+                        <a href="/art/music" class="btn text-sm">Listen</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-40 bg-gradient-to-br from-secondary/30 to-accent/30 rounded-lg flex items-center justify-center">
+                            <span class="text-3xl">🌊</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-3 gradient-text-secondary">Generative Flow</h3>
+                    <p class="mb-4 text-sm">Digital artwork created through algorithmic processes</p>
+                    <div class="flex gap-2">
+                        <a href="/art/digital" class="btn btn-secondary text-sm">View</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-40 bg-gradient-to-br from-accent/30 to-primary/30 rounded-lg flex items-center justify-center">
+                            <span class="text-3xl">🖼️</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-3 gradient-text">Mixed Media Study</h3>
+                    <p class="mb-4 text-sm">Experimental piece combining traditional and digital techniques</p>
+                    <div class="flex gap-2">
+                        <a href="/art/other" class="btn text-sm">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="mb-8 gradient-text">Creative & Technical</h2>
+            <p class="text-xl mb-12">Discover how creativity and technology intersect in my professional work and personal projects.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="/projects" class="btn btn-lg">View Tech Projects</a>
+                <a href="/demo-apps" class="btn btn-lg btn-outline">Explore Demos</a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="border-t border-gray-800 pt-12">
+                <h3 class="mb-6 gradient-text-secondary">Follow My Creative Journey</h3>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="https://youtube.com/@jhand" target="_blank" rel="noopener noreferrer" class="text-text-muted hover:text-primary transition-colors">
+                        📺 YouTube
+                    </a>
+                    <a
+                        href="https://github.com/jasonhand"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-secondary transition-colors"
+                    >
+                        💻 GitHub
+                    </a>
+                    <a
+                        href="https://www.tiktok.com/@jason.hand"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-accent transition-colors"
+                    >
+                        🎵 TikTok
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/jasonhand24"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-primary transition-colors"
+                    >
+                        💼 LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

@@ -1,0 +1,210 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Music - Art - Jason Hand">
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="mb-8">
+                <span class="scattered-letters">
+                    <span>M</span><span>u</span><span>s</span><span>i</span><span>c</span>
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
+                Musical compositions, soundscapes, and audio explorations across various genres and experimental approaches.
+            </p>
+        </div>
+    </section>
+
+    <!-- Navigation Breadcrumb -->
+    <section class="pb-8">
+        <div class="max-w-6xl mx-auto">
+            <nav class="flex items-center gap-2 text-text-muted">
+                <a href="/art" class="hover:text-primary transition-colors">Art</a>
+                <span>/</span>
+                <span class="text-primary">Music</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center mb-20">
+                <div>
+                    <h2 class="mb-8 gradient-text">Sound & Composition</h2>
+                    <p class="mb-6">
+                        Music has been a constant companion throughout my creative journey. From ambient soundscapes to experimental compositions, each piece
+                        explores different sonic territories.
+                    </p>
+                    <p class="mb-6">
+                        Working with both digital and analog tools, I create atmospheric pieces that blend traditional composition techniques with modern
+                        production methods.
+                    </p>
+                    <p>
+                        These works range from meditative ambient pieces to more structured compositions, often incorporating field recordings and synthesized
+                        elements.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="w-full h-96 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl flex items-center justify-center">
+                        <span class="text-6xl gradient-text">🎵</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Categories -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>G</span><span>e</span><span>n</span><span>r</span><span>e</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">🌊</div>
+                    <h3 class="mb-4 gradient-text">Ambient</h3>
+                    <p>Atmospheric soundscapes designed for contemplation and immersion.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text-secondary">🔬</div>
+                    <h3 class="mb-4 gradient-text-secondary">Experimental</h3>
+                    <p>Unconventional approaches to sound design and musical structure.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">🎹</div>
+                    <h3 class="mb-4 gradient-text">Electronic</h3>
+                    <p>Synthesized compositions exploring digital sound possibilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tracks -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>F</span><span>e</span><span>a</span><span>t</span><span>u</span><span>r</span><span>e</span><span>d</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>T</span><span>r</span><span>a</span><span>c</span><span>k</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid gap-8">
+                <div class="project-card">
+                    <div class="grid md:grid-cols-3 gap-6 items-center">
+                        <div class="w-full h-32 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">🎼</span>
+                        </div>
+                        <div class="md:col-span-2">
+                            <h3 class="mb-3 gradient-text text-xl">Ethereal Drift</h3>
+                            <p class="mb-3 text-text-muted">Ambient • 8:42</p>
+                            <p class="mb-4">
+                                A meditative journey through layered synthesizer textures and subtle field recordings, designed for deep listening and
+                                contemplation.
+                            </p>
+                            <div class="flex gap-3">
+                                <button class="btn text-sm">Play</button>
+                                <button class="btn btn-outline text-sm">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="grid md:grid-cols-3 gap-6 items-center">
+                        <div class="w-full h-32 bg-gradient-to-br from-secondary/30 to-accent/30 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">⚡</span>
+                        </div>
+                        <div class="md:col-span-2">
+                            <h3 class="mb-3 gradient-text-secondary text-xl">Digital Fragments</h3>
+                            <p class="mb-3 text-text-muted">Experimental • 5:23</p>
+                            <p class="mb-4">
+                                An exploration of glitched audio processing and algorithmic composition techniques, creating unexpected sonic textures.
+                            </p>
+                            <div class="flex gap-3">
+                                <button class="btn btn-secondary text-sm">Play</button>
+                                <button class="btn btn-outline text-sm">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="grid md:grid-cols-3 gap-6 items-center">
+                        <div class="w-full h-32 bg-gradient-to-br from-accent/30 to-primary/30 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">🌙</span>
+                        </div>
+                        <div class="md:col-span-2">
+                            <h3 class="mb-3 gradient-text text-xl">Nocturnal Patterns</h3>
+                            <p class="mb-3 text-text-muted">Electronic • 6:15</p>
+                            <p class="mb-4">
+                                Rhythmic sequences and evolving patterns that capture the essence of late-night creative sessions and urban soundscapes.
+                            </p>
+                            <div class="flex gap-3">
+                                <button class="btn text-sm">Play</button>
+                                <button class="btn btn-outline text-sm">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Process -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>T</span><span>o</span><span>o</span><span>l</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="project-card text-center">
+                    <div class="text-3xl mb-3">🎛️</div>
+                    <h4 class="mb-2 gradient-text">DAW</h4>
+                    <p class="text-sm">Ableton Live, Logic Pro</p>
+                </div>
+
+                <div class="project-card text-center">
+                    <div class="text-3xl mb-3">🎹</div>
+                    <h4 class="mb-2 gradient-text-secondary">Synthesizers</h4>
+                    <p class="text-sm">Hardware & Software Synths</p>
+                </div>
+
+                <div class="project-card text-center">
+                    <div class="text-3xl mb-3">🎤</div>
+                    <h4 class="mb-2 gradient-text">Recording</h4>
+                    <p class="text-sm">Field Recording, Sampling</p>
+                </div>
+
+                <div class="project-card text-center">
+                    <div class="text-3xl mb-3">🔧</div>
+                    <h4 class="mb-2 gradient-text-secondary">Processing</h4>
+                    <p class="text-sm">Effects, Modulation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="mb-8 gradient-text">Explore More Art</h2>
+            <p class="text-xl mb-12">Discover other creative mediums and artistic explorations across digital and analog formats.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/art/digital" class="btn btn-lg">Digital Art</a>
+                <a href="/art" class="btn btn-lg btn-outline">All Art Categories</a>
+            </div>
+        </div>
+    </section>
+</Layout>

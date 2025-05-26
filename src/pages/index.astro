@@ -4,18 +4,364 @@ import ContextAlert from '../components/ContextAlert.astro';
 import Markdown from '../components/Markdown.astro';
 
 const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
+Undergoing a complete rebuild.
 Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
 `;
 ---
 
-<Layout title="Welcome to Astro.">
-    <ContextAlert class="mb-8" />
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
+<Layout title="Jason Hand - Developer & Creator">
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Profile Image -->
+                <div class="order-1 lg:order-1 flex justify-center">
+                    <div class="relative">
+                        <div
+                            class="w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden border-4 border-gradient-to-r from-primary to-secondary p-1 bg-gradient-to-r from-primary to-secondary"
+                        >
+                            <div class="w-full h-full rounded-full overflow-hidden bg-background">
+                                <img
+                                    src="/images/Jhand_AI_Profile.png"
+                                    alt="Jason Hand - Developer & Creator"
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
+                        </div>
+                        <!-- Floating elements around the image -->
+                        <div class="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-full animate-pulse"></div>
+                        <div class="absolute -bottom-6 -left-6 w-6 h-6 bg-gradient-to-r from-secondary to-accent rounded-full animate-pulse delay-300"></div>
+                        <div class="absolute top-1/2 -left-8 w-4 h-4 bg-gradient-to-r from-accent to-primary rounded-full animate-pulse delay-700"></div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="order-2 lg:order-2">
+                    <h1 class="mb-8 text-left lg:text-left">
+                        <span class="scattered-letters">
+                            <span>J</span><span>a</span><span>s</span><span>o</span><span>n</span>
+                        </span>
+                        <br />
+                        <span class="scattered-letters">
+                            <span>H</span><span>a</span><span>n</span><span>d</span>
+                        </span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 text-left lg:text-left">Developer, creator, and digital craftsman building experiences that matter.</p>
+                    <p class="text-lg mb-12 text-text-muted text-left lg:text-left max-w-lg">
+                        Passionate about modern web technologies, developer relations, and creating innovative solutions that make a difference in the digital
+                        world.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-start">
+                        <a href="#projects" class="btn btn-lg">View My Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="mb-8">
+                        <span class="scattered-letters">
+                            <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>
+                        </span>
+                    </h2>
+                    <p class="mb-6">
+                        I'm a passionate developer who loves creating digital experiences that push boundaries and solve real problems. With expertise in modern
+                        web technologies, I help bring ideas to life.
+                    </p>
+                    <p class="mb-8">
+                        When I'm not coding, you'll find me exploring new technologies, contributing to open source, or sharing knowledge with the developer
+                        community.
+                    </p>
+                    <a href="/about" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="relative">
+                    <div class="w-full h-96 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl overflow-hidden">
+                        <img
+                            src="/images/Jhand_AI_Profile.png"
+                            alt="Jason Hand working"
+                            class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="mb-16">
+                <span class="scattered-letters">
+                    <span>S</span><span>k</span><span>i</span><span>l</span><span>l</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">⚡</div>
+                    <h3 class="mb-4 gradient-text">Frontend</h3>
+                    <p>React, Astro, TypeScript, Tailwind CSS, Next.js</p>
+                </div>
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text-secondary">🚀</div>
+                    <h3 class="mb-4 gradient-text-secondary">Backend</h3>
+                    <p>Node.js, Python, APIs, Databases, Cloud Services</p>
+                </div>
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">🎨</div>
+                    <h3 class="mb-4 gradient-text">Design</h3>
+                    <p>UI/UX, Figma, Design Systems, User Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section id="connect" class="section">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="mb-8">
+                <span class="scattered-letters">
+                    <span>C</span><span>o</span><span>n</span><span>n</span><span>e</span><span>c</span><span>t</span>
+                </span>
+            </h2>
+            <p class="text-xl mb-12 max-w-2xl mx-auto">
+                Follow my journey and connect with me across different platforms where I share insights, tutorials, and creative work.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="https://youtube.com/@jhand" target="_blank" rel="noopener noreferrer" class="project-card group hover:border-red-500/50">
+                    <div class="text-4xl mb-4">📺</div>
+                    <h3 class="mb-2 gradient-text">YouTube</h3>
+                    <p class="text-sm">Tech tutorials and insights</p>
+                </a>
+
+                <a href="https://github.com/jasonhand" target="_blank" rel="noopener noreferrer" class="project-card group hover:border-purple-500/50">
+                    <div class="text-4xl mb-4">💻</div>
+                    <h3 class="mb-2 gradient-text-secondary">GitHub</h3>
+                    <p class="text-sm">Open source projects and code</p>
+                </a>
+
+                <a href="https://www.tiktok.com/@jason.hand" target="_blank" rel="noopener noreferrer" class="project-card group hover:border-pink-500/50">
+                    <div class="text-4xl mb-4">🎵</div>
+                    <h3 class="mb-2 gradient-text">TikTok</h3>
+                    <p class="text-sm">Quick tips and creative content</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/jasonhand24" target="_blank" rel="noopener noreferrer" class="project-card group hover:border-blue-500/50">
+                    <div class="text-4xl mb-4">💼</div>
+                    <h3 class="mb-2 gradient-text-secondary">LinkedIn</h3>
+                    <p class="text-sm">Professional updates and networking</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-8">
+                <span class="scattered-letters">
+                    <span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>s</span>
+                </span>
+            </h2>
+            <p class="text-center text-xl mb-16 max-w-3xl mx-auto">
+                Production-ready applications and solutions that solve real-world problems with modern technologies.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">🌐</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text">E-Commerce Platform</h3>
+                    <p class="mb-4 text-text-muted">Next.js • Stripe • PostgreSQL • Tailwind</p>
+                    <p class="mb-6">A full-featured e-commerce platform with payment processing, inventory management, and admin dashboard.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="btn">View Project</a>
+                        <a href="#" class="btn btn-outline">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">📱</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text-secondary">Task Management App</h3>
+                    <p class="mb-4 text-text-muted">React Native • Node.js • MongoDB • Socket.io</p>
+                    <p class="mb-6">Cross-platform mobile app for team collaboration with real-time updates and offline functionality.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="btn btn-secondary">View Project</a>
+                        <a href="#" class="btn btn-outline">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">🏥</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text">Healthcare Dashboard</h3>
+                    <p class="mb-4 text-text-muted">Vue.js • Python • FastAPI • Chart.js</p>
+                    <p class="mb-6">Medical data visualization platform for healthcare professionals with HIPAA compliance and analytics.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="btn">View Project</a>
+                        <a href="#" class="btn btn-outline">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-48 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center">
+                            <span class="text-4xl">🎓</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 gradient-text-secondary">Learning Management System</h3>
+                    <p class="mb-4 text-text-muted">Astro • Supabase • TypeScript • Tailwind</p>
+                    <p class="mb-6">Educational platform with course management, progress tracking, and interactive learning modules.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="btn btn-secondary">View Project</a>
+                        <a href="#" class="btn btn-outline">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="/projects" class="btn btn-lg btn-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Apps Section -->
+    <section id="demo-apps" class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-8">
+                <span class="scattered-letters">
+                    <span>D</span><span>e</span><span>m</span><span>o</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>A</span><span>p</span><span>p</span><span>s</span>
+                </span>
+            </h2>
+            <p class="text-center text-xl mb-16 max-w-3xl mx-auto">
+                Interactive experiments and proof-of-concepts showcasing cutting-edge technologies and innovative ideas.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-40 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-lg flex items-center justify-center">
+                            <span class="text-3xl">🤖</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-3 gradient-text">AI Code Assistant</h3>
+                    <p class="mb-4 text-sm">Intelligent code completion using OpenAI API</p>
+                    <div class="flex gap-2">
+                        <a href="#" class="btn text-sm">Try Demo</a>
+                        <a href="#" class="btn btn-outline text-sm">Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-40 bg-gradient-to-br from-secondary/30 to-accent/30 rounded-lg flex items-center justify-center">
+                            <span class="text-3xl">🎨</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-3 gradient-text-secondary">Design System</h3>
+                    <p class="mb-4 text-sm">Interactive component library with live customization</p>
+                    <div class="flex gap-2">
+                        <a href="#" class="btn btn-secondary text-sm">Try Demo</a>
+                        <a href="#" class="btn btn-outline text-sm">Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-40 bg-gradient-to-br from-accent/30 to-primary/30 rounded-lg flex items-center justify-center">
+                            <span class="text-3xl">⚡</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-3 gradient-text">Real-time Collab</h3>
+                    <p class="mb-4 text-sm">Multi-user workspace with WebSocket integration</p>
+                    <div class="flex gap-2">
+                        <a href="#" class="btn text-sm">Try Demo</a>
+                        <a href="#" class="btn btn-outline text-sm">Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-40 bg-gradient-to-br from-primary/30 to-accent/30 rounded-lg flex items-center justify-center">
+                            <span class="text-3xl">📊</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-3 gradient-text-secondary">Data Viz Dashboard</h3>
+                    <p class="mb-4 text-sm">Interactive charts with D3.js and real-time updates</p>
+                    <div class="flex gap-2">
+                        <a href="#" class="btn btn-secondary text-sm">Try Demo</a>
+                        <a href="#" class="btn btn-outline text-sm">Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-40 bg-gradient-to-br from-secondary/30 to-primary/30 rounded-lg flex items-center justify-center">
+                            <span class="text-3xl">🎮</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-3 gradient-text">WebGL Game Engine</h3>
+                    <p class="mb-4 text-sm">3D browser game with physics simulation</p>
+                    <div class="flex gap-2">
+                        <a href="#" class="btn text-sm">Try Demo</a>
+                        <a href="#" class="btn btn-outline text-sm">Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="mb-4">
+                        <div class="w-full h-40 bg-gradient-to-br from-accent/30 to-secondary/30 rounded-lg flex items-center justify-center">
+                            <span class="text-3xl">🔐</span>
+                        </div>
+                    </div>
+                    <h3 class="mb-3 gradient-text-secondary">Blockchain Wallet</h3>
+                    <p class="mb-4 text-sm">Crypto wallet interface with Web3 integration</p>
+                    <div class="flex gap-2">
+                        <a href="#" class="btn btn-secondary text-sm">Try Demo</a>
+                        <a href="#" class="btn btn-outline text-sm">Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="/demo-apps" class="btn btn-lg btn-outline">Explore All Demos</a>
+            </div>
+        </div>
+    </section>
 </Layout>
+
+<style>
+    /* Smooth scrolling for anchor links */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Additional animations */
+    @keyframes float {
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .project-card:hover {
+        animation: float 2s ease-in-out infinite;
+    }
+</style>
