@@ -1,0 +1,126 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getAllDemos, getDemosByCategory, getDemosByStatus } from '../../data/demos';
+
+const allDemos = getAllDemos();
+const categories = ['web', 'ai', 'visualization', 'utility', 'entertainment', 'education'];
+const statuses = ['live', 'development', 'preview'];
+
+// Get URL parameters for filtering
+const url = new URL(Astro.request.url);
+const categoryFilter = url.searchParams.get('category');
+const statusFilter = url.searchParams.get('status');
+
+let filteredDemos = allDemos;
+
+if (categoryFilter) {
+    filteredDemos = getDemosByCategory(categoryFilter as any);
+}
+
+if (statusFilter) {
+    filteredDemos = filteredDemos.filter((demo) => demo.status === statusFilter);
+}
+---
+
+<Layout title="All Demos - Jason Hand">
+    <section class="section-hero">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="mb-8">
+                <span class="scattered-letters">
+                    <span>A</span><span>l</span><span>l</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>D</span><span>e</span><span>m</span><span>o</span><span>s</span>
+                </span>
+            </h1>
+            <p class="text-xl mb-12">Explore all {allDemos.length} interactive demonstrations and experimental applications.</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-wrap gap-4 justify-center mb-12">
+                <a href="/demos" class="btn btn-outline">All Demos</a>
+                {
+                    categories.map((category) => (
+                        <a href={`/demos?category=${category}`} class={`btn btn-outline ${categoryFilter === category ? 'btn-primary' : ''}`}>
+                            {category.charAt(0).toUpperCase() + category.slice(1)}
+                        </a>
+                    ))
+                }
+                {
+                    statuses.map((status) => (
+                        <a href={`/demos?status=${status}`} class={`btn btn-outline ${statusFilter === status ? 'btn-primary' : ''}`}>
+                            {status.charAt(0).toUpperCase() + status.slice(1)}
+                        </a>
+                    ))
+                }
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {
+                    filteredDemos.map((demo) => (
+                        <div class="project-card group">
+                            <div class="mb-4">
+                                <div
+                                    class={`w-full h-40 ${
+                                        demo.gradient === 'primary'
+                                            ? 'bg-gradient-to-br from-primary/30 to-secondary/30'
+                                            : demo.gradient === 'secondary'
+                                              ? 'bg-gradient-to-br from-secondary/30 to-accent/30'
+                                              : 'bg-gradient-to-br from-accent/30 to-primary/30'
+                                    } rounded-lg flex items-center justify-center transition-transform group-hover:scale-105`}
+                                >
+                                    <span class="text-3xl">{demo.icon}</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-2 mb-3">
+                                <h3 class="gradient-text">{demo.title}</h3>
+                                {demo.status !== 'live' && (
+                                    <span
+                                        class={`text-xs px-2 py-1 rounded-full ${
+                                            demo.status === 'development' ? 'text-yellow-500' : 'text-blue-500'
+                                        } bg-opacity-20`}
+                                    >
+                                        {demo.status === 'development' ? 'In Dev' : 'Preview'}
+                                    </span>
+                                )}
+                            </div>
+
+                            <p class="mb-4 text-sm text-text-muted">{demo.shortDescription}</p>
+
+                            <div class="flex flex-wrap gap-1 mb-4">
+                                {demo.tags.map((tag) => (
+                                    <span class="text-xs px-2 py-1 bg-background-secondary rounded-full text-text-muted">{tag}</span>
+                                ))}
+                            </div>
+
+                            <div class="flex gap-2">
+                                <a href={demo.url} target="_blank" rel="noopener noreferrer" class="btn text-sm">
+                                    {demo.status === 'development' ? 'Preview' : 'Try Demo'}
+                                </a>
+                                <a href={`/demos/${demo.id}`} class="btn btn-outline text-sm">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+
+            {
+                filteredDemos.length === 0 && (
+                    <div class="text-center py-12">
+                        <p class="text-xl text-text-muted">No demos found with the selected filters.</p>
+                        <a href="/demos" class="btn btn-outline mt-4">
+                            View All Demos
+                        </a>
+                    </div>
+                )
+            }
+        </div>
+    </section>
+</Layout>

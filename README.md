@@ -58,7 +58,7 @@ src/
 │   ├── publications.astro  # Books and publications
 │   ├── podcasts.astro      # Podcast episodes
 │   ├── videos.astro        # YouTube content
-│   ├── demo-apps.astro     # Interactive demos
+│   ├── demos/              # Interactive demos
 │   ├── art.astro           # Art gallery
 │   ├── projects.astro      # Datadog work overview
 │   ├── datadog/            # Datadog-specific pages

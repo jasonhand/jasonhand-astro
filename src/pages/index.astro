@@ -3,6 +3,10 @@ import Layout from '../layouts/Layout.astro';
 import ContextAlert from '../components/ContextAlert.astro';
 import Markdown from '../components/Markdown.astro';
 import SkillsFilter from '../components/SkillsFilter';
+import { getFeaturedDemos, getAllDemos } from '../data/demos';
+
+const featuredDemos = getFeaturedDemos();
+const allDemos = getAllDemos();
 
 const explainer = `
 Undergoing a complete rebuild.
@@ -210,7 +214,7 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
     </section>
 
     <!-- Demos Section -->
-    <section id="demo-apps" class="section">
+    <section id="demos" class="section">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-center mb-8">
                 <span class="scattered-letters">
@@ -224,99 +228,62 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
             <p class="text-center text-xl mb-16 max-w-3xl mx-auto">
                 Interactive experiments and proof-of-concepts showcasing cutting-edge technologies and innovative ideas.
             </p>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="project-card">
-                    <div class="mb-4">
-                        <div class="w-full h-40 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-lg flex items-center justify-center">
-                            <span class="text-3xl">👋</span>
-                        </div>
-                    </div>
-                    <h3 class="mb-3 gradient-text">SeeYouThere</h3>
-                    <p class="mb-4 text-sm">Location-based event discovery platform</p>
-                    <div class="flex gap-2">
-                        <a href="https://seeyathere.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn text-sm">Try Demo</a>
-                        <a href="https://github.com/jasonhand/seeyouthere" target="_blank" rel="noopener noreferrer" class="btn btn-outline text-sm">Code</a>
-                    </div>
-                </div>
 
-                <div class="project-card">
-                    <div class="mb-4">
-                        <div class="w-full h-40 bg-gradient-to-br from-secondary/30 to-accent/30 rounded-lg flex items-center justify-center">
-                            <span class="text-3xl">🌀</span>
-                        </div>
-                    </div>
-                    <h3 class="mb-3 gradient-text-secondary">Lissajous Curves</h3>
-                    <p class="mb-4 text-sm">Mathematical visualization with interactive controls</p>
-                    <div class="flex gap-2">
-                        <a href="https://jasonhand.github.io/Lissajous-Demo/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary text-sm"
-                            >Try Demo</a
-                        >
-                        <a href="https://github.com/jasonhand/Lissajous-Demo" target="_blank" rel="noopener noreferrer" class="btn btn-outline text-sm">Code</a>
-                    </div>
-                </div>
+            <!-- All Demos Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                {
+                    allDemos.map((demo) => (
+                        <div class="project-card group">
+                            <div class="mb-4">
+                                <div
+                                    class={`w-full h-40 ${
+                                        demo.gradient === 'primary'
+                                            ? 'bg-gradient-to-br from-primary/30 to-secondary/30'
+                                            : demo.gradient === 'secondary'
+                                              ? 'bg-gradient-to-br from-secondary/30 to-accent/30'
+                                              : 'bg-gradient-to-br from-accent/30 to-primary/30'
+                                    } rounded-lg flex items-center justify-center transition-transform group-hover:scale-105`}
+                                >
+                                    <span class="text-3xl">{demo.icon}</span>
+                                </div>
+                            </div>
 
-                <div class="project-card">
-                    <div class="mb-4">
-                        <div class="w-full h-40 bg-gradient-to-br from-accent/30 to-primary/30 rounded-lg flex items-center justify-center">
-                            <span class="text-3xl">🐱</span>
-                        </div>
-                    </div>
-                    <h3 class="mb-3 gradient-text">PSPSPS</h3>
-                    <p class="mb-4 text-sm">Playful cat-themed interactive application</p>
-                    <div class="flex gap-2">
-                        <a href="https://pspsps.app/" target="_blank" rel="noopener noreferrer" class="btn text-sm">Try Demo</a>
-                        <a href="https://github.com/jasonhand/pspsps" target="_blank" rel="noopener noreferrer" class="btn btn-outline text-sm">Code</a>
-                    </div>
-                </div>
+                            <div class="flex items-center gap-2 mb-3">
+                                <h3 class="gradient-text">{demo.title}</h3>
+                                {demo.status !== 'live' && (
+                                    <span
+                                        class={`text-xs px-2 py-1 rounded-full ${
+                                            demo.status === 'development' ? 'text-yellow-500' : 'text-blue-500'
+                                        } bg-opacity-20`}
+                                    >
+                                        {demo.status === 'development' ? 'In Dev' : 'Preview'}
+                                    </span>
+                                )}
+                            </div>
 
-                <div class="project-card">
-                    <div class="mb-4">
-                        <div class="w-full h-40 bg-gradient-to-br from-primary/30 to-accent/30 rounded-lg flex items-center justify-center">
-                            <span class="text-3xl">🎤</span>
-                        </div>
-                    </div>
-                    <h3 class="mb-3 gradient-text-secondary">JS Ignite Karaoke</h3>
-                    <p class="mb-4 text-sm">JavaScript-powered karaoke with real-time lyrics</p>
-                    <div class="flex gap-2">
-                        <a href="https://jasonhand.github.io/js-ignite-karaoke/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary text-sm"
-                            >Try Demo</a
-                        >
-                        <a href="https://github.com/jasonhand/js-ignite-karaoke" target="_blank" rel="noopener noreferrer" class="btn btn-outline text-sm"
-                            >Code</a
-                        >
-                    </div>
-                </div>
+                            <p class="mb-4 text-sm text-text-muted">{demo.shortDescription}</p>
 
-                <div class="project-card">
-                    <div class="mb-4">
-                        <div class="w-full h-40 bg-gradient-to-br from-secondary/30 to-primary/30 rounded-lg flex items-center justify-center">
-                            <span class="text-3xl">💿</span>
-                        </div>
-                    </div>
-                    <h3 class="mb-3 gradient-text">Vinyl Viewer</h3>
-                    <p class="mb-4 text-sm">Beautiful vinyl record collection browser</p>
-                    <div class="flex gap-2">
-                        <a href="https://jasonhand.github.io/vinyl-viewer/" target="_blank" rel="noopener noreferrer" class="btn text-sm">Try Demo</a>
-                        <a href="https://github.com/jasonhand/vinyl-viewer" target="_blank" rel="noopener noreferrer" class="btn btn-outline text-sm">Code</a>
-                    </div>
-                </div>
+                            <div class="flex flex-wrap gap-1 mb-4">
+                                {demo.tags.slice(0, 3).map((tag) => (
+                                    <span class="text-xs px-2 py-1 bg-background-secondary rounded-full text-text-muted">{tag}</span>
+                                ))}
+                            </div>
 
-                <div class="project-card">
-                    <div class="mb-4">
-                        <div class="w-full h-40 bg-gradient-to-br from-accent/30 to-secondary/30 rounded-lg flex items-center justify-center">
-                            <span class="text-3xl">🚀</span>
+                            <div class="flex gap-2">
+                                <a href={demo.url} target="_blank" rel="noopener noreferrer" class="btn text-sm">
+                                    {demo.status === 'development' ? 'Preview' : 'Try Demo'}
+                                </a>
+                                <a href={`/demos/${demo.id}`} class="btn btn-outline text-sm">
+                                    Details
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <h3 class="mb-3 gradient-text-secondary">More Coming Soon</h3>
-                    <p class="mb-4 text-sm">Exciting new experiments and demos in development</p>
-                    <div class="flex gap-2">
-                        <a href="/demo-apps" class="btn btn-secondary text-sm">View All</a>
-                        <a href="https://github.com/jasonhand" target="_blank" rel="noopener noreferrer" class="btn btn-outline text-sm">GitHub</a>
-                    </div>
-                </div>
+                    ))
+                }
             </div>
-            <div class="text-center mt-12">
-                <a href="/demo-apps" class="btn btn-lg btn-outline">Explore All Demos</a>
+
+            <div class="text-center">
+                <a href="/demos" class="btn btn-lg btn-outline">Explore All {allDemos.length} Demos</a>
             </div>
         </div>
     </section>
