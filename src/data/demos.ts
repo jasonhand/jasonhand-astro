@@ -179,7 +179,7 @@ export const demos: Demo[] = [
         description: 'A watering system visualizer and planner for efficient garden and landscape irrigation management.',
         shortDescription: 'Watering system visualizer and planner',
         icon: '💧',
-        url: 'https://watering-works-visualizer.lovable.app/',
+        url: 'https://spr1nklr.lovable.app/',
         tags: ['Garden', 'Irrigation', 'Visualization', 'Planning'],
         status: 'live',
         gradient: 'secondary',
@@ -380,7 +380,7 @@ export const demos: Demo[] = [
         description: 'A smart lighting control interface for LIFX bulbs with advanced automation and scene management (currently in development).',
         shortDescription: 'Smart lighting control interface (in development)',
         icon: '💡',
-        url: 'https://glow-pad-control.lovable.app/',
+        url: 'https://lumapad.lovable.app/',
         tags: ['Smart Home', 'Lighting', 'Automation', 'IoT'],
         status: 'development',
         gradient: 'secondary',
@@ -394,6 +394,30 @@ export const demos: Demo[] = [
             'Real-time updates'
         ],
         category: 'web',
+        difficulty: 'advanced'
+    },
+    {
+        id: 'ambient-weather-art',
+        title: 'Ambient Weather Art',
+        description: 'A dynamic, interactive art installation that transforms real-time weather data into mesmerizing visual experiences with camera integration and silhouette effects.',
+        shortDescription: 'Dynamic weather-driven visual art installation',
+        icon: '🌤️',
+        url: 'https://jasonhand.github.io/ambient_weather_art/',
+        githubUrl: 'https://github.com/jasonhand/ambient_weather_art',
+        tags: ['Weather', 'Art', 'Visualization', 'Interactive', 'Camera'],
+        status: 'live',
+        gradient: 'accent',
+        featured: true,
+        createdAt: '2024-04-10',
+        techStack: ['HTML5 Canvas', 'JavaScript', 'WebRTC', 'Ambient Weather API'],
+        features: [
+            'Real-time weather data visualization',
+            'Dynamic disc grid animations',
+            'Camera silhouette detection',
+            'Weather chaos indicators',
+            'Day/night cycle adaptation'
+        ],
+        category: 'visualization',
         difficulty: 'advanced'
     }
 ];
