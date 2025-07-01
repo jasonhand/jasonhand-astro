@@ -1,0 +1,266 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getDemoById } from '../../data/demos';
+import DemoCard from '../../components/DemoCard.astro';
+
+const demo = getDemoById('ambient-weather-art');
+---
+
+<Layout title={`${demo?.title} - Demos - Jason Hand`}>
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- Breadcrumb -->
+            <div class="mb-6">
+                <a href="/demos" class="text-text-muted hover:text-primary transition-colors">Demos</a>
+                <span class="text-text-muted mx-2">→</span>
+                <span class="text-text">{demo?.title}</span>
+            </div>
+
+            <h1 class="mb-8">
+                <span class="scattered-letters">
+                    <span>A</span><span>m</span><span>b</span><span>i</span><span>e</span><span>n</span><span>t</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>W</span><span>e</span><span>a</span><span>t</span><span>h</span><span>e</span><span>r</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>A</span><span>r</span><span>t</span>
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
+                Dynamic, interactive art installation that transforms real-time weather data into mesmerizing visual experiences.
+            </p>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center mb-20">
+                <div>
+                    <h2 class="mb-8 gradient-text">Weather-Driven Art</h2>
+                    <p class="mb-6">
+                        A dynamic, interactive art installation that transforms weather data into a mesmerizing visual experience. This web-based application
+                        creates a grid of animated discs that respond to real-time weather conditions and can integrate live camera feeds to create silhouette
+                        effects.
+                    </p>
+                    <p class="mb-6">
+                        The system connects to Ambient Weather Network API for live weather data, using temperature, humidity, pressure, wind speed, and solar
+                        radiation to influence visual patterns and animations.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href={demo?.url} target="_blank" rel="noopener noreferrer" class="btn btn-lg">Launch Demo</a>
+                        {
+                            demo?.githubUrl && (
+                                <a href={demo?.githubUrl} target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-outline">
+                                    View Source
+                                </a>
+                            )
+                        }
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-full h-96 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl flex items-center justify-center">
+                        <span class="text-6xl gradient-text">🌤️</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>F</span><span>e</span><span>a</span><span>t</span><span>u</span><span>r</span><span>e</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">🌡️</div>
+                    <h3 class="mb-4 gradient-text">Real-time Weather Integration</h3>
+                    <p class="mb-4">
+                        Connects to Ambient Weather Network API for live weather data including temperature, humidity, pressure, wind speed, and solar
+                        radiation.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">API Integration</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Live Data</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Weather Station</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text-secondary">🎨</div>
+                    <h3 class="mb-4 gradient-text-secondary">Dynamic Visual Art</h3>
+                    <p class="mb-4">
+                        Hundreds of animated discs that flip and change colors based on weather conditions, creating complex mathematical patterns.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Animation</span>
+                        <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Color Mapping</span>
+                        <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Patterns</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">📹</div>
+                    <h3 class="mb-4 gradient-text">Camera Integration</h3>
+                    <p class="mb-4">
+                        Advanced motion detection creates silhouette effects from live camera feeds, with multiple blend modes and real-time processing.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">Motion Detection</span>
+                        <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">Silhouettes</span>
+                        <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">WebRTC</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text-secondary">🌙</div>
+                    <h3 class="mb-4 gradient-text-secondary">Day/Night Cycles</h3>
+                    <p class="mb-4">
+                        Automatic color scheme adjustments based on time of day, with weather chaos indicators and atmospheric background changes.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Time-based</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Chaos Detection</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Atmospheric</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Details Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>T</span><span>e</span><span>c</span><span>h</span><span>n</span><span>i</span><span>c</span><span>a</span><span>l</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>D</span><span>e</span><span>t</span><span>a</span><span>i</span><span>l</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <h3 class="mb-4 gradient-text">Weather Data Processing</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>• Chaos calculation combining multiple weather factors</li>
+                        <li>• HSL color space with temperature-based hue selection</li>
+                        <li>• Multiple sine wave combinations for organic movement</li>
+                        <li>• 5-minute API refresh rate optimization</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="mb-4 gradient-text-secondary">Camera Processing</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>• Real-time background subtraction</li>
+                        <li>• Pixel-level difference calculation</li>
+                        <li>• Gaussian smoothing for clean silhouettes</li>
+                        <li>• Adaptive background for lighting changes</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="mb-4 gradient-text">Performance Optimization</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>• Canvas-based 2D graphics processing</li>
+                        <li>• RequestAnimationFrame for 60fps animations</li>
+                        <li>• Automatic cleanup of video streams</li>
+                        <li>• Responsive design for different screen sizes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>U</span><span>s</span><span>e</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>C</span><span>a</span><span>s</span><span>e</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="project-card">
+                    <h3 class="mb-4 gradient-text">Art Installations</h3>
+                    <p class="mb-4">Interactive weather-responsive art for gallery displays, public spaces, and educational environments.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Gallery Displays</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Public Spaces</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Educational</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="mb-4 gradient-text-secondary">Personal Use</h3>
+                    <p class="mb-4">Beautiful dynamic wall art, weather monitoring interface, and creative camera effects for home use.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Home Decor</span>
+                        <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Weather Monitoring</span>
+                        <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Camera Art</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="mb-8 gradient-text">Experience the Art</h2>
+            <p class="text-xl mb-12">See how weather data transforms into beautiful, dynamic visual art in real-time.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href={demo?.url} target="_blank" rel="noopener noreferrer" class="btn btn-lg">Launch Ambient Weather Art</a>
+                <a href="/demos" class="btn btn-lg btn-outline">Explore More Demos</a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="border-t border-gray-800 pt-12">
+                <h3 class="mb-6 gradient-text-secondary">Follow the Project</h3>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="https://youtube.com/@jhand" target="_blank" rel="noopener noreferrer" class="text-text-muted hover:text-primary transition-colors">
+                        📺 YouTube
+                    </a>
+                    <a
+                        href="https://github.com/jasonhand"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-secondary transition-colors"
+                    >
+                        💻 GitHub
+                    </a>
+                    <a
+                        href="https://www.tiktok.com/@jason.hand"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-accent transition-colors"
+                    >
+                        🎵 TikTok
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/jasonhand24"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-text-muted hover:text-primary transition-colors"
+                    >
+                        💼 LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

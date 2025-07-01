@@ -4,6 +4,7 @@ import ContextAlert from '../components/ContextAlert.astro';
 import Markdown from '../components/Markdown.astro';
 import SkillsFilter from '../components/SkillsFilter';
 import { getFeaturedDemos, getAllDemos } from '../data/demos';
+import { getDemoImagePath } from '../utils/imageMapping';
 
 const featuredDemos = getFeaturedDemos();
 const allDemos = getAllDemos();
@@ -231,16 +232,13 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
                     allDemos.map((demo) => (
                         <div class="project-card group">
                             <div class="mb-4">
-                                <div
-                                    class={`w-full h-40 ${
-                                        demo.gradient === 'primary'
-                                            ? 'bg-gradient-to-br from-primary/30 to-secondary/30'
-                                            : demo.gradient === 'secondary'
-                                              ? 'bg-gradient-to-br from-secondary/30 to-accent/30'
-                                              : 'bg-gradient-to-br from-accent/30 to-primary/30'
-                                    } rounded-lg flex items-center justify-center transition-transform group-hover:scale-105`}
-                                >
-                                    <span class="text-3xl">{demo.icon}</span>
+                                <div class="w-full h-40 rounded-lg overflow-hidden transition-transform group-hover:scale-105">
+                                    <img
+                                        src={getDemoImagePath(demo.id)}
+                                        alt={`Screenshot of ${demo.title}`}
+                                        class="w-full h-full object-cover"
+                                        loading="lazy"
+                                    />
                                 </div>
                             </div>
 
