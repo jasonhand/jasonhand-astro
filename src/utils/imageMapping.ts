@@ -2,6 +2,9 @@
 export function getDemoImagePath(demoId: string): string {
     // Map demo IDs to their corresponding image filenames
     const imageMapping: Record<string, string> = {
+        'ai-dev-challenge': 'ai_dev_challenge_hub',
+        'ambient-weather': 'ambient_weather_dashboard',
+        'markdown-viewer': 'markdown_viewer',
         'festy-packer': 'festy_packer',
         'see-ya-there': 'seeyathere',
         'split-sumthin': 'split_sumthin',

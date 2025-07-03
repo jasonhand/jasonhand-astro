@@ -9,90 +9,29 @@ if (!demo) {
 ---
 
 <Layout title={`${demo.title} - Demo - Jason Hand`}>
-    <section class="section-hero">
-        <div class="max-w-4xl mx-auto text-center">
-            <div class="mb-8">
-                <div class={`w-24 h-24 mx-auto mb-6 bg-gradient-to-br ${demo.gradient === 'primary' ? 'from-primary/30 to-secondary/30' : demo.gradient === 'secondary' ? 'from-secondary/30 to-accent/30' : 'from-accent/30 to-primary/30'} rounded-2xl flex items-center justify-center`}>
-                    <span class="text-4xl">{demo.icon}</span>
-                </div>
-                <h1 class="mb-4">{demo.title}</h1>
-                <p class="text-xl text-text-muted">{demo.shortDescription}</p>
-            </div>
-            
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href={demo.url} target="_blank" rel="noopener noreferrer" class="btn btn-lg">
-                    Try Demo
-                </a>
-                {demo.githubUrl && (
-                    <a href={demo.githubUrl} target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-outline">View Code</a>
-                )}
-                <a href="/demos" class="btn btn-lg btn-outline">Back to Demos</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="max-w-4xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h2 class="mb-6">About This Demo</h2>
-                    <p class="mb-4">{demo.description}</p>
-                    
-                    <div class="mb-6">
-                        <h3 class="mb-3 text-lg font-semibold">Key Features</h3>
-                        <ul class="space-y-2">
-                            {demo.features?.map(feature => (
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary">✓</span>
-                                    <span>{feature}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    <div class="mb-6">
-                        <h3 class="mb-3 text-lg font-semibold">Tech Stack</h3>
-                        <div class="flex flex-wrap gap-2">
-                            {demo.techStack?.map(tech => (
-                                <span class="px-3 py-1 bg-background-secondary rounded-full text-sm">{tech}</span>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="bg-background-secondary rounded-2xl p-6">
-                        <h3 class="mb-4 text-lg font-semibold">Demo Details</h3>
-                        <div class="space-y-4">
-                            <div>
-                                <span class="text-sm text-text-muted">Category:</span>
-                                <p class="capitalize">{demo.category}</p>
-                            </div>
-                            <div>
-                                <span class="text-sm text-text-muted">Difficulty:</span>
-                                <p class="capitalize">{demo.difficulty}</p>
-                            </div>
-                            <div>
-                                <span class="text-sm text-text-muted">Status:</span>
-                                <p class="capitalize">{demo.status}</p>
-                            </div>
-                            <div>
-                                <span class="text-sm text-text-muted">Created:</span>
-                                <p>{new Date(demo.createdAt).toLocaleDateString()}</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-6">
-                        <h3 class="mb-3 text-lg font-semibold">Tags</h3>
-                        <div class="flex flex-wrap gap-2">
-                            {demo.tags.map(tag => (
-                                <span class="px-3 py-1 bg-background-secondary rounded-full text-sm">{tag}</span>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="section py-16">
+    <div class="max-w-3xl mx-auto">
+      <img src="/images/screenshots/doggo_explorer.png" alt="Doggo Explorer Screenshot" class="rounded-xl shadow-lg mb-8 w-full h-auto" loading="lazy" />
+      <h1 class="gradient-text text-4xl font-bold mb-4">{demo.title}</h1>
+      <p class="text-lg mb-6 text-text-muted">{demo.description}</p>
+      <div class="mb-6">
+        {demo.tags.map(tag => (
+          <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full mr-2 mb-2">{tag}</span>
+        ))}
+      </div>
+      <ul class="list-disc pl-6 mb-8 text-base">
+        {demo.features?.map(feature => (
+          <li>{feature}</li>
+        ))}
+      </ul>
+      <div class="flex flex-col sm:flex-row gap-4 mb-8">
+        <a href={demo.url} target="_blank" rel="noopener noreferrer" class="btn">Try Demo</a>
+        {demo.githubUrl && (
+          <a href={demo.githubUrl} target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+        )}
+      </div>
+      <div class="text-sm text-text-muted">Tech Stack: {demo.techStack?.join(', ')}</div>
+      <div class="text-sm text-text-muted mt-2">Status: {demo.status.charAt(0).toUpperCase() + demo.status.slice(1)} &bull; Difficulty: {demo.difficulty.charAt(0).toUpperCase() + demo.difficulty.slice(1)} &bull; Released: {new Date(demo.createdAt).toLocaleDateString()}</div>
+    </div>
+  </section>
 </Layout>

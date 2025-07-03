@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="AI Dev Challenge Hub Demo">
+    <section class="section py-16">
+        <div class="max-w-3xl mx-auto">
+            <img
+                src="/images/screenshots/ai_dev_challenge_hub.png"
+                alt="AI Dev Challenge Hub Screenshot"
+                class="rounded-xl shadow-lg mb-8 w-full h-auto"
+                loading="lazy"
+            />
+            <h1 class="gradient-text text-4xl font-bold mb-4">AI Dev Challenge Hub</h1>
+            <p class="text-lg mb-6 text-text-muted">
+                A React-based dashboard for tracking GitHub repositories as they evolve through the AI Dev Challenge. Features repository tracking, challenge
+                timeline, real-time stats, and GitHub integration.
+            </p>
+            <div class="mb-6">
+                <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full mr-2 mb-2">AI</span>
+                <span class="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full mr-2 mb-2">Dashboard</span>
+                <span class="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full mr-2 mb-2">React</span>
+                <span class="inline-block bg-gray-700 text-white px-3 py-1 rounded-full mr-2 mb-2">GitHub</span>
+            </div>
+            <ul class="list-disc pl-6 mb-8 text-base">
+                <li>Repository tracking</li>
+                <li>Challenge timeline</li>
+                <li>Real-time statistics</li>
+                <li>URL sharing</li>
+                <li>Admin panel</li>
+                <li>Datadog RUM integration</li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href="https://jasonhand.github.io/ai_dev_challenge/" target="_blank" rel="noopener noreferrer" class="btn">Try Demo</a>
+                <a href="https://github.com/jasonhand/ai_dev_challenge" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+            </div>
+            <div class="text-sm text-text-muted">Tech Stack: React, TypeScript, Tailwind CSS, Vercel</div>
+            <div class="text-sm text-text-muted mt-2">Status: Live &bull; Difficulty: Intermediate &bull; Released: July 2024</div>
+        </div>
+    </section>
+</Layout>

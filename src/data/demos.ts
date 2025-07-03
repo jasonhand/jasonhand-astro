@@ -419,6 +419,80 @@ export const demos: Demo[] = [
         ],
         category: 'visualization',
         difficulty: 'advanced'
+    },
+    {
+        id: 'ai-dev-challenge',
+        title: 'AI Dev Challenge Hub',
+        description: 'A React-based dashboard for tracking GitHub repositories as they evolve through the AI Dev Challenge. Features repository tracking, challenge timeline, real-time stats, and GitHub integration.',
+        shortDescription: 'Track GitHub repos in the AI Dev Challenge',
+        icon: '🧑‍💻',
+        url: 'https://jasonhand.github.io/ai_dev_challenge/',
+        githubUrl: 'https://github.com/jasonhand/ai_dev_challenge',
+        tags: ['AI', 'Dashboard', 'GitHub', 'Challenge', 'React'],
+        status: 'live',
+        gradient: 'primary',
+        featured: true,
+        createdAt: '2024-07-10',
+        techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+        features: [
+            'Repository tracking',
+            'Challenge timeline',
+            'Real-time statistics',
+            'URL sharing',
+            'Admin panel',
+            'Datadog RUM integration'
+        ],
+        category: 'ai',
+        difficulty: 'intermediate',
+        // Screenshot: public/images/screenshots/ai_dev_challenge_hub.png
+    },
+    {
+        id: 'ambient-weather',
+        title: 'Ambient Weather Dashboard',
+        description: 'A dashboard for visualizing and monitoring real-time weather data from Ambient Weather stations. Features device management, data visualization, and API integration.',
+        shortDescription: 'Real-time Ambient Weather dashboard',
+        icon: '🌦️',
+        url: 'https://ambient-weather.lovable.app/',
+        githubUrl: 'https://github.com/jasonhand/ambient-weather',
+        tags: ['Weather', 'Dashboard', 'Visualization', 'API'],
+        status: 'live',
+        gradient: 'secondary',
+        featured: false,
+        createdAt: '2024-07-10',
+        techStack: ['JavaScript', 'HTML5', 'CSS3', 'Ambient Weather API'],
+        features: [
+            'Device management',
+            'Real-time weather data',
+            'Data visualization',
+            'API integration'
+        ],
+        category: 'visualization',
+        difficulty: 'intermediate',
+        // Screenshot: public/images/screenshots/ambient_weather_dashboard.png
+    },
+    {
+        id: 'markdown-viewer',
+        title: 'Markdown Viewer',
+        description: 'A simple, lightweight markdown previewer inspired by YiViewer. Instantly preview markdown files as HTML with auto-update and export features.',
+        shortDescription: 'Lightweight markdown previewer',
+        icon: '📄',
+        url: 'https://jasonhand.github.io/markdown_viewer/',
+        githubUrl: 'https://github.com/jasonhand/markdown_viewer',
+        tags: ['Markdown', 'Viewer', 'Preview', 'HTML'],
+        status: 'live',
+        gradient: 'accent',
+        featured: false,
+        createdAt: '2024-07-10',
+        techStack: ['Objective-C', 'HTML5', 'CSS3'],
+        features: [
+            'Auto-update preview',
+            'No dependencies',
+            'Export HTML',
+            'Lightweight design'
+        ],
+        category: 'utility',
+        difficulty: 'beginner',
+        // Screenshot: public/images/screenshots/markdown_viewer.png
     }
 ];
 

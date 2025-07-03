@@ -1,5 +1,9 @@
 # Jason Hand - Personal Website
 
+## 📊 Monitoring
+
+Get free monitoring for this project with [Datadog](https://www.datadoghq.com/dg/monitor/free-trial-b/?utm_source=jhand_demo)
+
 A modern, interactive personal website built with Astro.js, showcasing work in developer relations, publications, podcasts, and innovative demo applications.
 
 ## 🚀 Live Site
