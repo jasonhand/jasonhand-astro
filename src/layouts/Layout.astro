@@ -27,6 +27,39 @@ const { title } = Astro.props;
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
 
+        <!-- Datadog RUM SDK -->
+        <script is:inline>
+            (function (h, o, u, n, d) {
+                h = h[d] = h[d] || {
+                    q: [],
+                    onReady: function (c) {
+                        h.q.push(c);
+                    }
+                };
+                d = o.createElement(u);
+                d.async = 1;
+                d.src = n;
+                n = o.getElementsByTagName(u)[0];
+                n.parentNode.insertBefore(d, n);
+            })(window, document, 'script', 'https://www.datadoghq-browser-agent.com/us1/v6/datadog-rum.js', 'DD_RUM');
+            window.DD_RUM.onReady(function () {
+                window.DD_RUM.init({
+                    clientToken: 'pub3b339835526a4cc777fd26511a1aab95',
+                    applicationId: '4fbe0a71-76cb-46af-a2df-07e3fa266a98',
+                    // `site` refers to the Datadog site parameter of your organization
+                    // see https://docs.datadoghq.com/getting_started/site/
+                    site: 'datadoghq.com',
+                    service: 'jasonhand.com',
+                    env: 'prod',
+                    // Specify a version number to identify the deployed version of your application in Datadog
+                    // version: '1.0.0',
+                    sessionSampleRate: 100,
+                    sessionReplaySampleRate: 100,
+                    defaultPrivacyLevel: 'mask-user-input'
+                });
+            });
+        </script>
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     </head>
