@@ -22,7 +22,19 @@ export function getDemoImagePath(demoId: string): string {
         'doggo-explorer': 'doggo_explorer',
         'sup-destinations': 'sup_destinations',
         'lifx-app': 'lumapad',
-        'ambient-weather-art': 'ambient_weather_art'
+        'ambient-weather-art': 'ambient_weather_art',
+        'pomodoro-writer': 'PomodoroWriter',
+        'video-scope': 'VideoScope',
+        'do-it-lady': 'DoItLady',
+        'bills-blitz': 'Bills_Blitz',
+        'hero-scope': 'HeroScope',
+        'collatz-conjecture': 'CollatzConjecture',
+        'pokemon-battle': 'PokemonBattle',
+        'openweathermap': 'OpenWeatherMap',
+        'scam-url-detector': 'Scam_url_detector',
+        'star-wars-trivia': 'StarWarsTrivia',
+        'ms-learn-quiz': 'MSLearnQuiz',
+        'keyboard-speed-test': 'KeyboardSpeedTest'
     };
 
     const imageName = imageMapping[demoId] || demoId;
