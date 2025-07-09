@@ -769,6 +769,30 @@ export const demos: Demo[] = [
         ],
         category: 'utility',
         difficulty: 'beginner'
+    },
+    {
+        id: 'ecco-ocean-visualization',
+        title: 'ECCO Ocean Visualization',
+        description: 'A 3D globe and 2D map visualization for exploring ocean currents, temperature, salinity, and sea level using ECCO v4r4 data. Features interactive controls, region selection, time playback, and data quality statistics.',
+        shortDescription: 'Interactive ECCO ocean data globe & map',
+        icon: '🌊',
+        url: 'https://ecco-ocean-explorer-globe.lovable.app/',
+        githubUrl: 'https://github.com/jasonhand/ecco-ocean-explorer-globe',
+        tags: ['Ocean', 'Visualization', 'Climate', '3D', 'ECCO', 'Globe', 'Data'],
+        status: 'live',
+        gradient: 'accent',
+        featured: true,
+        createdAt: '2024-04-27',
+        techStack: ['React', 'Three.js', 'TypeScript', 'Netlify', 'Astro'],
+        features: [
+            '3D globe and 2D map views',
+            'Ocean current, temperature, salinity, and sea level layers',
+            'Region and time selection',
+            'Data quality and statistics',
+            'Export and share features'
+        ],
+        category: 'visualization',
+        difficulty: 'advanced'
     }
 ];
 

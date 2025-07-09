@@ -1,0 +1,38 @@
+---
+// ECCO Ocean Visualization Demo Page
+const demo = {
+    title: 'ECCO Ocean Visualization',
+    url: 'https://ecco-ocean-explorer-globe.lovable.app/',
+    githubUrl: 'https://github.com/jasonhand/ecco-ocean-explorer-globe',
+    image: '/images/screenshots/ECCO.png',
+    description: `A 3D globe and 2D map visualization for exploring ocean currents, temperature, salinity, and sea level using ECCO v4r4 data. Features interactive controls, region selection, time playback, and data quality statistics.`,
+    features: [
+        '3D globe and 2D map views',
+        'Ocean current, temperature, salinity, and sea level layers',
+        'Region and time selection',
+        'Data quality and statistics',
+        'Export and share features'
+    ]
+};
+---
+
+<Layout title={demo.title}>
+    <h1 class="text-3xl font-bold mb-4">{demo.title}</h1>
+    <img src={demo.image} alt="ECCO Ocean Visualization Screenshot" class="rounded-xl shadow-lg mb-8 w-full h-auto" loading="lazy" />
+    <p class="mb-4 text-lg">{demo.description}</p>
+    <div class="flex flex-wrap gap-4 mb-6">
+        <a href={demo.url} class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="View live ECCO Ocean Visualization demo">Live Demo</a>
+        <a
+            href={demo.githubUrl}
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View ECCO Ocean Visualization source code on GitHub">GitHub Repo</a
+        >
+    </div>
+    <h2 class="text-xl font-semibold mb-2">Key Features</h2>
+    <ul class="list-disc list-inside mb-8">
+        {demo.features.map((feature) => <li>{feature}</li>)}
+    </ul>
+</Layout>
+
