@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Datadog TOTO Simulator Demo">
+    <section class="section py-16">
+        <div class="max-w-3xl mx-auto">
+            <img
+                src="/images/screenshots/datadog-toto-simulator.png"
+                alt="Datadog TOTO Simulator Screenshot"
+                class="rounded-xl shadow-lg mb-8 w-full h-auto"
+                loading="lazy"
+            />
+            <h1 class="gradient-text-secondary text-4xl font-bold mb-4">Datadog TOTO Simulator</h1>
+            <p class="text-lg mb-6 text-text-muted">
+                A simulation tool for Datadog TOTO (Time-based Observability Training Operations) with interactive scenarios and learning modules.
+            </p>
+            <div class="mb-6">
+                <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full mr-2 mb-2">Datadog</span>
+                <span class="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full mr-2 mb-2">Training</span>
+                <span class="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full mr-2 mb-2">Simulation</span>
+                <span class="inline-block bg-gray-700 text-white px-3 py-1 rounded-full mr-2 mb-2">Observability</span>
+            </div>
+            <ul class="list-disc pl-6 mb-8 text-base">
+                <li>Interactive training scenarios</li>
+                <li>Observability simulations</li>
+                <li>Progress tracking</li>
+                <li>Learning modules</li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href="https://jasonhand.github.io/datadog-toto-simulator/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Try Demo</a>
+                <a href="https://github.com/jasonhand/datadog-toto-simulator" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+            </div>
+            <div class="text-sm text-text-muted">Tech Stack: React, TypeScript, Datadog APIs, Netlify</div>
+            <div class="text-sm text-text-muted mt-2">Status: Live &bull; Difficulty: Intermediate &bull; Released: August 2024</div>
+        </div>
+    </section>
+</Layout>
+

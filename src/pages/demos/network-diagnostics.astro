@@ -1,0 +1,40 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Network Diagnostics Demo">
+    <section class="section py-16">
+        <div class="max-w-3xl mx-auto">
+            <img
+                src="/images/screenshots/network-diagnostics.png"
+                alt="Network Diagnostics Screenshot"
+                class="rounded-xl shadow-lg mb-8 w-full h-auto"
+                loading="lazy"
+            />
+            <h1 class="gradient-text text-4xl font-bold mb-4">Network Diagnostics</h1>
+            <p class="text-lg mb-6 text-text-muted">
+                A comprehensive network diagnostic tool that helps analyze and troubleshoot network connectivity issues with detailed reporting and
+                visualization.
+            </p>
+            <div class="mb-6">
+                <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full mr-2 mb-2">Network</span>
+                <span class="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full mr-2 mb-2">Diagnostics</span>
+                <span class="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full mr-2 mb-2">Troubleshooting</span>
+                <span class="inline-block bg-gray-700 text-white px-3 py-1 rounded-full mr-2 mb-2">Tools</span>
+            </div>
+            <ul class="list-disc pl-6 mb-8 text-base">
+                <li>Network connectivity testing</li>
+                <li>Detailed diagnostic reports</li>
+                <li>Performance analysis</li>
+                <li>Troubleshooting guidance</li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href="https://network-diagnosis.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-accent">Try Demo</a>
+                <a href="https://github.com/jasonhand/network-diagnosis" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+            </div>
+            <div class="text-sm text-text-muted">Tech Stack: JavaScript, Network APIs, HTML5, CSS3</div>
+            <div class="text-sm text-text-muted mt-2">Status: Live &bull; Difficulty: Intermediate &bull; Released: August 2024</div>
+        </div>
+    </section>
+</Layout>
+

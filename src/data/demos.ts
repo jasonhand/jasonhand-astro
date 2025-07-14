@@ -567,7 +567,7 @@ export const demos: Demo[] = [
         id: 'bills-blitz',
         title: 'Bills Blitz',
         description: 'A fast-paced card game focused on bill management and financial literacy with engaging gameplay and educational elements.',
-        shortDescription: 'Fast-paced bill management card game',
+        shortDescription: 'The card game 31 - called Blitz',
         icon: '💳',
         url: 'https://blitz-card-chase.lovable.app/',
         githubUrl: 'https://github.com/jasonhand/blitz-card-chase',
@@ -793,6 +793,144 @@ export const demos: Demo[] = [
         ],
         category: 'visualization',
         difficulty: 'advanced'
+    },
+    {
+        id: 'space-time-language',
+        title: 'Space Time Language',
+        description: 'An interactive exploration of language patterns across time and space, visualizing how communication evolves and adapts in different contexts.',
+        shortDescription: 'Interactive language pattern visualization',
+        icon: '🌌',
+        url: 'https://jasonhand.github.io/space-time-language/',
+        githubUrl: 'https://github.com/jasonhand/space-time-language',
+        tags: ['Language', 'Visualization', 'Patterns', 'Interactive', 'Data'],
+        status: 'live',
+        gradient: 'primary',
+        featured: false,
+        createdAt: '2024-08-01',
+        techStack: ['JavaScript', 'D3.js', 'HTML5', 'CSS3'],
+        features: [
+            'Language pattern visualization',
+            'Interactive data exploration',
+            'Time-based analysis',
+            'Spatial representation'
+        ],
+        category: 'visualization',
+        difficulty: 'intermediate'
+    },
+    {
+        id: 'zeta-3',
+        title: 'Zeta-3',
+        description: 'A mathematical exploration and visualization of the zeta function and its properties, featuring interactive controls and beautiful mathematical patterns.',
+        shortDescription: 'Mathematical zeta function visualization',
+        icon: '🔢',
+        url: 'https://jasonhand.github.io/zeta-3/',
+        githubUrl: 'https://github.com/jasonhand/zeta-3',
+        tags: ['Mathematics', 'Zeta Function', 'Visualization', 'Complex Analysis'],
+        status: 'live',
+        gradient: 'secondary',
+        featured: false,
+        createdAt: '2024-08-05',
+        techStack: ['JavaScript', 'Canvas API', 'Math.js', 'HTML5'],
+        features: [
+            'Zeta function visualization',
+            'Interactive parameter controls',
+            'Mathematical accuracy',
+            'Complex number representation'
+        ],
+        category: 'visualization',
+        difficulty: 'advanced'
+    },
+    {
+        id: 'network-diagnostics',
+        title: 'Network Diagnostics',
+        description: 'A comprehensive network diagnostic tool that helps analyze and troubleshoot network connectivity issues with detailed reporting and visualization.',
+        shortDescription: 'Network diagnostic and troubleshooting tool',
+        icon: '🌐',
+        url: 'https://network-diagnosis.netlify.app/',
+        githubUrl: 'https://github.com/jasonhand/network-diagnosis',
+        tags: ['Network', 'Diagnostics', 'Troubleshooting', 'Tools'],
+        status: 'live',
+        gradient: 'accent',
+        featured: false,
+        createdAt: '2024-08-10',
+        techStack: ['JavaScript', 'Network APIs', 'HTML5', 'CSS3'],
+        features: [
+            'Network connectivity testing',
+            'Detailed diagnostic reports',
+            'Performance analysis',
+            'Troubleshooting guidance'
+        ],
+        category: 'utility',
+        difficulty: 'intermediate'
+    },
+    {
+        id: 'btc-price-wrapper',
+        title: 'BTC Price Wrapper',
+        description: 'A Bitcoin price tracking and visualization application that displays real-time cryptocurrency data with interactive charts and market analysis.',
+        shortDescription: 'Bitcoin price tracking and visualization',
+        icon: '₿',
+        url: 'https://jasonhand.github.io/btc-price-wrapper/',
+        githubUrl: 'https://github.com/jasonhand/btc-price-wrapper',
+        tags: ['Cryptocurrency', 'Bitcoin', 'Trading', 'Charts'],
+        status: 'live',
+        gradient: 'primary',
+        featured: false,
+        createdAt: '2024-08-15',
+        techStack: ['JavaScript', 'Chart.js', 'Crypto APIs', 'HTML5'],
+        features: [
+            'Real-time price tracking',
+            'Interactive charts',
+            'Market analysis',
+            'Price alerts'
+        ],
+        category: 'web',
+        difficulty: 'beginner'
+    },
+    {
+        id: 'datadog-toto-simulator',
+        title: 'Datadog TOTO Simulator',
+        description: 'A simulation tool for Datadog TOTO (Time-based Observability Training Operations) with interactive scenarios and learning modules.',
+        shortDescription: 'Datadog TOTO simulation and training tool',
+        icon: '🐕',
+        url: 'https://jasonhand.github.io/datadog-toto-simulator/',
+        githubUrl: 'https://github.com/jasonhand/datadog-toto-simulator',
+        tags: ['Datadog', 'Training', 'Simulation', 'Observability'],
+        status: 'live',
+        gradient: 'secondary',
+        featured: false,
+        createdAt: '2024-08-20',
+        techStack: ['React', 'TypeScript', 'Datadog APIs', 'Netlify'],
+        features: [
+            'Interactive training scenarios',
+            'Observability simulations',
+            'Progress tracking',
+            'Learning modules'
+        ],
+        category: 'education',
+        difficulty: 'intermediate'
+    },
+    {
+        id: 'flight-status-tracker',
+        title: 'Flight Status Tracker',
+        description: 'A real-time flight tracking application that provides live updates on flight status, delays, and arrival information with interactive maps.',
+        shortDescription: 'Real-time flight tracking and status updates',
+        icon: '✈️',
+        url: 'https://flight-status-tracker.netlify.app/',
+        githubUrl: 'https://github.com/jasonhand/flight_status',
+        tags: ['Flight', 'Tracking', 'Real-time', 'Travel'],
+        status: 'live',
+        gradient: 'accent',
+        featured: false,
+        createdAt: '2024-08-25',
+        techStack: ['React', 'TypeScript', 'Flight APIs', 'Netlify'],
+        features: [
+            'Real-time flight tracking',
+            'Status updates',
+            'Interactive maps',
+            'Delay notifications'
+        ],
+        category: 'utility',
+        difficulty: 'intermediate'
     }
 ];
 

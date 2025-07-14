@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Flight Status Tracker Demo">
+    <section class="section py-16">
+        <div class="max-w-3xl mx-auto">
+            <img
+                src="/images/screenshots/flight-status-tracker.png"
+                alt="Flight Status Tracker Screenshot"
+                class="rounded-xl shadow-lg mb-8 w-full h-auto"
+                loading="lazy"
+            />
+            <h1 class="gradient-text text-4xl font-bold mb-4">Flight Status Tracker</h1>
+            <p class="text-lg mb-6 text-text-muted">
+                A real-time flight tracking application that provides live updates on flight status, delays, and arrival information with interactive maps.
+            </p>
+            <div class="mb-6">
+                <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full mr-2 mb-2">Flight</span>
+                <span class="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full mr-2 mb-2">Tracking</span>
+                <span class="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full mr-2 mb-2">Real-time</span>
+                <span class="inline-block bg-gray-700 text-white px-3 py-1 rounded-full mr-2 mb-2">Travel</span>
+            </div>
+            <ul class="list-disc pl-6 mb-8 text-base">
+                <li>Real-time flight tracking</li>
+                <li>Status updates</li>
+                <li>Interactive maps</li>
+                <li>Delay notifications</li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href="https://flight-status-tracker.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-accent">Try Demo</a>
+                <a href="https://github.com/jasonhand/flight_status" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+            </div>
+            <div class="text-sm text-text-muted">Tech Stack: React, TypeScript, Flight APIs, Netlify</div>
+            <div class="text-sm text-text-muted mt-2">Status: Live &bull; Difficulty: Intermediate &bull; Released: August 2024</div>
+        </div>
+    </section>
+</Layout>
+

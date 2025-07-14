@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="BTC Price Wrapper Demo">
+    <section class="section py-16">
+        <div class="max-w-3xl mx-auto">
+            <img
+                src="/images/screenshots/btc-price-wrapper.png"
+                alt="BTC Price Wrapper Screenshot"
+                class="rounded-xl shadow-lg mb-8 w-full h-auto"
+                loading="lazy"
+            />
+            <h1 class="gradient-text text-4xl font-bold mb-4">BTC Price Wrapper</h1>
+            <p class="text-lg mb-6 text-text-muted">
+                A Bitcoin price tracking and visualization application that displays real-time cryptocurrency data with interactive charts and market analysis.
+            </p>
+            <div class="mb-6">
+                <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full mr-2 mb-2">Cryptocurrency</span>
+                <span class="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full mr-2 mb-2">Bitcoin</span>
+                <span class="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full mr-2 mb-2">Trading</span>
+                <span class="inline-block bg-gray-700 text-white px-3 py-1 rounded-full mr-2 mb-2">Charts</span>
+            </div>
+            <ul class="list-disc pl-6 mb-8 text-base">
+                <li>Real-time price tracking</li>
+                <li>Interactive charts</li>
+                <li>Market analysis</li>
+                <li>Price alerts</li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href="https://jasonhand.github.io/btc-price-wrapper/" target="_blank" rel="noopener noreferrer" class="btn">Try Demo</a>
+                <a href="https://github.com/jasonhand/btc-price-wrapper" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+            </div>
+            <div class="text-sm text-text-muted">Tech Stack: JavaScript, Chart.js, Crypto APIs, HTML5</div>
+            <div class="text-sm text-text-muted mt-2">Status: Live &bull; Difficulty: Beginner &bull; Released: August 2024</div>
+        </div>
+    </section>
+</Layout>
+

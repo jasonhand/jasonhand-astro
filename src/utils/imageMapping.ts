@@ -34,7 +34,13 @@ export function getDemoImagePath(demoId: string): string {
         'scam-url-detector': 'Scam_url_detector',
         'star-wars-trivia': 'StarWarsTrivia',
         'ms-learn-quiz': 'MSLearnQuiz',
-        'keyboard-speed-test': 'KeyboardSpeedTest'
+        'keyboard-speed-test': 'KeyboardSpeedTest',
+        'space-time-language': 'space-time-language',
+        'zeta-3': 'zeta-3',
+        'network-diagnostics': 'network-diagnostics',
+        'btc-price-wrapper': 'btc-price-wrapper',
+        'datadog-toto-simulator': 'datadog-toto-simulator',
+        'flight-status-tracker': 'flight-status-tracker'
     };
 
     const imageName = imageMapping[demoId] || demoId;
