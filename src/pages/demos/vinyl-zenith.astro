@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Vinyl Zenith Demo">
+    <section class="section py-16">
+        <div class="max-w-3xl mx-auto">
+            <img
+                src="/images/screenshots/my_vinyl_collection.png"
+                alt="Vinyl Zenith Screenshot"
+                class="rounded-xl shadow-lg mb-8 w-full h-auto"
+                loading="lazy"
+            />
+            <h1 class="gradient-text text-4xl font-bold mb-4">Vinyl Zenith</h1>
+            <p class="text-lg mb-6 text-text-muted">
+                A comprehensive vinyl record collection management and visualization platform with beautiful album artwork display and detailed metadata
+                tracking.
+            </p>
+            <div class="mb-6">
+                <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full mr-2 mb-2">Vinyl</span>
+                <span class="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full mr-2 mb-2">Music</span>
+                <span class="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full mr-2 mb-2">Collection</span>
+                <span class="inline-block bg-gray-700 text-white px-3 py-1 rounded-full mr-2 mb-2">Management</span>
+            </div>
+            <ul class="list-disc pl-6 mb-8 text-base">
+                <li>Album collection browsing</li>
+                <li>High-quality artwork display</li>
+                <li>Metadata management</li>
+                <li>Search and filtering</li>
+                <li>Collection statistics</li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href="https://vinylviewer.com/" target="_blank" rel="noopener noreferrer" class="btn">Try Demo</a>
+                <a href="https://github.com/jasonhand/vinyl-zenith" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+            </div>
+            <div class="text-sm text-text-muted">Tech Stack: React, TypeScript, CSS3, Netlify</div>
+            <div class="text-sm text-text-muted mt-2">Status: Live &bull; Difficulty: Intermediate &bull; Released: September 2024</div>
+        </div>
+    </section>
+</Layout>
+

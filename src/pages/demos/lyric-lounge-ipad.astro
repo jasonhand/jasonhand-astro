@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Lyric Lounge iPad Demo">
+    <section class="section py-16">
+        <div class="max-w-3xl mx-auto">
+            <img
+                src="/images/screenshots/pickinpartner.png"
+                alt="Lyric Lounge iPad Screenshot"
+                class="rounded-xl shadow-lg mb-8 w-full h-auto"
+                loading="lazy"
+            />
+            <h1 class="gradient-text text-4xl font-bold mb-4">Lyric Lounge iPad</h1>
+            <p class="text-lg mb-6 text-text-muted">
+                An iPad-optimized application for musicians to manage lyrics, chord charts, and song arrangements with touch-friendly interface and
+                collaborative features.
+            </p>
+            <div class="mb-6">
+                <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full mr-2 mb-2">Music</span>
+                <span class="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full mr-2 mb-2">iPad</span>
+                <span class="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full mr-2 mb-2">Lyrics</span>
+                <span class="inline-block bg-gray-700 text-white px-3 py-1 rounded-full mr-2 mb-2">Collaboration</span>
+            </div>
+            <ul class="list-disc pl-6 mb-8 text-base">
+                <li>Lyric management</li>
+                <li>Chord chart display</li>
+                <li>Touch-optimized interface</li>
+                <li>Collaborative editing</li>
+                <li>Song organization</li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href="https://pickinpartner.com/" target="_blank" rel="noopener noreferrer" class="btn">Try Demo</a>
+                <a href="https://github.com/jasonhand/lyric-lounge-ipad" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+            </div>
+            <div class="text-sm text-text-muted">Tech Stack: React, TypeScript, iPad UI, Touch Interface</div>
+            <div class="text-sm text-text-muted mt-2">Status: Live &bull; Difficulty: Intermediate &bull; Released: September 2024</div>
+        </div>
+    </section>
+</Layout>
+

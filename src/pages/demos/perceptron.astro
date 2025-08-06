@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Perceptron Visualizer Demo">
+    <section class="section py-16">
+        <div class="max-w-3xl mx-auto">
+            <img
+                src="/images/screenshots/perceptron.png"
+                alt="Perceptron Visualizer Screenshot"
+                class="rounded-xl shadow-lg mb-8 w-full h-auto"
+                loading="lazy"
+            />
+            <h1 class="gradient-text text-4xl font-bold mb-4">Perceptron Visualizer</h1>
+            <p class="text-lg mb-6 text-text-muted">
+                An interactive visualization of the perceptron algorithm, a fundamental machine learning concept, with real-time training visualization and
+                decision boundary plotting.
+            </p>
+            <div class="mb-6">
+                <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full mr-2 mb-2">Machine Learning</span>
+                <span class="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full mr-2 mb-2">Perceptron</span>
+                <span class="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full mr-2 mb-2">AI</span>
+                <span class="inline-block bg-gray-700 text-white px-3 py-1 rounded-full mr-2 mb-2">Education</span>
+            </div>
+            <ul class="list-disc pl-6 mb-8 text-base">
+                <li>Perceptron training visualization</li>
+                <li>Decision boundary plotting</li>
+                <li>Interactive data points</li>
+                <li>Learning rate controls</li>
+                <li>Educational explanations</li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href="https://jasonhand.github.io/perceptron/" target="_blank" rel="noopener noreferrer" class="btn">Try Demo</a>
+                <a href="https://github.com/jasonhand/perceptron" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+            </div>
+            <div class="text-sm text-text-muted">Tech Stack: JavaScript, Canvas API, Machine Learning, HTML5</div>
+            <div class="text-sm text-text-muted mt-2">Status: Live &bull; Difficulty: Intermediate &bull; Released: October 2024</div>
+        </div>
+    </section>
+</Layout>
+

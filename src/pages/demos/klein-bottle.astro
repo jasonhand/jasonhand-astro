@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Klein Bottle Visualizer Demo">
+    <section class="section py-16">
+        <div class="max-w-3xl mx-auto">
+            <img
+                src="/images/screenshots/klein_bottle.png"
+                alt="Klein Bottle Visualizer Screenshot"
+                class="rounded-xl shadow-lg mb-8 w-full h-auto"
+                loading="lazy"
+            />
+            <h1 class="gradient-text text-4xl font-bold mb-4">Klein Bottle Visualizer</h1>
+            <p class="text-lg mb-6 text-text-muted">
+                An interactive 3D visualization of the Klein bottle, a fascinating mathematical surface with no inside or outside, featuring real-time parameter
+                controls and mathematical accuracy.
+            </p>
+            <div class="mb-6">
+                <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full mr-2 mb-2">Mathematics</span>
+                <span class="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full mr-2 mb-2">3D</span>
+                <span class="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full mr-2 mb-2">Klein Bottle</span>
+                <span class="inline-block bg-gray-700 text-white px-3 py-1 rounded-full mr-2 mb-2">Topology</span>
+            </div>
+            <ul class="list-disc pl-6 mb-8 text-base">
+                <li>3D Klein bottle rendering</li>
+                <li>Interactive controls</li>
+                <li>Mathematical accuracy</li>
+                <li>Real-time parameter adjustment</li>
+                <li>Educational information</li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href="https://jasonhand.github.io/klein_bottle/" target="_blank" rel="noopener noreferrer" class="btn">Try Demo</a>
+                <a href="https://github.com/jasonhand/klein_bottle" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+            </div>
+            <div class="text-sm text-text-muted">Tech Stack: Three.js, JavaScript, WebGL, Mathematics</div>
+            <div class="text-sm text-text-muted mt-2">Status: Live &bull; Difficulty: Advanced &bull; Released: October 2024</div>
+        </div>
+    </section>
+</Layout>
+

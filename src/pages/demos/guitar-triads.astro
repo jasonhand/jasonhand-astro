@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Guitar Triads Master Demo">
+    <section class="section py-16">
+        <div class="max-w-3xl mx-auto">
+            <img
+                src="/images/screenshots/guitar_triads.png"
+                alt="Guitar Triads Master Screenshot"
+                class="rounded-xl shadow-lg mb-8 w-full h-auto"
+                loading="lazy"
+            />
+            <h1 class="gradient-text text-4xl font-bold mb-4">Guitar Triads Master</h1>
+            <p class="text-lg mb-6 text-text-muted">
+                An interactive guitar learning tool that teaches triad inversions, chord construction, and harmonic function through close-position triad
+                inversions with visual fretboard diagrams.
+            </p>
+            <div class="mb-6">
+                <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full mr-2 mb-2">Guitar</span>
+                <span class="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full mr-2 mb-2">Music Theory</span>
+                <span class="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full mr-2 mb-2">Triads</span>
+                <span class="inline-block bg-gray-700 text-white px-3 py-1 rounded-full mr-2 mb-2">Education</span>
+            </div>
+            <ul class="list-disc pl-6 mb-8 text-base">
+                <li>Triad inversion visualization</li>
+                <li>Fretboard diagrams</li>
+                <li>Practice exercises</li>
+                <li>Harmonic function analysis</li>
+                <li>Pattern recognition</li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href="https://jasonhand.github.io/guitar_triads/" target="_blank" rel="noopener noreferrer" class="btn">Try Demo</a>
+                <a href="https://github.com/jasonhand/guitar_triads" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+            </div>
+            <div class="text-sm text-text-muted">Tech Stack: HTML5, CSS3, JavaScript, Music Theory</div>
+            <div class="text-sm text-text-muted mt-2">Status: Live &bull; Difficulty: Intermediate &bull; Released: September 2024</div>
+        </div>
+    </section>
+</Layout>
+

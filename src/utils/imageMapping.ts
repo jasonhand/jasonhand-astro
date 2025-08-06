@@ -40,7 +40,25 @@ export function getDemoImagePath(demoId: string): string {
         'network-diagnostics': 'network-diagnostics',
         'btc-price-wrapper': 'btc-price-wrapper',
         'datadog-toto-simulator': 'datadog-toto-simulator',
-        'flight-status-tracker': 'flight-status-tracker'
+        'flight-status-tracker': 'flight-status-tracker',
+        // New demos added
+        'magic-eye-generator': 'magic_eye_generator',
+        'vinyl-zenith': 'my_vinyl_collection',
+        'lyric-lounge-ipad': 'pickinpartner',
+        'guitar-triads': 'guitar_triads',
+        'music-theory-lessons': 'music_theory_lessons',
+        'technical-debt': 'technical_debt',
+        'klein-bottle': 'klein_bottle',
+        '3d-logo-viewer': '3d_logo_viewer',
+        'perceptron': 'perceptron',
+        'backpropagation': 'backpropagation',
+        'stardust': 'stardust',
+        'ai-energy-impact': 'ai_energy_consumption',
+        'robots-txt-generator': 'robot_txt_generator',
+        'faulty-deployment-detection': 'faulty_deployment_detection',
+        'devcast-nexus-discover': 'devcast_discovery',
+        'reservation-system': 'reservation_system',
+        'ecco-ocean-visualization': 'ECCO'
     };
 
     const imageName = imageMapping[demoId] || demoId;

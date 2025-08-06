@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="3D Logo Viewer Demo">
+    <section class="section py-16">
+        <div class="max-w-3xl mx-auto">
+            <img src="/images/screenshots/3d_logo_viewer.png" alt="3D Logo Viewer Screenshot" class="rounded-xl shadow-lg mb-8 w-full h-auto" loading="lazy" />
+            <h1 class="gradient-text text-4xl font-bold mb-4">3D Logo Viewer</h1>
+            <p class="text-lg mb-6 text-text-muted">
+                A 3D logo visualization tool that allows users to view and interact with logos in three-dimensional space with customizable lighting and
+                materials.
+            </p>
+            <div class="mb-6">
+                <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full mr-2 mb-2">3D</span>
+                <span class="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full mr-2 mb-2">Logo</span>
+                <span class="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full mr-2 mb-2">Visualization</span>
+                <span class="inline-block bg-gray-700 text-white px-3 py-1 rounded-full mr-2 mb-2">Design</span>
+            </div>
+            <ul class="list-disc pl-6 mb-8 text-base">
+                <li>3D logo rendering</li>
+                <li>Interactive viewing</li>
+                <li>Customizable lighting</li>
+                <li>Material controls</li>
+                <li>Export functionality</li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href="https://jasonhand.github.io/3D_logo_viewer/" target="_blank" rel="noopener noreferrer" class="btn">Try Demo</a>
+                <a href="https://github.com/jasonhand/3D_logo_viewer" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+            </div>
+            <div class="text-sm text-text-muted">Tech Stack: Three.js, JavaScript, WebGL, 3D Graphics</div>
+            <div class="text-sm text-text-muted mt-2">Status: Live &bull; Difficulty: Intermediate &bull; Released: October 2024</div>
+        </div>
+    </section>
+</Layout>
+

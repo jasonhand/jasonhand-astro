@@ -1,0 +1,40 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Technical Debt Visualizer Demo">
+    <section class="section py-16">
+        <div class="max-w-3xl mx-auto">
+            <img
+                src="/images/screenshots/technical_debt.png"
+                alt="Technical Debt Visualizer Screenshot"
+                class="rounded-xl shadow-lg mb-8 w-full h-auto"
+                loading="lazy"
+            />
+            <h1 class="gradient-text text-4xl font-bold mb-4">Technical Debt Visualizer</h1>
+            <p class="text-lg mb-6 text-text-muted">
+                A visualization tool that helps developers understand and track technical debt in their codebase with interactive charts and metrics analysis.
+            </p>
+            <div class="mb-6">
+                <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full mr-2 mb-2">Technical Debt</span>
+                <span class="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full mr-2 mb-2">Development</span>
+                <span class="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full mr-2 mb-2">Visualization</span>
+                <span class="inline-block bg-gray-700 text-white px-3 py-1 rounded-full mr-2 mb-2">Metrics</span>
+            </div>
+            <ul class="list-disc pl-6 mb-8 text-base">
+                <li>Debt visualization</li>
+                <li>Metrics tracking</li>
+                <li>Interactive charts</li>
+                <li>Trend analysis</li>
+                <li>Reporting tools</li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href="https://jasonhand.github.io/technical_debt/" target="_blank" rel="noopener noreferrer" class="btn">Try Demo</a>
+                <a href="https://github.com/jasonhand/technical_debt" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+            </div>
+            <div class="text-sm text-text-muted">Tech Stack: JavaScript, D3.js, HTML5, CSS3</div>
+            <div class="text-sm text-text-muted mt-2">Status: Live &bull; Difficulty: Intermediate &bull; Released: September 2024</div>
+        </div>
+    </section>
+</Layout>
+

@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Magic Eye Generator Demo">
+    <section class="section py-16">
+        <div class="max-w-3xl mx-auto">
+            <img
+                src="/images/screenshots/magic_eye_generator.png"
+                alt="Magic Eye Generator Screenshot"
+                class="rounded-xl shadow-lg mb-8 w-full h-auto"
+                loading="lazy"
+            />
+            <h1 class="gradient-text text-4xl font-bold mb-4">Magic Eye Generator</h1>
+            <p class="text-lg mb-6 text-text-muted">
+                Transform your images into mesmerizing stereogram illusions that reveal hidden 3D shapes when viewed with the right technique. Features depth
+                map creation, customizable parameters, and real-time preview.
+            </p>
+            <div class="mb-6">
+                <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full mr-2 mb-2">Magic Eye</span>
+                <span class="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full mr-2 mb-2">Stereogram</span>
+                <span class="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full mr-2 mb-2">3D</span>
+                <span class="inline-block bg-gray-700 text-white px-3 py-1 rounded-full mr-2 mb-2">Optical Illusion</span>
+            </div>
+            <ul class="list-disc pl-6 mb-8 text-base">
+                <li>Image to stereogram conversion</li>
+                <li>Depth intensity controls</li>
+                <li>Pattern width adjustment</li>
+                <li>Real-time preview</li>
+                <li>Download functionality</li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href="https://jasonhand.github.io/magic_eye/" target="_blank" rel="noopener noreferrer" class="btn">Try Demo</a>
+                <a href="https://github.com/jasonhand/magic_eye" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+            </div>
+            <div class="text-sm text-text-muted">Tech Stack: HTML5 Canvas, JavaScript, Image Processing, GitHub Pages</div>
+            <div class="text-sm text-text-muted mt-2">Status: Live &bull; Difficulty: Advanced &bull; Released: September 2024</div>
+        </div>
+    </section>
+</Layout>
+
