@@ -53,7 +53,6 @@ export function getDemoImagePath(demoId: string): string {
         'ai-energy-impact': 'ai_energy_consumption',
         'robots-txt-generator': 'robot_txt_generator',
         'faulty-deployment-detection': 'faulty_deployment_detection',
-        'reservation-system': 'reservation_system',
         'ecco-ocean-visualization': 'ECCO'
     };
 

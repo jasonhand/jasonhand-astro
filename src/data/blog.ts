@@ -3,21 +3,23 @@ import type { BlogPost } from '../types';
 export const blogPosts: BlogPost[] = [
     {
         id: 'ten-years-community-pulse',
-        title: 'Ten Years and 100 Episodes of The Community Pulse',
-        excerpt: '100 episodes, thousands of conversations, and the evolution of an industry told through the lens of those building it. A reflection on ten years of authentic community building through podcasting.',
-        content: `*100 episodes, thousands of conversations, and the evolution of an industry told through the lens of those building it*
+        title: 'Ten Years and 100 Episodes later.',
+        excerpt: '100 episodes and the evolution of an industry from my lens.',
+        content: `*100 episodes and the evolution of an industry from my lens.*
 
 ---
 
-We never meant to do this. There was no grand vision, no ten-year plan, no strategic roadmap. Just a simple problem that needed solving and a couple of microphones to capture the solution.
+We never meant to do this. There was no grand vision, no ten-year plan, no strategic roadmap. Just a problem that needed solving.
 
 So how did this all start?
 
-In 2015, I found myself as a very early employee at VictorOps, a Boulder startup with a mission statement that made other companies laugh: "Making On-call Suck Less." My desk sat just feet from both the VP of Product and the CEO, the two people I reported to. Close enough to influence decisions, close enough to feel the weight of every choice we made.
+## The Beginning
+
+In 2015, I found myself as a very early employee at VictorOps, a Boulder startup with a mission statement of "Making On-call Suck Less." My desk sat just feet from both the VP of Product and the CEO, the two people I reported to. Close enough to influence decisions, close enough to feel the weight of every choice we made.
 
 As the company's DevOps Evangelist, I spent my days talking to engineers whose entire lives revolved around incident response and keeping systems alive. These conversations weren't abstract for me. I'd lived through the 3 AM pages, the holiday interruptions, the constant anxiety of being on-call. The trauma was real, shared, and deeply understood. We weren't just building a product; we were trying to solve our own pain.
 
-But solving pain requires understanding community, and understanding community requires being genuinely part of one. So I dove in by attending conferences, Meetups, Twitter discussions, DevOpsDays events, anywhere technical practitioners gathered to commiserate and collaborate. I submitted talk proposals, engaged with other speakers, and consumed every piece of content about developer relations I could find.
+But solving pain requires understanding community, and understanding community requires being genuinely part of one. So I dove in by attending conferences, Meetups, Twitter discussions, DevOpsDays events—anywhere technical practitioners gathered to commiserate and collaborate. I submitted talk proposals, engaged with other speakers, and consumed every piece of content about developer relations I could find.
 
 It wasn't long before I noticed a gap.
 
@@ -31,11 +33,11 @@ This was 2015, remember—a pivotal moment in tech. Conferences sprouted like mu
 
 ## The Velocity Conference Moment
 
-O'Reilly's Velocity conference was ground zero for systems operations expertise and the place where the cloud migration conversation was happening in real-time. VictorOps had a booth, but I wasn't there just to work it. I sat in sessions, furiously taking notes, live-tweeting insights from speakers, creating the kind of authentic engagement that couldn't be bought with sponsorship dollars.
+O'Reilly's Velocity conference was ground zero for systems operations expertise and the place where the cloud migration conversation was happening in real-time. VictorOps always had a booth at their events, but I wasn't there just to work it. I sat in sessions, furiously taking notes, live-tweeting insights from speakers, creating the kind of authentic engagement that couldn't be bought with sponsorship dollars.
 
 That's where I met Mary Thengvall. And her dog, Ember.
 
-Mary was juggling community efforts O'Reilly (and later, Chef), a unique position that gave her perspective on community building from multiple angles. We were kindred spirits in an emerging field, both trying to figure out what authentic community engagement actually looked like in practice.
+Mary was juggling community efforts at O'Reilly (and later, Chef), a unique position that gave her perspective on community building from multiple angles. We immediately connected on similar challenges in the emerging field, both trying to figure out what authentic community engagement actually looked like in practice.
 
 When I floated the podcast idea, Mary didn't immediately say yes. We both needed time to think it through as this wasn't a casual commitment. But something shifted at the Community Leadership Summit a few months later.
 
@@ -47,11 +49,11 @@ Our first episode was just Mary and me, setting expectations, explaining why thi
 
 Google Meet. A couple of lower third animations. That was our entire production setup for recording with Jono Bacon.
 
-Looking back at that video now, I appear calm. The reality? My hands were shaking slightly off-camera. Jono had written "The Art of Community", a book I'd practically memorized while trying to figure out this new role. I'd met him several times, absorbed every piece of wisdom he'd share, but sitting across from him (virtually) as a podcast host felt different. This was my community building hero, and I was about to interview him.
+Looking back at that video now, I appear calm. The reality? My hands were definitely shaky off-camera. Jono had written "The Art of Community", a book I'd practically memorized while trying to figure out this new role. I'd met him several times, absorbed every piece of wisdom he'd share, but sitting across from him (virtually) as a podcast host felt different. This was my community building hero, and I was about to interview him.
 
 The technology limitations of 2015 seem almost charming now. StreamYard didn't exist. YouTube streaming was primitive. Most of my webinars I did at the time were audio and slides only. The idea of always having your camera on wasn't even a consideration yet. We made it work with what we had.
 
-When we published that episode, the response was immediate and overwhelming. iTunes reviews poured in. Our community Slack channels lit up with excitement. VictorOps leadership loved it. Here was organic brand awareness that didn't feel like marketing. I was building recognition for the company by having authentic conversations about community building, never once pitching our on-call solution.
+When we published that episode, the response was immediate and overwhelming. We were having authentic conversations about community building. Listeners loved it.
 
 Early on, we made a deliberate choice to record everything as video but publish primarily as audio. YouTube would get the occasional upload, but we knew our limits. Publishing even one episode properly took significant effort. We'd rather do one thing well than burn out trying to be everywhere at once.
 
@@ -61,15 +63,17 @@ In 2018, I made a leap that redefined my entire perspective on developer relatio
 
 The scale was staggering. I'd deliver highly technical 90-minute sessions on stage—sometimes three or four per day, for two to three days straight, in cities around the world. We had advocates representing nearly every country and language. What worked for a scrappy startup in Boulder had to be completely reimagined for a global enterprise.
 
-This wasn't just a job change; it was like seeing community building from an entirely different dimension. Suddenly, I could speak authoritatively about both worlds. I had lived or was living both the startup hustle and the enterprise machine and understood what it meant to build community with twelve people and what it meant with twelve thousand.
+This wasn't just a job change; it was like seeing community building from an entirely different dimension. Suddenly, I could speak authoritatively about both worlds. I had lived both the startup hustle and the enterprise machine, and understood what it meant to build community with twelve people and what it meant with twelve thousand.
 
 ## The Great Unraveling
 
-March 2020. I stared at my calendar—six months of international travel, meticulously planned. Sessions prepared, flights booked, presentations polished. With a few clicks, I deleted it all.
+March 2020. I stared at my calendar—six months of international travel, meticulously planned. Sessions prepared, flights booked, presentations polished. 
+
+With a few clicks, I deleted it all.
 
 That's when I knew: the world we'd built our careers in no longer existed.
 
-The pandemic forced us all into our homes, in front of cameras, trying to recreate human connection through screens. But it was just the beginning of a larger unraveling. Twitter, the platform that had been our communal heartbeat, where authentic technical conversations thrived had began its transformation into something else entirely.
+The pandemic forced us all into our homes, in front of cameras, trying to recreate human connection through screens. But it was just the beginning of a larger unraveling. Twitter, the platform that had been our communal heartbeat, where authentic technical conversations thrived, began its transformation into something else entirely.
 
 We'd built Community Pulse's audience through Twitter. We'd found guests there, shared insights there, created genuine connections there. It was *the* platform for developer relations. Then it became X, and with that change came an exodus. The community scattered, searching for safer spaces that might never quite replicate what we'd lost.
 
@@ -91,13 +95,13 @@ When one of us needs to disappear for a while, the others step up. Not out of ob
 
 ## The Measurement Problem
 
-Measuring success in the area of community building has always been a challenge but in episode 73 "DevRel Beyond Developers" with Jennifer Ritzinger and Matty Stratton, we were sorta forced to confront an uncomfortable truth the definition of "developer" was exploding, and our traditional approaches were failing to keep up.
+Measuring success in community building has always been a challenge. But in episode 73 "DevRel Beyond Developers" with Jennifer Ritzinger and Matty Stratton, we were sorta forced to confront an uncomfortable truth: the definition of "developer" was exploding, and our traditional approaches were failing to keep up.
 
 Jennifer was leading Microsoft's massive Developer Relations organization. She led my entire org, a global team trying to serve an increasingly diverse audience. The conversation exposed a fundamental challenge: as tools democratize and more non-traditional developers enter the space, how do we measure success in a way that actually matters?
 
 At Microsoft's scale, measurement becomes both critical and problematic. You need processes and tooling just to function. When the pandemic hit, my role transformed entirely. Instead of creating content and meeting developers at conferences, I became the architect behind the scenes—building and maintaining the Azure DevOps instance tracking our entire organization's work, creating automation for data synchronization, producing other teammates video content, and managing the Microsoft Developer YouTube channel.
 
-I was essentially doing (at least) two jobs: building the infrastructure that enabled everyone else's success while still being measured against content creation metrics. I felt like the lonely hampster on the wheel behind the curtain making everyone else's content shine, their videos perform better, and their processes run smoother. But none of that registered in the standardized success metrics designed for DevRel at scale.
+I was building the infrastructure that enabled everyone else's success while still being measured against content creation metrics. I felt like a lonely hamster on the wheel behind the curtain, making everyone else's content shine, their videos perform better, and their processes run smoother. But none of that registered in the standardized success metrics designed for DevRel at scale.
 
 The frustration built slowly. I didn't mind the work itself. Creating tooling and solving systematic problems had its own satisfaction, and something I had unfortunately moved away from during my time at VictorOps. But being held to the same measurements as pure content creators while simultaneously enabling their success felt like being invisible in plain sight.
 
@@ -117,27 +121,13 @@ Our philosophy remains consistent: there are no bad actors in this space, just p
 
 We've learned that authenticity isn't just about being real, it's about being brave enough to have the difficult conversations that move an entire industry forward.
 
-## The Goldilocks Company
-
-Two and a half years ago, I joined Datadog's Advocacy team. I didn't realize it at the time, but this move would complete an unexpected trilogy in my DevRel education.
-
-We have resources, reach, and ability to create real impact. But we're not too big as to lose our agility. We have startup DNA and the ability for individual contributors to drive meaningful change.
-
-The beauty is how each experience prepared me for this moment. From VictorOps, I came with scrappy resourcefulness and the knowledge of what it takes to build from nothing. From Microsoft, I learned scale, process, and how to navigate enterprise and beurocratic complexity. At Datadog, I can deploy both skill sets strategically.
-
-When I talk to startup community builders, I remember the taste of that desperation and creativity. When enterprise teams share their challenges, I understand the weight of those processes and politics. And for mid-size companies trying to find their sweet spot, I can offer the roadmap I wish I'd had around how to maintain authenticity while scaling and how to preserve agility while building process.
-
 ## Rock Bottom and Rising
 
-I've wanted to quit several times. The always-on nature of developer relations, the constant social media engagement, the global presence, the need to have opinions backed by facts.. it grinds you down. At both VictorOps and Microsoft, staying plugged into the community pulse meant never really disconnecting.
-
-Then the industry shifted. Suddenly, expertise didn't matter as much as hot takes. People who'd never done the work were positioned as thought leaders. Controversial discussions drove engagement metrics. Everything authentic about community building was being optimized out of existence. I wanted no part of it.
-
-But the absolute lowest point came with surgical precision: Tore my Achilles tendon on a Monday.. laid off from Microsoft that Friday.
+The absolute lowest point came with surgical precision: I tore my Achilles tendon on a Monday. Laid off from Microsoft that Friday.
 
 One week. Two life-altering events.
 
-Lying there, leg elevated, career in question, I had two choices: give up or transform the pain into something useful. We recorded "Suddenly Unemployed" shortly after my surgery. I spoke honestly about the fear, the uncertainty, the strange relief mixed with terror. Others shared their stories too.
+Lying there, leg elevated, career in question, we recorded "Suddenly Unemployed" shortly after my surgery. I spoke honestly about the fear, the uncertainty, the strange relief mixed with terror. Others shared their stories too.
 
 That episode remains one of our most downloaded. Turns out, authenticity in moments of vulnerability resonates deeper than any polished content ever could.
 
@@ -147,7 +137,7 @@ My co-hosts were incredible. Job leads, recommendations, check-in messages. When
 
 We don't chase growth anymore. We don't optimize for YouTube. We just maintain what we've built, because sometimes that's enough. The podcast stands as proof (to potential employers, to the community, to myself) that expertise compounds over time, that consistency matters, that showing up even when everything falls apart is its own form of leadership.
 
-I turned that experience into content because I knew others would face similar moments. In tech, layoffs and injuries and life disruptions are inevitable. Maybe hearing how someone else navigated that darkness would help someone, somewhere, someday find their own way through.
+I turned that experience into something useful because I knew others would face similar moments. In tech, layoffs and injuries and life disruptions are inevitable. Maybe hearing how someone else navigated that darkness would help someone, somewhere, someday find their own way through.
 
 ## The Magic After the Recording Stops
 
@@ -169,7 +159,7 @@ The secret sauce? We've mastered the "two things can be true at once" philosophy
 
 Without Twitter, listening to the community pulse became harder and more intentional.
 
-The DevRel Collective Slack became our primary listening post—hundreds of practitioners sharing real challenges in real-time. Every Friday, we gather virtually, comparing notes from different corners of the internet, triangulating trends, identifying the questions people are afraid to ask publicly, but most of all venting about our own day to day struggles in the DevRel and community building industry.
+The DevRel Collective Slack became our primary listening post—hundreds of practitioners sharing real challenges in real-time. Every Friday, we gather virtually, comparing notes from different corners of the internet, triangulating trends, identifying the questions people are afraid to ask publicly. But most of all, we vent about our own day-to-day struggles in the DevRel and community building industry.
 
 Sometimes the best episodes come from our own struggles. When one of us is wrestling with something, chances are our audience is too. "Suddenly Unemployed" emerged from my own personal crisis but resonated because layoffs had become everyone's reality. The most powerful content often comes from admitting "I'm dealing with this right now and don't have all the answers."
 
@@ -197,7 +187,7 @@ Forty minutes to reflect on ten years felt impossibly short. We could have talke
 
 Seeing Jono again after so long triggered a flood of memories—that first nervous recording, the Community Leadership Summit where it all began, the anxiety of interviewing a hero that had transformed into comfortable conversation between peers.
 
-He's still leading the field, still pushing boundaries, still asking the questions that matter. But now I wasn't just absorbing his wisdom; I was contributing to the conversation as an equal.
+He's still leading the field, still pushing boundaries, still asking the questions that matter. But now I wasn't just absorbing his wisdom; I was contributing to the conversation as an equal. The validation felt earned—not given, but built episode by episode over a decade.
 
 SJ's presence reminded us that Community Pulse has always been bigger than whoever was hosting at any given moment. People come and go as life demands, but the conversation continues. The pulse keeps beating.
 
@@ -226,7 +216,7 @@ The pulse continues. We're still here, still recording, still asking the questio
 ---
 
 *To our listeners who've stayed with us through platform changes and pandemics, to every guest who shared their wisdom and vulnerabilities, to Mary, PJ, Wesley, and SJ for making this journey possible—thank you. The next 100 episodes await, and honestly? I have no idea what they'll bring. That's exactly how I like it.*`,
-        publishedAt: '2025-01-20',
+        publishedAt: '2025-10-01',
         tags: ['Community', 'DevRel', 'Podcasting', 'Developer Relations', 'Community Pulse'],
         readTime: 25,
         featured: true,

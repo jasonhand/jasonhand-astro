@@ -1183,30 +1183,6 @@ export const demos: Demo[] = [
         difficulty: 'advanced'
     },
     {
-        id: 'reservation-system',
-        title: 'Pine Ridge Resort Reservation System',
-        description: 'A comprehensive reservation and booking system for Pine Ridge Resort, featuring room availability, booking management, and guest services integration.',
-        shortDescription: 'Resort reservation and booking system',
-        icon: '🏨',
-        url: 'https://pineridgeresort.netlify.app/',
-        githubUrl: 'https://github.com/jasonhand/reservations_system',
-        tags: ['Reservations', 'Hotel', 'Booking', 'Management', 'Guest Services'],
-        status: 'live',
-        gradient: 'primary',
-        featured: false,
-        createdAt: '2024-11-15',
-        techStack: ['React', 'TypeScript', 'Booking System', 'Netlify'],
-        features: [
-            'Room availability tracking',
-            'Online booking',
-            'Guest management',
-            'Payment processing',
-            'Service integration'
-        ],
-        category: 'web',
-        difficulty: 'intermediate'
-    },
-    {
         id: 'ecco-ocean-visualization',
         title: 'ECCO Ocean Visualization',
         description: 'An interactive web application for visualizing ocean data, focusing on circulation and climate. Features an interactive 3D globe, multiple data layers (temperature, currents, salinity, sea level), region and time controls, and real-time data statistics.',
