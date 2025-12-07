@@ -266,28 +266,6 @@ export const demos: Demo[] = [
         difficulty: 'beginner'
     },
     {
-        id: 'star-gazer',
-        title: 'Star Gazer',
-        description: 'A comprehensive stargazing guide and planner specifically designed for Boulder, Colorado astronomy enthusiasts.',
-        shortDescription: 'Boulder stargazing guide and planner',
-        icon: '⭐',
-        url: 'https://boulder-stargazer-guide.lovable.app/',
-        tags: ['Astronomy', 'Boulder', 'Stargazing', 'Planning'],
-        status: 'live',
-        gradient: 'accent',
-        featured: false,
-        createdAt: '2024-03-10',
-        techStack: ['React', 'TypeScript', 'Astronomy APIs', 'Vercel'],
-        features: [
-            'Star visibility predictions',
-            'Weather integration',
-            'Location-specific data',
-            'Event calendar'
-        ],
-        category: 'utility',
-        difficulty: 'intermediate'
-    },
-    {
         id: 'ignite-karaoke',
         title: 'Ignite Karaoke',
         description: 'A JavaScript-powered karaoke application with real-time lyrics display and interactive audio controls.',
@@ -354,28 +332,6 @@ export const demos: Demo[] = [
         ],
         category: 'web',
         difficulty: 'beginner'
-    },
-    {
-        id: 'sup-destinations',
-        title: 'SUP Destinations',
-        description: 'A comprehensive guide to stand-up paddleboarding destinations throughout Colorado (currently in development).',
-        shortDescription: 'Colorado SUP destinations guide (in development)',
-        icon: '🏄',
-        url: 'https://colorado-sup-destinations.lovable.app',
-        tags: ['SUP', 'Colorado', 'Destinations', 'Outdoor'],
-        status: 'development',
-        gradient: 'primary',
-        featured: false,
-        createdAt: '2024-04-01',
-        techStack: ['React', 'TypeScript', 'Mapbox', 'Vercel'],
-        features: [
-            'Destination mapping',
-            'Difficulty ratings',
-            'Weather integration',
-            'User reviews'
-        ],
-        category: 'utility',
-        difficulty: 'intermediate'
     },
     {
         id: 'lifx-app',
@@ -891,29 +847,6 @@ export const demos: Demo[] = [
         difficulty: 'intermediate'
     },
     {
-        id: 'flight-status-tracker',
-        title: 'Flight Status Tracker',
-        description: 'A real-time flight tracking application that provides live updates on flight status, delays, and arrival information with interactive maps.',
-        shortDescription: 'Real-time flight tracking and status updates',
-        icon: '✈️',
-        url: 'https://flight-status-tracker.netlify.app/',
-        githubUrl: 'https://github.com/jasonhand/flight_status',
-        tags: ['Flight', 'Tracking', 'Real-time', 'Travel'],
-        status: 'live',
-        gradient: 'accent',
-        featured: false,
-        createdAt: '2024-08-25',
-        techStack: ['React', 'TypeScript', 'Flight APIs', 'Netlify'],
-        features: [
-            'Real-time flight tracking',
-            'Status updates',
-            'Interactive maps',
-            'Delay notifications'
-        ],
-        category: 'utility',
-        difficulty: 'intermediate'
-    },
-    {
         id: 'magic-eye-generator',
         title: 'Magic Eye Generator',
         description: 'Transform your images into mesmerizing stereogram illusions that reveal hidden 3D shapes when viewed with the right technique. Features depth map creation, customizable parameters, and real-time preview.',
@@ -1248,30 +1181,6 @@ export const demos: Demo[] = [
         ],
         category: 'ai',
         difficulty: 'advanced'
-    },
-    {
-        id: 'devcast-nexus-discover',
-        title: 'DevCast Nexus Discover',
-        description: 'A discovery platform for developer podcasts and content, featuring curated recommendations, search functionality, and community-driven content discovery.',
-        shortDescription: 'Developer podcast discovery platform',
-        icon: '🎧',
-        url: 'https://devcast-nexus-discover.lovable.app/',
-        githubUrl: 'https://github.com/jasonhand/devcast-nexus-discover',
-        tags: ['Podcasts', 'Developer Content', 'Discovery', 'Community', 'Curated'],
-        status: 'live',
-        gradient: 'accent',
-        featured: false,
-        createdAt: '2024-11-10',
-        techStack: ['React', 'TypeScript', 'Podcast APIs', 'Netlify'],
-        features: [
-            'Podcast discovery',
-            'Curated recommendations',
-            'Search functionality',
-            'Community features',
-            'Content categorization'
-        ],
-        category: 'web',
-        difficulty: 'intermediate'
     },
     {
         id: 'reservation-system',

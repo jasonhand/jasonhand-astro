@@ -16,11 +16,9 @@ export function getDemoImagePath(demoId: string): string {
         'devops-certified': 'devops_certified',
         'lissajous-demo': 'lissajous_curves',
         'jhand-tv': 'jhand_tv',
-        'star-gazer': 'star_gazer',
         'ignite-karaoke': 'ignite_karaoke',
         'vinyl-viewer': 'vinyl_viewer',
         'doggo-explorer': 'doggo_explorer',
-        'sup-destinations': 'sup_destinations',
         'lifx-app': 'lumapad',
         'ambient-weather-art': 'ambient_weather_art',
         'pomodoro-writer': 'PomodoroWriter',
@@ -40,7 +38,6 @@ export function getDemoImagePath(demoId: string): string {
         'network-diagnostics': 'network-diagnostics',
         'btc-price-wrapper': 'btc-price-wrapper',
         'datadog-toto-simulator': 'datadog-toto-simulator',
-        'flight-status-tracker': 'flight-status-tracker',
         // New demos added
         'magic-eye-generator': 'magic_eye_generator',
         'vinyl-zenith': 'my_vinyl_collection',
@@ -56,7 +53,6 @@ export function getDemoImagePath(demoId: string): string {
         'ai-energy-impact': 'ai_energy_consumption',
         'robots-txt-generator': 'robot_txt_generator',
         'faulty-deployment-detection': 'faulty_deployment_detection',
-        'devcast-nexus-discover': 'devcast_discovery',
         'reservation-system': 'reservation_system',
         'ecco-ocean-visualization': 'ECCO'
     };

@@ -197,7 +197,7 @@ Forty minutes to reflect on ten years felt impossibly short. We could have talke
 
 Seeing Jono again after so long triggered a flood of memories—that first nervous recording, the Community Leadership Summit where it all began, the anxiety of interviewing a hero that had transformed into comfortable conversation between peers.
 
-He's still leading the field, still pushing boundaries, still asking the questions that matter. But now I wasn't just absorbing his wisdom; I was contributing to the conversation as an equal. The validation felt earned—not given, but built episode by episode over a decade.
+He's still leading the field, still pushing boundaries, still asking the questions that matter. But now I wasn't just absorbing his wisdom; I was contributing to the conversation as an equal.
 
 SJ's presence reminded us that Community Pulse has always been bigger than whoever was hosting at any given moment. People come and go as life demands, but the conversation continues. The pulse keeps beating.
 
