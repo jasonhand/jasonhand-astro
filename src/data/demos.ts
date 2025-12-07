@@ -15,6 +15,7 @@ export interface Demo {
     features?: string[];
     category: 'web' | 'ai' | 'visualization' | 'utility' | 'entertainment' | 'education';
     difficulty: 'beginner' | 'intermediate' | 'advanced';
+    screenshot?: string; // Path to screenshot image
 }
 
 export const demos: Demo[] = [
@@ -104,7 +105,8 @@ export const demos: Demo[] = [
             'Leaderboard system'
         ],
         category: 'ai',
-        difficulty: 'beginner'
+        difficulty: 'beginner',
+        screenshot: '/images/screenshots/ai-tools-lab-quiz.png'
     },
     {
         id: 'toroidal-field',
@@ -238,7 +240,8 @@ export const demos: Demo[] = [
             'Smooth animations'
         ],
         category: 'visualization',
-        difficulty: 'intermediate'
+        difficulty: 'intermediate',
+        screenshot: '/images/screenshots/lissajous-demo.png'
     },
     {
         id: 'jhand-tv',
@@ -394,7 +397,8 @@ export const demos: Demo[] = [
             'Real-time updates'
         ],
         category: 'web',
-        difficulty: 'advanced'
+        difficulty: 'advanced',
+        screenshot: '/images/screenshots/lifx-app.png'
     },
     {
         id: 'ambient-weather-art',
@@ -444,7 +448,7 @@ export const demos: Demo[] = [
         ],
         category: 'ai',
         difficulty: 'intermediate',
-        // Screenshot: public/images/screenshots/ai_dev_challenge_hub.png
+        screenshot: '/images/screenshots/ai-dev-challenge.png'
     },
     {
         id: 'ambient-weather',
@@ -468,7 +472,7 @@ export const demos: Demo[] = [
         ],
         category: 'visualization',
         difficulty: 'intermediate',
-        // Screenshot: public/images/screenshots/ambient_weather_dashboard.png
+        screenshot: '/images/screenshots/ambient-weather.png'
     },
     {
         id: 'markdown-viewer',
@@ -1318,6 +1322,195 @@ export const demos: Demo[] = [
             'Live data streaming'
         ],
         category: 'visualization',
+        difficulty: 'advanced',
+        screenshot: '/images/screenshots/ecco-ocean-visualization.png'
+    },
+    {
+        id: 'core-web-vitals',
+        title: 'Core Web Vitals',
+        description: 'Interactive educational tool about web performance metrics including First Contentful Paint (FCP), Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS) with visual explanations and real-time testing capabilities.',
+        shortDescription: 'Educational tool for web performance metrics',
+        icon: '⚡',
+        url: 'https://jasonhand.github.io/core_web_vitals/',
+        githubUrl: 'https://github.com/jasonhand/core_web_vitals',
+        tags: ['Web Performance', 'Core Web Vitals', 'Education', 'JavaScript', 'Lighthouse'],
+        status: 'live',
+        gradient: 'primary',
+        featured: false,
+        createdAt: '2024-12-01',
+        techStack: ['JavaScript', 'HTML', 'CSS', 'Web APIs'],
+        features: [
+            'Interactive metrics visualization',
+            'Real-time performance testing',
+            'Educational content',
+            'Responsive design'
+        ],
+        category: 'education',
+        difficulty: 'intermediate',
+        screenshot: '/images/screenshots/core-web-vitals.png'
+    },
+    {
+        id: 'error-tracking-demo',
+        title: 'Error Tracking Demo',
+        description: 'Comprehensive guide and demonstration comparing different error tracking tools and workflows. Features detailed analysis of error taxonomy, monitoring strategies, and best practices for application reliability.',
+        shortDescription: 'Comprehensive error tracking tools comparison',
+        icon: '🐛',
+        url: 'https://jasonhand.github.io/error_tracking_demo/',
+        githubUrl: 'https://github.com/jasonhand/error_tracking_demo',
+        tags: ['Error Tracking', 'Monitoring', 'DevOps', 'Reliability', 'Documentation'],
+        status: 'live',
+        gradient: 'secondary',
+        featured: false,
+        createdAt: '2024-11-15',
+        techStack: ['HTML', 'CSS', 'JavaScript', 'Documentation'],
+        features: [
+            'Tool comparison matrix',
+            'Error taxonomy guide',
+            'Workflow documentation',
+            'Best practices guide'
+        ],
+        category: 'education',
+        difficulty: 'advanced',
+        screenshot: '/images/screenshots/error-tracking-demo.png'
+    },
+    {
+        id: 'app-demo-showcase',
+        title: 'App Demo Showcase',
+        description: 'Portfolio grid showcasing 10 AI-enabled applications with project filtering by category. Features a clean, modern interface for browsing and discovering various AI-powered tools and demonstrations.',
+        shortDescription: 'Portfolio of AI-enabled applications',
+        icon: '🚀',
+        url: 'https://jasonhand.github.io/app_demo_showcase/',
+        githubUrl: 'https://github.com/jasonhand/app_demo_showcase',
+        tags: ['AI', 'Portfolio', 'Showcase', 'Applications', 'Filtering'],
+        status: 'live',
+        gradient: 'accent',
+        featured: true,
+        createdAt: '2024-10-20',
+        techStack: ['HTML', 'CSS', 'JavaScript', 'Grid Layout'],
+        features: [
+            'Interactive grid layout',
+            'Category filtering',
+            'Responsive design',
+            'Project previews'
+        ],
+        category: 'ai',
+        difficulty: 'intermediate',
+        screenshot: '/images/screenshots/app-demo-showcase.png'
+    },
+    {
+        id: 'markov-chain',
+        title: 'Markov Chain',
+        description: 'Interactive mathematical visualization tool for understanding Markov chains. Features matrix editing, simulation controls, and graphical state representation for educational purposes.',
+        shortDescription: 'Interactive Markov chain visualization',
+        icon: '🔗',
+        url: 'https://jasonhand.github.io/markov_chain/',
+        githubUrl: 'https://github.com/jasonhand/markov_chain',
+        tags: ['Mathematics', 'Visualization', 'Statistics', 'Education', 'Interactive'],
+        status: 'live',
+        gradient: 'primary',
+        featured: false,
+        createdAt: '2024-09-10',
+        techStack: ['JavaScript', 'HTML', 'CSS', 'Mathematics Libraries'],
+        features: [
+            'Interactive matrix editing',
+            'Real-time simulation',
+            'State visualization',
+            'Educational content'
+        ],
+        category: 'education',
+        difficulty: 'advanced'
+    },
+    {
+        id: 'transcription-to-json',
+        title: 'Transcription to JSON',
+        description: 'Simple converter tool that transforms transcription text into structured JSON format. Features a clean, modern interface with textarea input and instant conversion capabilities.',
+        shortDescription: 'Transcription text to JSON converter',
+        icon: '📝',
+        url: 'https://jasonhand.github.io/transcription_2_JSON/',
+        githubUrl: 'https://github.com/jasonhand/transcription_2_JSON',
+        tags: ['Text Processing', 'JSON', 'Converter', 'Utility', 'Parsing'],
+        status: 'live',
+        gradient: 'secondary',
+        featured: false,
+        createdAt: '2024-08-25',
+        techStack: ['JavaScript', 'HTML', 'CSS', 'Text Processing'],
+        features: [
+            'Real-time conversion',
+            'Clean interface',
+            'Copy to clipboard',
+            'Format validation'
+        ],
+        category: 'utility',
+        difficulty: 'beginner'
+    },
+    {
+        id: 'pareto-principle',
+        title: 'Pareto Principle',
+        description: 'Interactive educational tool exploring the 80/20 rule with interactive charts and sliders. Features dynamic data visualization and practical examples of the Pareto Principle in various contexts.',
+        shortDescription: 'Interactive 80/20 rule demonstration',
+        icon: '📊',
+        url: 'https://jasonhand.github.io/pareto_principle/',
+        githubUrl: 'https://github.com/jasonhand/pareto_principle',
+        tags: ['Statistics', 'Education', 'Charts', 'Interactive', 'Business'],
+        status: 'live',
+        gradient: 'accent',
+        featured: false,
+        createdAt: '2024-07-30',
+        techStack: ['JavaScript', 'Chart.js', 'HTML', 'CSS'],
+        features: [
+            'Interactive charts',
+            'Dynamic sliders',
+            'Real-time calculations',
+            'Educational examples'
+        ],
+        category: 'education',
+        difficulty: 'intermediate',
+        screenshot: '/images/screenshots/pareto-principle.png'
+    },
+    {
+        id: 'hummingbirds',
+        title: 'Hummingbirds',
+        description: 'Interactive data visualization exploring hummingbird ecology with maps and scientific content. Features violet-cyan gradient design with dark teal accents and educational information about hummingbird species and habitats.',
+        shortDescription: 'Interactive hummingbird ecology visualization',
+        icon: '🐦',
+        url: 'https://jasonhand.github.io/hummingbirds/',
+        githubUrl: 'https://github.com/jasonhand/hummingbirds',
+        tags: ['Biology', 'Ecology', 'Visualization', 'Maps', 'Education'],
+        status: 'live',
+        gradient: 'primary',
+        featured: false,
+        createdAt: '2024-06-15',
+        techStack: ['JavaScript', 'Maps API', 'HTML', 'CSS', 'Data Visualization'],
+        features: [
+            'Interactive maps',
+            'Species information',
+            'Habitat visualization',
+            'Scientific data'
+        ],
+        category: 'education',
+        difficulty: 'intermediate'
+    },
+    {
+        id: 'dunbars-number',
+        title: "Dunbar's Number",
+        description: 'Interactive visualization exploring the cognitive limits of social relationships. Features network visualization and educational content about social psychology and anthropological research on relationship capacity.',
+        shortDescription: 'Social relationship cognitive limits visualization',
+        icon: '👥',
+        url: 'https://jasonhand.github.io/dunbars_number/',
+        githubUrl: 'https://github.com/jasonhand/dunbars_number',
+        tags: ['Psychology', 'Anthropology', 'Social Science', 'Visualization', 'Education'],
+        status: 'live',
+        gradient: 'secondary',
+        featured: false,
+        createdAt: '2024-05-20',
+        techStack: ['JavaScript', 'D3.js', 'HTML', 'CSS', 'Network Visualization'],
+        features: [
+            'Network visualization',
+            'Interactive exploration',
+            'Educational content',
+            'Social science research'
+        ],
+        category: 'education',
         difficulty: 'advanced'
     }
 ];

@@ -1,0 +1,156 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getAllBlogPosts, getFeaturedBlogPosts } from '../data/blog';
+
+const allPosts = getAllBlogPosts();
+const featuredPosts = getFeaturedBlogPosts();
+const regularPosts = allPosts.filter(post => !post.featured);
+
+function formatDate(dateString: string): string {
+    return new Date(dateString).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+}
+---
+
+<Layout title="Blog - Jason Hand">
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="mb-6">Blog</h1>
+            <p class="text-xl text-text-muted max-w-2xl mx-auto">
+                Thoughts on developer relations, community building, and the evolution of tech culture
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Posts -->
+    {featuredPosts.length > 0 && (
+        <section class="section">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="mb-8 text-center">Featured Posts</h2>
+                <div class="grid gap-8 mb-16">
+                    {featuredPosts.map((post) => (
+                        <article class="bg-background-secondary rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+                            <div class="p-8">
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    {post.tags.map((tag) => (
+                                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
+
+                                <h3 class="mb-4">
+                                    <a href={`/blog/${post.id}`} class="hover:text-primary transition-colors">
+                                        {post.title}
+                                    </a>
+                                </h3>
+
+                                <p class="text-text-muted mb-6 leading-relaxed">
+                                    {post.excerpt}
+                                </p>
+
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-4">
+                                        <div class="flex items-center gap-3">
+                                            {post.author.avatar && (
+                                                <img
+                                                    src={post.author.avatar}
+                                                    alt={post.author.name}
+                                                    class="w-8 h-8 rounded-full"
+                                                />
+                                            )}
+                                            <div class="text-sm">
+                                                <p class="font-medium">{post.author.name}</p>
+                                                <p class="text-text-muted">{formatDate(post.publishedAt)}</p>
+                                            </div>
+                                        </div>
+                                        <span class="text-text-muted text-sm">·</span>
+                                        <span class="text-text-muted text-sm">{post.readTime} min read</span>
+                                    </div>
+
+                                    <a
+                                        href={`/blog/${post.id}`}
+                                        class="btn btn-outline"
+                                    >
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    ))}
+                </div>
+            </div>
+        </section>
+    )}
+
+    <!-- All Posts -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="mb-8 text-center">All Posts</h2>
+
+            {allPosts.length === 0 ? (
+                <div class="text-center py-16">
+                    <p class="text-text-muted text-lg">No blog posts yet. Check back soon!</p>
+                </div>
+            ) : (
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {allPosts.map((post) => (
+                        <article class="bg-background-secondary rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+                            <div class="p-6">
+                                <div class="flex flex-wrap gap-2 mb-3">
+                                    {post.tags.slice(0, 2).map((tag) => (
+                                        <span class="px-2 py-1 bg-primary/20 text-primary rounded text-xs">
+                                            {tag}
+                                        </span>
+                                    ))}
+                                    {post.tags.length > 2 && (
+                                        <span class="px-2 py-1 bg-surface text-text-muted rounded text-xs">
+                                            +{post.tags.length - 2}
+                                        </span>
+                                    )}
+                                </div>
+
+                                <h3 class="mb-3 text-lg">
+                                    <a href={`/blog/${post.id}`} class="hover:text-primary transition-colors">
+                                        {post.title}
+                                    </a>
+                                </h3>
+
+                                <p class="text-text-muted mb-4 text-sm leading-relaxed line-clamp-3">
+                                    {post.excerpt}
+                                </p>
+
+                                <div class="flex items-center justify-between">
+                                    <div class="text-xs text-text-muted">
+                                        <p>{formatDate(post.publishedAt)}</p>
+                                        <p>{post.readTime} min read</p>
+                                    </div>
+
+                                    <a
+                                        href={`/blog/${post.id}`}
+                                        class="text-primary hover:text-secondary transition-colors text-sm font-medium"
+                                    >
+                                        Read →
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    ))}
+                </div>
+            )}
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .line-clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+</style>

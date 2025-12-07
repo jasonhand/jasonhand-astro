@@ -1,0 +1,147 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Content - Jason Hand">
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="mb-6">
+                <span class="scattered-letters">
+                    <span>C</span><span>o</span><span>n</span><span>t</span><span>e</span><span>n</span><span>t</span>
+                </span>
+            </h1>
+            <p class="text-xl text-text-muted max-w-2xl mx-auto">
+                Blog posts, podcasts, videos, publications, and interactive demos
+            </p>
+        </div>
+    </section>
+
+    <!-- Content Categories -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Blog -->
+                <article class="project-card group cursor-pointer" onclick="window.location.href='/blog'">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-2xl flex items-center justify-center">
+                            <span class="text-3xl">✍️</span>
+                        </div>
+                        <div>
+                            <h3 class="mb-2">Blog</h3>
+                            <p class="text-text-muted">Long-form thoughts and insights</p>
+                        </div>
+                    </div>
+                    <p class="text-text-muted mb-4">
+                        In-depth articles on developer relations, community building, and industry evolution.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary font-medium">Read Posts →</span>
+                    </div>
+                </article>
+
+                <!-- Podcasts -->
+                <article class="project-card group cursor-pointer" onclick="window.location.href='/podcasts'">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary/30 to-accent/30 rounded-2xl flex items-center justify-center">
+                            <span class="text-3xl">🎙️</span>
+                        </div>
+                        <div>
+                            <h3 class="mb-2">Podcasts</h3>
+                            <p class="text-text-muted">Community Pulse and more</p>
+                        </div>
+                    </div>
+                    <p class="text-text-muted mb-4">
+                        Ten years of conversations about developer relations and community building.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary font-medium">Listen Now →</span>
+                    </div>
+                </article>
+
+                <!-- Videos -->
+                <article class="project-card group cursor-pointer" onclick="window.location.href='/videos'">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-accent/30 to-primary/30 rounded-2xl flex items-center justify-center">
+                            <span class="text-3xl">📹</span>
+                        </div>
+                        <div>
+                            <h3 class="mb-2">Videos</h3>
+                            <p class="text-text-muted">YouTube content and tutorials</p>
+                        </div>
+                    </div>
+                    <p class="text-text-muted mb-4">
+                        Educational videos, tutorials, and tech commentary on YouTube.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary font-medium">Watch Videos →</span>
+                    </div>
+                </article>
+
+                <!-- Publications -->
+                <article class="project-card group cursor-pointer" onclick="window.location.href='/publications'">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl flex items-center justify-center">
+                            <span class="text-3xl">📚</span>
+                        </div>
+                        <div>
+                            <h3 class="mb-2">Publications</h3>
+                            <p class="text-text-muted">Books and technical reports</p>
+                        </div>
+                    </div>
+                    <p class="text-text-muted mb-4">
+                        O'Reilly publications, technical books, and industry reports on DevOps and SRE.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary font-medium">View Books →</span>
+                    </div>
+                </article>
+
+                <!-- Demos -->
+                <article class="project-card group cursor-pointer" onclick="window.location.href='/demos'">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary/30 to-primary/30 rounded-2xl flex items-center justify-center">
+                            <span class="text-3xl">🚀</span>
+                        </div>
+                        <div>
+                            <h3 class="mb-2">Demos</h3>
+                            <p class="text-text-muted">Interactive experiments</p>
+                        </div>
+                    </div>
+                    <p class="text-text-muted mb-4">
+                        Interactive web applications, proof-of-concepts, and experimental projects.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary font-medium">Try Demos →</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Content Preview -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-8">Featured Content</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-background-secondary rounded-2xl p-6">
+                    <h3 class="mb-3 text-lg">Latest Blog Post</h3>
+                    <p class="text-text-muted text-sm mb-4">Ten Years and 100 Episodes of The Community Pulse - A reflection on a decade of authentic community building...</p>
+                    <a href="/blog/ten-years-community-pulse" class="text-primary text-sm font-medium">Read More →</a>
+                </div>
+
+                <div class="bg-background-secondary rounded-2xl p-6">
+                    <h3 class="mb-3 text-lg">Recent Podcast</h3>
+                    <p class="text-text-muted text-sm mb-4">Community Pulse Episode 100 - Celebrating ten years of conversations about developer relations...</p>
+                    <a href="/podcasts/community-pulse" class="text-primary text-sm font-medium">Listen Now →</a>
+                </div>
+
+                <div class="bg-background-secondary rounded-2xl p-6">
+                    <h3 class="mb-3 text-lg">Popular Demo</h3>
+                    <p class="text-text-muted text-sm mb-4">Festy Packer - A comprehensive festival packing and planning tool for your next adventure...</p>
+                    <a href="/demos/festy-packer" class="text-primary text-sm font-medium">Try Demo →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

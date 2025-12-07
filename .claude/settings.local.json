@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "WebFetch(domain:jasonhand.github.io)",
+      "Bash(echo:*)",
+      "Bash(npm run:*)",
+      "Bash(node:*)",
+      "Bash(grep:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "Bash(mv:*)",
+      "mcp__playwright__browser_wait_for"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

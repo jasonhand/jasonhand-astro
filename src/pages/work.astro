@@ -1,0 +1,102 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Work - Jason Hand">
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="mb-6">
+                <span class="scattered-letters">
+                    <span>W</span><span>o</span><span>r</span><span>k</span>
+                </span>
+            </h1>
+            <p class="text-xl text-text-muted max-w-2xl mx-auto">
+                Professional work, projects, and contributions in developer relations and AI research
+            </p>
+        </div>
+    </section>
+
+    <!-- Work Categories -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Datadog Projects -->
+                <article class="project-card group cursor-pointer" onclick="window.location.href='/projects'">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-2xl flex items-center justify-center">
+                            <span class="text-3xl">🐕</span>
+                        </div>
+                        <div>
+                            <h3 class="mb-2">Datadog Projects</h3>
+                            <p class="text-text-muted">Developer advocacy and AI research initiatives</p>
+                        </div>
+                    </div>
+                    <p class="text-text-muted mb-4">
+                        Leading developer advocacy efforts, AI tool development, and community building at Datadog's Developer Relations team.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary font-medium">Explore Projects →</span>
+                    </div>
+                </article>
+
+                <!-- Conference Talks -->
+                <article class="project-card group cursor-pointer" onclick="window.location.href='/datadog/conference-talks'">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary/30 to-accent/30 rounded-2xl flex items-center justify-center">
+                            <span class="text-3xl">🎤</span>
+                        </div>
+                        <div>
+                            <h3 class="mb-2">Conference Talks</h3>
+                            <p class="text-text-muted">Speaking at major tech conferences worldwide</p>
+                        </div>
+                    </div>
+                    <p class="text-text-muted mb-4">
+                        Technical presentations on DevOps, observability, AI, and community building at conferences around the globe.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary font-medium">View Talks →</span>
+                    </div>
+                </article>
+
+                <!-- Live Streams -->
+                <article class="project-card group cursor-pointer" onclick="window.location.href='/datadog/live-streams'">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-accent/30 to-primary/30 rounded-2xl flex items-center justify-center">
+                            <span class="text-3xl">📺</span>
+                        </div>
+                        <div>
+                            <h3 class="mb-2">Live Streams</h3>
+                            <p class="text-text-muted">Educational content and community engagement</p>
+                        </div>
+                    </div>
+                    <p class="text-text-muted mb-4">
+                        Regular live streaming sessions covering observability, DevOps practices, and emerging technologies.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary font-medium">Watch Streams →</span>
+                    </div>
+                </article>
+
+                <!-- AI Tools Lab -->
+                <article class="project-card group cursor-pointer" onclick="window.location.href='/datadog/ai-tools-lab'">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl flex items-center justify-center">
+                            <span class="text-3xl">🤖</span>
+                        </div>
+                        <div>
+                            <h3 class="mb-2">AI Tools Lab</h3>
+                            <p class="text-text-muted">Experimental AI research and development</p>
+                        </div>
+                    </div>
+                    <p class="text-text-muted mb-4">
+                        Research and experimentation with AI tools for developers, including LLMs, automation, and observability.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-primary font-medium">Explore Lab →</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</Layout>

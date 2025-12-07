@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getDemoById } from '../../data/demos';
+
+const demo = getDemoById('pareto-principle');
+if (!demo) {
+    return Astro.redirect('/demos');
+}
+---
+
+<Layout title={`${demo.title} - Demo - Jason Hand`}>
+    <section class="section py-16">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="gradient-text text-4xl font-bold mb-4">{demo.title}</h1>
+            <p class="text-lg mb-6 text-text-muted">{demo.description}</p>
+            <div class="mb-6">
+                {demo.tags.map(tag => (
+                    <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full mr-2 mb-2">{tag}</span>
+                ))}
+            </div>
+            <ul class="list-disc pl-6 mb-8 text-base">
+                {demo.features?.map((feature) => <li>{feature}</li>)}
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href={demo.url} target="_blank" rel="noopener noreferrer" class="btn">Try Demo</a>
+                {demo.githubUrl && (
+                    <a href={demo.githubUrl} target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
+                )}
+            </div>
+            <div class="text-sm text-text-muted">Tech Stack: {demo.techStack?.join(', ')}</div>
+        </div>
+    </section>
+</Layout>
