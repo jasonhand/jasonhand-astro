@@ -2,9 +2,6 @@
   command = "npm run build"
   publish = "dist"
 
-[[plugins]]
-  package = "@astrojs/netlify"
-
 # Headers for better security and performance
 [[headers]]
   for = "/*"
