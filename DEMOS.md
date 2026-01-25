@@ -45,7 +45,7 @@ Each demo in `src/data/demos.ts` has the following structure:
     status: 'live' | 'development' | 'preview',
     gradient: 'primary' | 'secondary' | 'accent', // Visual theme
     featured: true,                 // Show on homepage
-    createdAt: '2024-01-15',        // ISO date string
+    createdAt: '2025-01-15',        // ISO date string
     techStack: ['React', 'TypeScript'], // Technologies used
     features: ['Feature 1', 'Feature 2'], // Key features
     category: 'web' | 'ai' | 'visualization' | 'utility' | 'entertainment' | 'education',

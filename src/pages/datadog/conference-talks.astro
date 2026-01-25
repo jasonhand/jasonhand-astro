@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Conference Talks - Datadog - Jason Hand">
+<Layout title="Conference Talks & Webinars - Datadog - Jason Hand">
     <!-- Hero Section -->
     <section class="section-hero">
         <div class="max-w-4xl mx-auto text-center">
@@ -10,7 +10,7 @@ import Layout from '../../layouts/Layout.astro';
             <div class="mb-6">
                 <a href="/projects" class="text-text-muted hover:text-primary transition-colors">Datadog</a>
                 <span class="text-text-muted mx-2">→</span>
-                <span class="text-text">Conference Talks</span>
+                <span class="text-text">Conference Talks & Webinars</span>
             </div>
 
             <h1 class="mb-8">
@@ -21,9 +21,17 @@ import Layout from '../../layouts/Layout.astro';
                 <span class="scattered-letters">
                     <span>T</span><span>a</span><span>l</span><span>k</span><span>s</span>
                 </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>&</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>W</span><span>e</span><span>b</span><span>i</span><span>n</span><span>a</span><span>r</span><span>s</span>
+                </span>
             </h1>
             <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
-                Speaking at major technology conferences to share insights on observability, AI, and developer experience.
+                Speaking engagements at major technology conferences and educational webinars with partners, sharing insights on observability, AI, and developer experience.
             </p>
         </div>
     </section>
@@ -33,20 +41,142 @@ import Layout from '../../layouts/Layout.astro';
         <div class="max-w-6xl mx-auto">
             <div class="grid md:grid-cols-2 gap-16 items-center mb-20">
                 <div>
-                    <h2 class="mb-8 gradient-text">Global Speaking</h2>
+                    <h2 class="mb-8 gradient-text">Speaking & Educational Content</h2>
                     <p class="mb-6">
-                        I regularly speak at major technology conferences worldwide, sharing insights on observability, artificial intelligence, and developer
-                        experience from my work at Datadog.
+                        I regularly speak at major technology conferences worldwide and host educational webinars with partners like Google, Microsoft, and AWS, 
+                        sharing insights on observability, artificial intelligence, and developer experience from my work at Datadog.
                     </p>
                     <p class="mb-6">
-                        These talks cover cutting-edge topics including AI-powered monitoring, modern observability practices, and the future of developer
-                        tools.
+                        These sessions cover cutting-edge topics including AI-powered monitoring, modern observability practices, and the future of developer
+                        tools. Each presentation aims to educate, inspire, and provide practical insights that attendees can apply in their own organizations.
                     </p>
-                    <p>Each presentation aims to educate, inspire, and provide practical insights that attendees can apply in their own organizations.</p>
+                    <p>Watch the complete collection of conference talks and webinars in the playlist below.</p>
                 </div>
                 <div class="relative">
                     <div class="w-full h-96 bg-gradient-to-br from-secondary/20 to-accent/20 rounded-2xl flex items-center justify-center">
                         <span class="text-6xl gradient-text-secondary">🎤</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Playlist Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>V</span><span>i</span><span>d</span><span>e</span><span>o</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>P</span><span>l</span><span>a</span><span>y</span><span>l</span><span>i</span><span>s</span><span>t</span>
+                </span>
+            </h2>
+            <div class="project-card">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="mb-4 gradient-text text-3xl">Conference Talks & Webinars</h3>
+                        <p class="mb-6 text-lg">
+                            A collection of recorded conference presentations and educational webinars covering observability, AI, developer tools, 
+                            and best practices for modern application monitoring.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="mb-3 font-semibold gradient-text">Content Includes:</h4>
+                            <ul class="list-disc list-inside space-y-1 text-text-muted">
+                                <li>Conference presentations from Microsoft Build, Google Next, AWS re:Invent, and more</li>
+                                <li>Educational webinars with technology partners</li>
+                                <li>AI-powered observability and monitoring strategies</li>
+                                <li>Developer experience and tooling best practices</li>
+                                <li>Modern observability patterns and case studies</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a 
+                                href="https://www.youtube.com/playlist?list=PLjR8CqndeyMpuZ9CKCvS9yQneHDuSIuMZ" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                class="btn btn-lg"
+                            >
+                                Watch Playlist
+                            </a>
+                            <a 
+                                href="https://youtube.com/@jhand" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                class="btn btn-lg btn-outline"
+                            >
+                                View Channel
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="w-full aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden">
+                            <iframe
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/videoseries?list=PLjR8CqndeyMpuZ9CKCvS9yQneHDuSIuMZ"
+                                title="Conference Talks & Webinars Playlist"
+                                style="border: none;"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>F</span><span>e</span><span>a</span><span>t</span><span>u</span><span>r</span><span>e</span><span>d</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>T</span><span>a</span><span>l</span><span>k</span>
+                </span>
+            </h2>
+            <div class="project-card border-2 border-accent/30 bg-gradient-to-br from-accent/5 to-primary/5">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs font-semibold">Latest Talk</span>
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-semibold">November 2025</span>
+                        </div>
+                        <h3 class="mb-4 gradient-text text-3xl">AI Native Dev Conference</h3>
+                        <p class="mb-4 text-text-muted">Virtual Conference • AI Development • Modern Tools</p>
+                        <p class="mb-6 text-lg">
+                            My latest conference presentation exploring the intersection of AI and developer workflows. This talk dives into how AI-native development practices are transforming how we build, test, and deploy applications.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="mb-3 font-semibold gradient-text-secondary">Key Topics:</h4>
+                            <ul class="list-disc list-inside space-y-1 text-text-muted">
+                                <li>AI-powered development workflows</li>
+                                <li>Modern observability in AI applications</li>
+                                <li>Developer productivity tools</li>
+                                <li>Best practices for AI integration</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://youtu.be/LcsGFQr7vqU" target="_blank" rel="noopener noreferrer" class="btn btn-lg">
+                                Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="w-full aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden shadow-xl">
+                            <iframe
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/LcsGFQr7vqU"
+                                title="AI Native Dev Conference - Jason Hand"
+                                style="border: none;"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -79,10 +209,6 @@ import Layout from '../../layouts/Layout.astro';
                     <p class="mb-6">
                         "AI-Powered Observability: The Future of Application Monitoring" - Exploring how AI transforms monitoring and troubleshooting.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#" class="btn">Watch Recording</a>
-                        <a href="#" class="btn btn-outline">View Slides</a>
-                    </div>
                 </div>
 
                 <!-- SCaLE 22x -->
@@ -98,10 +224,6 @@ import Layout from '../../layouts/Layout.astro';
                         "Open Source Observability: Building Monitoring That Scales" - Best practices for implementing observability in open source
                         environments.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#" class="btn btn-secondary">Watch Recording</a>
-                        <a href="#" class="btn btn-outline">View Slides</a>
-                    </div>
                 </div>
 
                 <!-- Google Next -->
@@ -116,59 +238,91 @@ import Layout from '../../layouts/Layout.astro';
                     <p class="mb-6">
                         "Observability in the Cloud-Native Era" - Strategies for monitoring microservices and containerized applications at scale.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#" class="btn">Watch Recording</a>
-                        <a href="#" class="btn btn-outline">View Slides</a>
-                    </div>
                 </div>
 
                 <!-- AWS re:Invent -->
                 <div class="project-card">
                     <div class="mb-4">
-                        <div class="w-full h-48 bg-gradient-to-br from-primary/30 to-accent/30 rounded-lg flex items-center justify-center">
-                            <span class="text-4xl">🚀</span>
+                        <div class="w-full aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg overflow-hidden shadow-xl">
+                            <iframe
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/6kK27w0xPMQ"
+                                title="AWS re:Invent - Platform Engineering: Building a Platform Developers Love"
+                                style="border: none;"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                            ></iframe>
                         </div>
                     </div>
                     <h3 class="mb-4 gradient-text-secondary">AWS re:Invent</h3>
-                    <p class="mb-4 text-text-muted">Serverless • Infrastructure • DevOps</p>
+                    <p class="mb-4 text-text-muted">Platform Engineering • Developer Experience • Infrastructure</p>
                     <p class="mb-6">
-                        "Serverless Observability: Monitoring the Invisible Infrastructure" - Techniques for gaining visibility into serverless applications.
+                        Platform engineering isn't just rebranded CI/CD. Successful platforms provide more than tools; they foster developer autonomy. In this session, hear a lead platform engineer from Starbucks and an advocacy manager from Datadog share advice for building a platform that developers love. Learn key features required to accelerate production deployments, improve reliability, and control costs so developer teams can have true service ownership. This presentation is brought to you by Datadog, an AWS Partner.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#" class="btn btn-secondary">Watch Recording</a>
-                        <a href="#" class="btn btn-outline">View Slides</a>
+                        <a 
+                            href="https://youtu.be/6kK27w0xPMQ?si=z1T84MDhtGS1JhuX" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm"
+                        >
+                            Watch on YouTube
+                        </a>
                     </div>
                 </div>
 
                 <!-- DevOpsDays Denver -->
                 <div class="project-card">
                     <div class="mb-4">
-                        <div class="w-full h-48 bg-gradient-to-br from-secondary/30 to-primary/30 rounded-lg flex items-center justify-center">
-                            <span class="text-4xl">🏔️</span>
+                        <div class="w-full aspect-video bg-gradient-to-br from-secondary/20 to-primary/20 rounded-lg overflow-hidden shadow-xl">
+                            <iframe
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/r4ePTRIsFoA"
+                                title="DevOpsDays Denver - Building a Culture of Observability"
+                                style="border: none;"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                            ></iframe>
                         </div>
                     </div>
                     <h3 class="mb-4 gradient-text">DevOpsDays Denver</h3>
                     <p class="mb-4 text-text-muted">DevOps Culture • Automation • Collaboration</p>
                     <p class="mb-6">"Building a Culture of Observability" - How to foster observability practices across development and operations teams.</p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#" class="btn">Watch Recording</a>
-                        <a href="#" class="btn btn-outline">View Slides</a>
+                        <a 
+                            href="https://youtu.be/r4ePTRIsFoA?si=T-6tQGhJegWTxS_o" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm"
+                        >
+                            Watch on YouTube
+                        </a>
                     </div>
                 </div>
 
                 <!-- .NET Conf -->
                 <div class="project-card">
                     <div class="mb-4">
-                        <div class="w-full h-48 bg-gradient-to-br from-accent/30 to-secondary/30 rounded-lg flex items-center justify-center">
-                            <span class="text-4xl">💜</span>
+                        <div class="w-full aspect-video bg-gradient-to-br from-accent/20 to-secondary/20 rounded-lg overflow-hidden shadow-xl">
+                            <iframe
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/4xMIROBECRw"
+                                title=".NET Conf - Monitoring .NET Applications: From Development to Production"
+                                style="border: none;"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                            ></iframe>
                         </div>
                     </div>
                     <h3 class="mb-4 gradient-text-secondary">.NET Conf</h3>
                     <p class="mb-4 text-text-muted">.NET • Application Performance • Monitoring</p>
-                    <p class="mb-6">"Monitoring .NET Applications: From Development to Production" - Best practices for observability in .NET ecosystems.</p>
+                    <p class="mb-6">In this session, we will show you how to instrument a .NET Blazor application to use OpenTelemetry and .NET Aspire to help us visualize what is really happening in our application. We will than see how we can add OpenTelemetry exporters and use different solution: Azure Application Insight or Datadog APM to collect those OpenTelemetry metrics and traces and how it could help us.</p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#" class="btn btn-secondary">Watch Recording</a>
-                        <a href="#" class="btn btn-outline">View Slides</a>
+                        <a 
+                            href="https://youtu.be/4xMIROBECRw?si=kBXP0VjayHB6jrQq" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn btn-sm btn-secondary"
+                        >
+                            Watch on YouTube
+                        </a>
                     </div>
                 </div>
             </div>
@@ -209,6 +363,157 @@ import Layout from '../../layouts/Layout.astro';
         </div>
     </section>
 
+    <!-- From the Archives Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>F</span><span>r</span><span>o</span><span>m</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>t</span><span>h</span><span>e</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>A</span><span>r</span><span>c</span><span>h</span><span>i</span><span>v</span><span>e</span><span>s</span>
+                </span>
+            </h2>
+            <div class="project-card border-2 border-secondary/30 bg-gradient-to-br from-secondary/5 to-primary/5">
+                <div class="mb-8">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-xs font-semibold">Archive</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-semibold">5+ Years Ago</span>
+                    </div>
+                    <h3 class="mb-4 gradient-text-secondary text-3xl">Historical Conference Talks</h3>
+                    <p class="mb-6 text-lg">
+                        A collection of conference presentations and talks from 5+ years ago, showcasing the evolution of technology discussions and insights from earlier in my speaking career.
+                    </p>
+                </div>
+                <div class="mb-8">
+                    <div class="w-full aspect-video bg-gradient-to-br from-secondary/20 to-primary/20 rounded-lg overflow-hidden shadow-xl">
+                        <iframe
+                            class="w-full h-full"
+                            src="https://www.youtube.com/embed/OQzpMKdQLjo"
+                            title="From the Archives - Conference Talk"
+                            style="border: none;"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a 
+                        href="https://youtu.be/OQzpMKdQLjo?si=hTLg1G4VG2iCNd_V" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="btn btn-lg"
+                    >
+                        Watch on YouTube
+                    </a>
+                </div>
+            </div>
+            <div class="project-card border-2 border-accent/30 bg-gradient-to-br from-accent/5 to-secondary/5 mt-8">
+                <div class="mb-8">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs font-semibold">Archive</span>
+                        <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-xs font-semibold">5+ Years Ago</span>
+                    </div>
+                    <h3 class="mb-4 gradient-text text-3xl">Historical Conference Talk</h3>
+                    <p class="mb-6 text-lg">
+                        Another archived conference presentation from 5+ years ago, showcasing insights and discussions from earlier in my speaking career.
+                    </p>
+                </div>
+                <div class="mb-8">
+                    <div class="w-full aspect-video bg-gradient-to-br from-accent/20 to-secondary/20 rounded-lg overflow-hidden shadow-xl">
+                        <iframe
+                            class="w-full h-full"
+                            src="https://www.youtube.com/embed/IJSQXItzClI"
+                            title="From the Archives - Conference Talk"
+                            style="border: none;"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a 
+                        href="https://youtu.be/IJSQXItzClI?si=a69G5ybDLA-ZgqW-" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="btn btn-lg btn-secondary"
+                    >
+                        Watch on YouTube
+                    </a>
+                </div>
+            </div>
+            <div class="project-card border-2 border-primary/30 bg-gradient-to-br from-primary/5 to-accent/5 mt-8">
+                <div class="mb-8">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-semibold">Archive</span>
+                        <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs font-semibold">5+ Years Ago</span>
+                    </div>
+                    <h3 class="mb-4 gradient-text-secondary text-3xl">Historical Conference Talk</h3>
+                    <p class="mb-6 text-lg">
+                        An archived conference presentation from 5+ years ago, featuring insights and discussions from earlier in my speaking career.
+                    </p>
+                </div>
+                <div class="mb-8">
+                    <div class="w-full aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg overflow-hidden shadow-xl">
+                        <iframe
+                            class="w-full h-full"
+                            src="https://www.youtube.com/embed/aq_vIGTFaG4"
+                            title="From the Archives - Conference Talk"
+                            style="border: none;"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a 
+                        href="https://youtu.be/aq_vIGTFaG4?si=9pjtQjxSH8DARGh1" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="btn btn-lg"
+                    >
+                        Watch on YouTube
+                    </a>
+                </div>
+            </div>
+            <div class="project-card border-2 border-secondary/30 bg-gradient-to-br from-secondary/5 to-accent/5 mt-8">
+                <div class="mb-8">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-xs font-semibold">Archive</span>
+                        <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs font-semibold">5+ Years Ago</span>
+                    </div>
+                    <h3 class="mb-4 gradient-text text-3xl">Historical Conference Talk</h3>
+                    <p class="mb-6 text-lg">
+                        An archived conference presentation from 5+ years ago, showcasing insights and discussions from earlier in my speaking career.
+                    </p>
+                </div>
+                <div class="mb-8">
+                    <div class="w-full aspect-video bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg overflow-hidden shadow-xl">
+                        <iframe
+                            class="w-full h-full"
+                            src="https://www.youtube.com/embed/HYZ6NrlN_kk"
+                            title="From the Archives - Conference Talk"
+                            style="border: none;"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a 
+                        href="https://youtu.be/HYZ6NrlN_kk?si=d4DaEeW-FlpWjIlg" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="btn btn-lg btn-secondary"
+                    >
+                        Watch on YouTube
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="section">
         <div class="max-w-4xl mx-auto text-center">
@@ -217,7 +522,6 @@ import Layout from '../../layouts/Layout.astro';
                 Interested in having me speak at your conference or event? Let's discuss how we can share insights on observability and AI.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <a href="/devrel" class="btn btn-lg">View DevRel Activities</a>
                 <a href="/projects" class="btn btn-lg btn-outline">Back to Datadog</a>
             </div>
 

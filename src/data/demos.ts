@@ -30,7 +30,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: true,
-        createdAt: '2024-01-15',
+        createdAt: '2025-01-15',
         techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Netlify'],
         features: [
             'Interactive packing lists',
@@ -52,7 +52,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: true,
-        createdAt: '2024-01-20',
+        createdAt: '2025-01-20',
         techStack: ['Next.js', 'TypeScript', 'Mapbox', 'Vercel'],
         features: [
             'Location-based event discovery',
@@ -74,7 +74,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: true,
-        createdAt: '2024-01-25',
+        createdAt: '2025-01-25',
         techStack: ['Vue.js', 'JavaScript', 'CSS', 'Firebase'],
         features: [
             'Expense tracking',
@@ -91,12 +91,12 @@ export const demos: Demo[] = [
         description: 'An interactive quiz game testing knowledge of AI tools and technologies in an engaging format.',
         shortDescription: 'Interactive AI tools knowledge challenge',
         icon: '🤖',
-        url: 'https://ai-tools-lab.com/quiz-challenge',
+        url: 'https://youtube.com/@datadogcommunity',
         tags: ['AI', 'Quiz', 'Learning', 'Education'],
         status: 'live',
         gradient: 'primary',
         featured: true,
-        createdAt: '2024-02-01',
+        createdAt: '2025-02-01',
         techStack: ['React', 'TypeScript', 'AI APIs', 'Vercel'],
         features: [
             'Interactive quiz interface',
@@ -119,7 +119,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: true,
-        createdAt: '2024-02-05',
+        createdAt: '2025-02-05',
         techStack: ['Canvas API', 'JavaScript', 'WebGL', 'Math.js'],
         features: [
             'Real-time field visualization',
@@ -142,7 +142,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: true,
-        createdAt: '2024-02-10',
+        createdAt: '2025-02-10',
         techStack: ['HTML5', 'CSS3', 'JavaScript', 'Web Audio API'],
         features: [
             'Interactive cat animations',
@@ -164,7 +164,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-02-15',
+        createdAt: '2025-02-15',
         techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Netlify'],
         features: [
             'Camping site finder',
@@ -186,7 +186,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-02-20',
+        createdAt: '2025-02-20',
         techStack: ['React', 'Three.js', 'WebGL', 'Vercel'],
         features: [
             '3D system visualization',
@@ -208,7 +208,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: false,
-        createdAt: '2024-02-25',
+        createdAt: '2025-02-25',
         techStack: ['Vue.js', 'JavaScript', 'CSS', 'GitHub Pages'],
         features: [
             'Practice exams',
@@ -231,7 +231,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-03-01',
+        createdAt: '2025-03-01',
         techStack: ['HTML5 Canvas', 'JavaScript', 'Math.js', 'GitHub Pages'],
         features: [
             'Real-time curve generation',
@@ -254,7 +254,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-03-05',
+        createdAt: '2025-03-05',
         techStack: ['HTML5', 'CSS3', 'JavaScript', 'Video API'],
         features: [
             'Video collection browsing',
@@ -277,7 +277,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-03-15',
+        createdAt: '2025-03-15',
         techStack: ['JavaScript', 'Web Audio API', 'HTML5', 'CSS3'],
         features: [
             'Real-time lyrics display',
@@ -300,7 +300,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-03-20',
+        createdAt: '2025-03-20',
         techStack: ['HTML5', 'CSS3', 'JavaScript', 'GitHub Pages'],
         features: [
             'Album browsing interface',
@@ -322,7 +322,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: false,
-        createdAt: '2024-03-25',
+        createdAt: '2025-03-25',
         techStack: ['React', 'JavaScript', 'CSS', 'Dog API'],
         features: [
             'Breed information database',
@@ -344,7 +344,7 @@ export const demos: Demo[] = [
         status: 'development',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-04-05',
+        createdAt: '2025-04-05',
         techStack: ['React', 'TypeScript', 'LIFX API', 'WebSocket'],
         features: [
             'Bulb control interface',
@@ -368,7 +368,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: true,
-        createdAt: '2024-04-10',
+        createdAt: '2025-04-10',
         techStack: ['HTML5 Canvas', 'JavaScript', 'WebRTC', 'Ambient Weather API'],
         features: [
             'Real-time weather data visualization',
@@ -392,7 +392,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: true,
-        createdAt: '2024-07-10',
+        createdAt: '2025-07-10',
         techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
         features: [
             'Repository tracking',
@@ -418,7 +418,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-07-10',
+        createdAt: '2025-07-10',
         techStack: ['JavaScript', 'HTML5', 'CSS3', 'Ambient Weather API'],
         features: [
             'Device management',
@@ -442,7 +442,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: false,
-        createdAt: '2024-07-10',
+        createdAt: '2025-07-10',
         techStack: ['Objective-C', 'HTML5', 'CSS3'],
         features: [
             'Auto-update preview',
@@ -466,7 +466,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-07-15',
+        createdAt: '2025-07-15',
         techStack: ['HTML5', 'CSS3', 'JavaScript', 'Local Storage'],
         features: [
             'Pomodoro timer integration',
@@ -489,7 +489,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-07-15',
+        createdAt: '2025-07-15',
         techStack: ['React', 'TypeScript', 'Video APIs', 'Analytics'],
         features: [
             'Video content analysis',
@@ -512,7 +512,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: false,
-        createdAt: '2024-07-15',
+        createdAt: '2025-07-15',
         techStack: ['HTML5', 'CSS3', 'JavaScript', 'Local Storage'],
         features: [
             'Task creation and tracking',
@@ -535,7 +535,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-07-15',
+        createdAt: '2025-07-15',
         techStack: ['React', 'TypeScript', 'Game Logic', 'CSS Animations'],
         features: [
             'Fast-paced gameplay',
@@ -558,7 +558,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-07-15',
+        createdAt: '2025-07-15',
         techStack: ['React', 'TypeScript', 'Real-time Data', 'Dashboard'],
         features: [
             'Real-time monitoring',
@@ -581,7 +581,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: false,
-        createdAt: '2024-07-15',
+        createdAt: '2025-07-15',
         techStack: ['HTML5 Canvas', 'JavaScript', 'Math.js', 'D3.js'],
         features: [
             'Interactive visualization',
@@ -604,7 +604,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-07-15',
+        createdAt: '2025-07-15',
         techStack: ['React', 'TypeScript', 'Game Theory', 'Pokémon API'],
         features: [
             'Strategic battles',
@@ -627,7 +627,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-07-15',
+        createdAt: '2025-07-15',
         techStack: ['JavaScript', 'OpenWeatherMap API', 'HTML5', 'CSS3'],
         features: [
             'Current weather display',
@@ -650,7 +650,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: false,
-        createdAt: '2024-07-15',
+        createdAt: '2025-07-15',
         techStack: ['JavaScript', 'URL Analysis', 'Security APIs', 'HTML5'],
         features: [
             'URL analysis',
@@ -673,7 +673,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-07-15',
+        createdAt: '2025-07-15',
         techStack: ['JavaScript', 'Star Wars API', 'HTML5', 'CSS3'],
         features: [
             'Character trivia questions',
@@ -696,7 +696,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-07-15',
+        createdAt: '2025-07-15',
         techStack: ['React', 'TypeScript', 'Microsoft Learn API', 'Quiz Engine'],
         features: [
             'Interactive quizzes',
@@ -719,7 +719,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: false,
-        createdAt: '2024-07-15',
+        createdAt: '2025-07-15',
         techStack: ['JavaScript', 'Datadog RUM', 'HTML5', 'CSS3'],
         features: [
             'Typing speed measurement',
@@ -743,7 +743,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-08-01',
+        createdAt: '2025-08-01',
         techStack: ['JavaScript', 'D3.js', 'HTML5', 'CSS3'],
         features: [
             'Language pattern visualization',
@@ -766,7 +766,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-08-05',
+        createdAt: '2025-08-05',
         techStack: ['JavaScript', 'Canvas API', 'Math.js', 'HTML5'],
         features: [
             'Zeta function visualization',
@@ -789,7 +789,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: false,
-        createdAt: '2024-08-10',
+        createdAt: '2025-08-10',
         techStack: ['JavaScript', 'Network APIs', 'HTML5', 'CSS3'],
         features: [
             'Network connectivity testing',
@@ -812,7 +812,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-08-15',
+        createdAt: '2025-08-15',
         techStack: ['JavaScript', 'Chart.js', 'Crypto APIs', 'HTML5'],
         features: [
             'Real-time price tracking',
@@ -835,7 +835,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-08-20',
+        createdAt: '2025-08-20',
         techStack: ['React', 'TypeScript', 'Datadog APIs', 'Netlify'],
         features: [
             'Interactive training scenarios',
@@ -858,7 +858,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: true,
-        createdAt: '2024-09-01',
+        createdAt: '2025-09-01',
         techStack: ['HTML5 Canvas', 'JavaScript', 'Image Processing', 'GitHub Pages'],
         features: [
             'Image to stereogram conversion',
@@ -882,7 +882,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-09-05',
+        createdAt: '2025-09-05',
         techStack: ['React', 'TypeScript', 'CSS3', 'Netlify'],
         features: [
             'Album collection browsing',
@@ -906,7 +906,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: false,
-        createdAt: '2024-09-10',
+        createdAt: '2025-09-10',
         techStack: ['React', 'TypeScript', 'iPad UI', 'Touch Interface'],
         features: [
             'Lyric management',
@@ -930,7 +930,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-09-15',
+        createdAt: '2025-09-15',
         techStack: ['HTML5', 'CSS3', 'JavaScript', 'Music Theory'],
         features: [
             'Triad inversion visualization',
@@ -954,7 +954,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-09-20',
+        createdAt: '2025-09-20',
         techStack: ['HTML5', 'CSS3', 'JavaScript', 'Web Audio API'],
         features: [
             'Interactive lessons',
@@ -978,7 +978,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: false,
-        createdAt: '2024-09-25',
+        createdAt: '2025-09-25',
         techStack: ['JavaScript', 'D3.js', 'HTML5', 'CSS3'],
         features: [
             'Debt visualization',
@@ -1002,7 +1002,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-10-01',
+        createdAt: '2025-10-01',
         techStack: ['Three.js', 'JavaScript', 'WebGL', 'Mathematics'],
         features: [
             '3D Klein bottle rendering',
@@ -1026,7 +1026,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-10-05',
+        createdAt: '2025-10-05',
         techStack: ['Three.js', 'JavaScript', 'WebGL', '3D Graphics'],
         features: [
             '3D logo rendering',
@@ -1050,7 +1050,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: false,
-        createdAt: '2024-10-10',
+        createdAt: '2025-10-10',
         techStack: ['JavaScript', 'Canvas API', 'Machine Learning', 'HTML5'],
         features: [
             'Perceptron training visualization',
@@ -1074,7 +1074,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-10-15',
+        createdAt: '2025-10-15',
         techStack: ['JavaScript', 'Canvas API', 'Neural Networks', 'Mathematics'],
         features: [
             'Network architecture visualization',
@@ -1098,7 +1098,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-10-20',
+        createdAt: '2025-10-20',
         techStack: ['JavaScript', 'Canvas API', 'Particle Systems', 'WebGL'],
         features: [
             'Dynamic particle systems',
@@ -1122,7 +1122,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: false,
-        createdAt: '2024-10-25',
+        createdAt: '2025-10-25',
         techStack: ['JavaScript', 'D3.js', 'Data Analysis', 'HTML5'],
         features: [
             'Energy consumption analysis',
@@ -1146,7 +1146,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-11-01',
+        createdAt: '2025-11-01',
         techStack: ['JavaScript', 'HTML5', 'CSS3', 'Web Standards'],
         features: [
             'Interactive generator',
@@ -1170,7 +1170,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-11-05',
+        createdAt: '2025-11-05',
         techStack: ['Python', 'Machine Learning', 'JavaScript', 'Data Analysis'],
         features: [
             'Anomaly detection',
@@ -1193,7 +1193,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: true,
-        createdAt: '2024-11-20',
+        createdAt: '2025-11-20',
         techStack: ['React', 'Three.js', 'WebGL', 'Data Visualization', 'Scientific APIs'],
         features: [
             '3D interactive globe',
@@ -1222,7 +1222,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-12-01',
+        createdAt: '2025-12-01',
         techStack: ['JavaScript', 'HTML', 'CSS', 'Web APIs'],
         features: [
             'Interactive metrics visualization',
@@ -1246,7 +1246,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-11-15',
+        createdAt: '2025-11-15',
         techStack: ['HTML', 'CSS', 'JavaScript', 'Documentation'],
         features: [
             'Tool comparison matrix',
@@ -1270,7 +1270,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: true,
-        createdAt: '2024-10-20',
+        createdAt: '2025-10-20',
         techStack: ['HTML', 'CSS', 'JavaScript', 'Grid Layout'],
         features: [
             'Interactive grid layout',
@@ -1294,7 +1294,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-09-10',
+        createdAt: '2025-09-10',
         techStack: ['JavaScript', 'HTML', 'CSS', 'Mathematics Libraries'],
         features: [
             'Interactive matrix editing',
@@ -1303,7 +1303,8 @@ export const demos: Demo[] = [
             'Educational content'
         ],
         category: 'education',
-        difficulty: 'advanced'
+        difficulty: 'advanced',
+        screenshot: '/images/screenshots/markov_chain.png'
     },
     {
         id: 'transcription-to-json',
@@ -1317,7 +1318,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-08-25',
+        createdAt: '2025-08-25',
         techStack: ['JavaScript', 'HTML', 'CSS', 'Text Processing'],
         features: [
             'Real-time conversion',
@@ -1340,7 +1341,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'accent',
         featured: false,
-        createdAt: '2024-07-30',
+        createdAt: '2025-07-30',
         techStack: ['JavaScript', 'Chart.js', 'HTML', 'CSS'],
         features: [
             'Interactive charts',
@@ -1364,7 +1365,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'primary',
         featured: false,
-        createdAt: '2024-06-15',
+        createdAt: '2025-06-15',
         techStack: ['JavaScript', 'Maps API', 'HTML', 'CSS', 'Data Visualization'],
         features: [
             'Interactive maps',
@@ -1387,7 +1388,7 @@ export const demos: Demo[] = [
         status: 'live',
         gradient: 'secondary',
         featured: false,
-        createdAt: '2024-05-20',
+        createdAt: '2025-05-20',
         techStack: ['JavaScript', 'D3.js', 'HTML', 'CSS', 'Network Visualization'],
         features: [
             'Network visualization',
@@ -1397,6 +1398,104 @@ export const demos: Demo[] = [
         ],
         category: 'education',
         difficulty: 'advanced'
+    },
+    {
+        id: 'plinko-drop',
+        title: 'Plinko Drop',
+        description: 'An interactive "Plinko" -like drop game where balls fall through a series of pegs, creating unpredictable paths and exciting gameplay with physics-based mechanics.',
+        shortDescription: 'Interactive Plinko-style drop game',
+        icon: '🎯',
+        url: 'https://jasonhand.github.io/plinko-drop/',
+        githubUrl: 'https://github.com/jasonhand/plinko-drop',
+        tags: ['Game', 'Physics', 'Interactive', 'Plinko', 'Entertainment'],
+        status: 'live',
+        gradient: 'primary',
+        featured: false,
+        createdAt: '2025-12-09',
+        techStack: ['HTML5', 'CSS3', 'JavaScript', 'Physics Engine'],
+        features: [
+            'Physics-based ball mechanics',
+            'Interactive peg board',
+            'Score tracking',
+            'Realistic animations',
+            'Responsive gameplay'
+        ],
+        category: 'entertainment',
+        difficulty: 'intermediate',
+        screenshot: '/images/screenshots/plinko_drop.png'
+    },
+    {
+        id: 'family-tree-archive',
+        title: 'Family Tree Archive',
+        description: 'A beautiful visualization tool for exploring and displaying family tree relationships with interactive navigation, relationship mapping, and genealogical data organization.',
+        shortDescription: 'Interactive family tree visualization',
+        icon: '🌳',
+        url: 'https://hand-family-tree.netlify.app/',
+        githubUrl: 'https://github.com/jasonhand/family-tree-archive',
+        tags: ['Family Tree', 'Visualization', 'Genealogy', 'Data', 'Interactive'],
+        status: 'live',
+        gradient: 'secondary',
+        featured: false,
+        createdAt: '2025-12-07',
+        techStack: ['Svelte', 'JavaScript', 'Data Visualization', 'Netlify'],
+        features: [
+            'Interactive family tree navigation',
+            'Relationship mapping',
+            'Genealogical data organization',
+            'Visual hierarchy display',
+            'Search and filter capabilities'
+        ],
+        category: 'visualization',
+        difficulty: 'intermediate',
+        screenshot: '/images/screenshots/family_tree_archive.png'
+    },
+    {
+        id: 'gif-maker',
+        title: 'GIF Maker',
+        description: 'Create high-resolution GIFs from MP4 video files with customizable settings. Features quality control, frame rate adjustment, and optimized output for web and social media sharing.',
+        shortDescription: 'High-resolution MP4 to GIF converter',
+        icon: '🎞️',
+        url: 'https://jasonhand.github.io/gif_maker/',
+        githubUrl: 'https://github.com/jasonhand/gif_maker',
+        tags: ['GIF', 'Video', 'Converter', 'Media', 'Utility'],
+        status: 'live',
+        gradient: 'primary',
+        featured: false,
+        createdAt: '2025-09-04',
+        techStack: ['Python', 'FFmpeg', 'Image Processing', 'Media Conversion'],
+        features: [
+            'MP4 to GIF conversion',
+            'High-resolution output',
+            'Frame rate control',
+            'Quality optimization',
+            'File size management'
+        ],
+        category: 'utility',
+        difficulty: 'intermediate'
+    },
+    {
+        id: 'retro-programming-sim',
+        title: 'Retro Programming Simulator',
+        description: 'Experience the evolution of programming languages from the past. An interactive journey through programming history with authentic syntax, historical context, and educational content about how coding has evolved over the decades.',
+        shortDescription: 'Interactive journey through programming language history',
+        icon: '💾',
+        url: 'https://jasonhand.github.io/retro-programming-sim/',
+        githubUrl: 'https://github.com/jasonhand/retro-programming-sim',
+        tags: ['Programming', 'History', 'Education', 'Retro', 'Interactive'],
+        status: 'live',
+        gradient: 'secondary',
+        featured: false,
+        createdAt: '2025-07-17',
+        techStack: ['HTML5', 'CSS3', 'JavaScript', 'Historical Data'],
+        features: [
+            'Historical programming languages',
+            'Authentic syntax examples',
+            'Timeline navigation',
+            'Educational content',
+            'Interactive code examples'
+        ],
+        category: 'education',
+        difficulty: 'beginner'
     }
 ];
 

@@ -108,6 +108,7 @@ export default function SkillsFilter() {
         <input
           type="text"
           placeholder="Search skills..."
+          aria-label="Search through technical, soft skills, and leadership skills by name or description"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="px-4 py-2 bg-surface border border-gray-700 rounded-lg text-text focus:border-primary focus:outline-none"

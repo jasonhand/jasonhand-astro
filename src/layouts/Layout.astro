@@ -7,9 +7,17 @@ import AnimatedBackground from '../components/AnimatedBackground.astro';
 
 interface Props {
     title: string;
+    description?: string;
+    image?: string;
+    canonical?: string;
 }
 
-const { title } = Astro.props;
+const { 
+    title,
+    description = "Jason Hand - Developer Relations, AI Tools, and Community Building. Explore demos, insights, and technical content on observability, developer productivity, and emerging technologies.",
+    image = "/images/Jhand_AI_Profile.png",
+    canonical = Astro.url.href
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -17,8 +25,26 @@ const { title } = Astro.props;
     <head>
         <meta charset="UTF-8" />
         <title>{title}</title>
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="generator" content={Astro.generator} />
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonical} />
+        
+        <!-- Open Graph Tags -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={new URL(image, Astro.url).href} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:site_name" content="Jason Hand" />
+        
+        <!-- Twitter Card Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={new URL(image, Astro.url).href} />
 
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -31,19 +57,22 @@ const { title } = Astro.props;
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     </head>
     <body class="antialiased">
+        <!-- Skip to content link for accessibility -->
+        <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded focus:no-underline">
+            Skip to main content
+        </a>
+        
         <AnimatedBackground />
         <div class="flex flex-col min-h-screen px-6 sm:px-12 relative z-10">
             <div class="flex flex-col w-full max-w-7xl mx-auto grow">
                 <Header />
-                <main class="grow"><slot /></main>
+                <main id="main-content" class="grow"><slot /></main>
                 <Footer />
             </div>
         </div>
 
         <!-- Datadog RUM SDK -->
         <script is:inline>
-            console.log('Datadog RUM: Starting script execution...');
-
             (function (h, o, u, n, d) {
                 h = h[d] = h[d] || {
                     q: [],
@@ -54,21 +83,11 @@ const { title } = Astro.props;
                 d = o.createElement(u);
                 d.async = 1;
                 d.src = n;
-                d.onerror = function () {
-                    console.error('Datadog RUM: Failed to load script from', n);
-                };
-                d.onload = function () {
-                    console.log('Datadog RUM: Script loaded successfully from', n);
-                };
                 n = o.getElementsByTagName(u)[0];
                 n.parentNode.insertBefore(d, n);
             })(window, document, 'script', 'https://www.datadoghq-browser-agent.com/us1/v6/datadog-rum.js', 'DD_RUM');
 
-            console.log('Datadog RUM: Script loaded, waiting for DD_RUM to be ready...');
-            console.log('Datadog RUM: window.DD_RUM available?', !!window.DD_RUM);
-
             window.DD_RUM.onReady(function () {
-                console.log('Datadog RUM: DD_RUM is ready, initializing...');
                 try {
                     window.DD_RUM.init({
                         clientToken: 'pub3b339835526a4cc777fd26511a1aab95',
@@ -84,7 +103,6 @@ const { title } = Astro.props;
                         sessionReplaySampleRate: 100,
                         defaultPrivacyLevel: 'mask-user-input'
                     });
-                    console.log('Datadog RUM: Successfully initialized');
 
                     // Test that RUM is working by sending a custom action
                     setTimeout(() => {
@@ -92,15 +110,80 @@ const { title } = Astro.props;
                             window.DD_RUM.addAction('test_action', {
                                 message: 'RUM is working!'
                             });
-                            console.log('Datadog RUM: Test action sent successfully');
-                        } else {
-                            console.error('Datadog RUM: DD_RUM.addAction not available');
                         }
                     }, 1000);
                 } catch (error) {
-                    console.error('Datadog RUM: Error during initialization:', error);
+                    // Silent error handling in production
                 }
             });
+        </script>
+
+        <!-- Auto-configure external links -->
+        <script is:inline>
+            (function() {
+                // Function to check if a URL is external
+                function isExternalUrl(url) {
+                    if (!url) return false;
+                    
+                    // Handle relative URLs (internal)
+                    if (url.startsWith('/') || url.startsWith('#') || url.startsWith('?')) {
+                        return false;
+                    }
+                    
+                    // Handle protocol-relative URLs (internal if same domain)
+                    if (url.startsWith('//')) {
+                        try {
+                            const currentHost = window.location.hostname;
+                            const urlHost = new URL('https:' + url).hostname;
+                            return urlHost !== currentHost;
+                        } catch {
+                            return true;
+                        }
+                    }
+                    
+                    // Check if it's a full URL
+                    try {
+                        const currentUrl = new URL(window.location.href);
+                        const linkUrl = new URL(url, window.location.href);
+                        return linkUrl.origin !== currentUrl.origin;
+                    } catch {
+                        // If URL parsing fails, assume it's external if it has a protocol
+                        return url.includes('://');
+                    }
+                }
+                
+                // Function to process all links on the page
+                function configureExternalLinks() {
+                    const links = document.querySelectorAll('a[href]');
+                    links.forEach(link => {
+                        const href = link.getAttribute('href');
+                        
+                        // Skip if already has target attribute explicitly set
+                        if (link.hasAttribute('target')) {
+                            return;
+                        }
+                        
+                        if (isExternalUrl(href)) {
+                            link.setAttribute('target', '_blank');
+                            link.setAttribute('rel', 'noopener noreferrer');
+                        }
+                    });
+                }
+                
+                // Run on page load
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', configureExternalLinks);
+                } else {
+                    configureExternalLinks();
+                }
+                
+                // Also run after dynamic content loads (for SPAs or dynamic content)
+                const observer = new MutationObserver(configureExternalLinks);
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            })();
         </script>
     </body>
 </html>

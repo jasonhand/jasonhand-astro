@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { getAllDemos, getDemosByCategory, getDemosByStatus } from '../../data/demos';
 import { getDemoImagePath } from '../../utils/imageMapping';
+import { hasBlogPostForDemo } from '../../data/blog';
 
 const allDemos = getAllDemos();
 const categories = ['web', 'ai', 'visualization', 'utility', 'entertainment', 'education'];
@@ -96,13 +97,18 @@ if (statusFilter) {
                                 ))}
                             </div>
 
-                            <div class="flex gap-2">
+                            <div class="flex flex-wrap gap-2">
                                 <a href={demo.url} target="_blank" rel="noopener noreferrer" class="btn text-sm">
                                     {demo.status === 'development' ? 'Preview' : 'Try Demo'}
                                 </a>
                                 <a href={`/demos/${demo.id}`} class="btn btn-outline text-sm">
                                     Details
                                 </a>
+                                {hasBlogPostForDemo(demo.id) && (
+                                    <a href={`/blog/${demo.id}-demo`} class="btn btn-outline text-sm border-accent/50 text-accent hover:bg-accent/10">
+                                        📝 Blog Post
+                                    </a>
+                                )}
                             </div>
                         </div>
                     ))

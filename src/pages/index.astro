@@ -1,18 +1,47 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ContextAlert from '../components/ContextAlert.astro';
-import Markdown from '../components/Markdown.astro';
 import SkillsFilter from '../components/SkillsFilter';
 import { getFeaturedDemos, getAllDemos } from '../data/demos';
 import { getDemoImagePath } from '../utils/imageMapping';
+import { getLatestContent, getLatestGuestAppearance } from '../utils/latestContent';
+import { getLatestAIToolsLabVideo, getLatestYouTubeShortsVideo } from '../utils/youtube';
+import { hasBlogPostForDemo } from '../data/blog';
+
+// Try to get the latest AI Tools Lab video
+// Falls back to null if not available (will show placeholder)
+const latestVideo = await getLatestAIToolsLabVideo();
+// Fallback video ID if automatic fetch fails (you can set this manually)
+const fallbackVideoId = import.meta.env.AI_TOOLS_LAB_FALLBACK_VIDEO_ID || null;
+const videoId = latestVideo?.videoId || fallbackVideoId;
+
+// Try to get the latest YouTube Shorts video
+const latestShortsVideo = await getLatestYouTubeShortsVideo();
+const fallbackShortsVideoId = import.meta.env.YOUTUBE_SHORTS_FALLBACK_VIDEO_ID || null;
+const shortsVideoId = latestShortsVideo?.videoId || fallbackShortsVideoId;
 
 const featuredDemos = getFeaturedDemos();
 const allDemos = getAllDemos();
+const latestContent = getLatestContent(6);
+const latestGuestAppearance = getLatestGuestAppearance();
 
-const explainer = `
-Undergoing a complete rebuild.
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
+function formatDate(dateString: string): string {
+    return new Date(dateString).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+}
+
+function getTypeLabel(type: string): string {
+    const labels: Record<string, string> = {
+        blog: 'Blog Post',
+        podcast: 'Podcast',
+        video: 'Video',
+        publication: 'Publication',
+        'guest-appearance': 'Guest Appearance'
+    };
+    return labels[type] || type;
+}
 ---
 
 <Layout title="Jason Hand - Developer & Creator">
@@ -30,6 +59,9 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
                                 <img
                                     src="/images/Jhand_AI_Profile.png"
                                     alt="Jason Hand - Developer & Creator"
+                                    width="448"
+                                    height="448"
+                                    fetchpriority="high"
                                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                                 />
                             </div>
@@ -52,23 +84,222 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
                             <span>H</span><span>a</span><span>n</span><span>d</span>
                         </span>
                     </h1>
-                    <p class="text-xl md:text-2xl mb-8 text-left lg:text-left">Developer, creator, and digital craftsman building experiences that matter.</p>
+                    <p class="text-xl md:text-2xl mb-8 text-left lg:text-left">Human, creator, advocate.</p>
                     <p class="text-lg mb-12 text-text-muted text-left lg:text-left max-w-lg">
                         Passionate about modern web technologies, developer relations, and creating innovative solutions that make a difference in the digital
                         world.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-start">
-                        <a href="/projects" class="btn btn-lg">View My Datadog Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tools Lab Featured Section -->
+    <section id="ai-tools-lab" class="section bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block mb-4">
+                        <span class="px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-semibold">Featured Project</span>
+                    </div>
+                    <h2 class="mb-6">
+                        <span class="scattered-letters">
+                            <span>A</span><span>I</span>
+                        </span>
+                        <br />
+                        <span class="scattered-letters">
+                            <span>T</span><span>o</span><span>o</span><span>l</span><span>s</span>
+                        </span>
+                        <br />
+                        <span class="scattered-letters">
+                            <span>L</span><span>a</span><span>b</span>
+                        </span>
+                    </h2>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="/datadog/ai-tools-lab" class="btn btn-lg">Explore AI Tools Lab</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-full max-w-sm mx-auto aspect-[9/16] bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl overflow-hidden shadow-xl">
+                        <iframe
+                            class="w-full h-full"
+                            src="https://www.youtube.com/embed/videoseries?list=PLjR8CqndeyMpWN93WBE4oDLk1LveBa2sJ"
+                            title="AI Tools Lab Shorts Playlist"
+                            aria-label="AI Tools Lab Shorts - Short-form educational videos about AI development tools and techniques"
+                            style="border: none;"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
+    <!-- AI Tools Lab Episodes Section (Video Only) -->
+    <section id="ai-tools-lab-episodes" class="section">
         <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="w-full aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl overflow-hidden shadow-xl">
+                <iframe
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/videoseries?list=PLVOmGuoGYFgr5lvPwWpsEFm-QU_FvxzJ0"
+                    title="AI Tools Lab Episodes Playlist"
+                    aria-label="AI Tools Lab Episodes - Full-length technical demonstrations and educational content about AI development tools"
+                    style="border: none;"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Pulse Section -->
+    <section id="community-pulse-shorts" class="section bg-gradient-to-br from-secondary/5 via-background to-accent/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="inline-block mb-4">
+                        <span class="px-4 py-2 bg-secondary/20 text-secondary rounded-full text-sm font-semibold">Latest Shorts</span>
+                    </div>
+                    <h2 class="mb-6">
+                        <span class="scattered-letters">
+                            <span>C</span><span>o</span><span>m</span><span>m</span><span>u</span><span>n</span><span>i</span><span>t</span><span>y</span>
+                        </span>
+                        <br />
+                        <span class="scattered-letters">
+                            <span>P</span><span>u</span><span>l</span><span>s</span><span>e</span>
+                        </span>
+                        <br />
+                        <span class="scattered-letters">
+                            <span>S</span><span>h</span><span>o</span><span>r</span><span>t</span><span>s</span>
+                        </span>
+                    </h2>
+                    <p class="text-xl mb-6 text-text-muted">Quick tips, insights, and behind-the-scenes content in bite-sized format.</p>
+                    <p class="mb-8 text-lg">
+                        Catch the latest Community Pulse covering developer relations, community building, and industry insights. New content added regularly!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a
+                            href={`https://www.youtube.com/playlist?list=PLjR8CqndeyMofFphEh7jUHUfjzkjiStwl`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-lg"
+                        >
+                            Watch All Shorts
+                        </a>
+                        <a href="https://youtube.com/@jhand" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-outline"> Subscribe </a>
+                    </div>
+                </div>
+                <div class="relative order-1 md:order-2">
+                    <div class="w-full max-w-sm mx-auto aspect-[9/16] bg-gradient-to-br from-secondary/20 to-accent/20 rounded-2xl overflow-hidden shadow-xl">
+                        <iframe
+                            class="w-full h-full"
+                            src="https://www.youtube.com/embed/videoseries?list=PLjR8CqndeyMofFphEh7jUHUfjzkjiStwl"
+                            title="Community Pulse Playlist"
+                            aria-label="Community Pulse Shorts - Developer relations insights and community building content in short format"
+                            style="border: none;"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Guest Appearance Section -->
+    {
+        latestGuestAppearance && (
+            <section id="guest-appearance" class="section bg-gradient-to-br from-accent/5 via-background to-primary/5">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="order-2 md:order-1">
+                            <div class="inline-block mb-4">
+                                <span class="px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-semibold">Guest Appearance</span>
+                            </div>
+                            {latestGuestAppearance.show && <p class="text-lg mb-4 text-text-muted">{latestGuestAppearance.show}</p>}
+                            <h2 class="mb-6">
+                                <span class="scattered-letters">
+                                    <>
+                                        <span>L</span>
+                                        <span>a</span>
+                                        <span>t</span>
+                                        <span>e</span>
+                                        <span>s</span>
+                                        <span>t</span>
+                                    </>
+                                </span>
+                                <br />
+                                <span class="scattered-letters">
+                                    <>
+                                        <span>I</span>
+                                        <span>n</span>
+                                        <span>t</span>
+                                        <span>e</span>
+                                        <span>r</span>
+                                        <span>v</span>
+                                        <span>i</span>
+                                        <span>e</span>
+                                        <span>w</span>
+                                    </>
+                                </span>
+                            </h2>
+                            <h3 class="text-2xl mb-6 gradient-text">{latestGuestAppearance.title}</h3>
+                            {latestGuestAppearance.description && <p class="text-lg mb-6 text-text-muted">{latestGuestAppearance.description}</p>}
+                            <p class="mb-8 text-sm text-text-muted">Published {formatDate(latestGuestAppearance.date)}</p>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href={latestGuestAppearance.url} target="_blank" rel="noopener noreferrer" class="btn btn-lg">
+                                    Listen Now
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=1jxmNoWv9WU" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-outline">
+                                    Watch on YouTube
+                                </a>
+                            </div>
+                        </div>
+                        <div class="relative order-1 md:order-2">
+                            {latestGuestAppearance.videoId ? (
+                                <div class="w-full aspect-video bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl overflow-hidden shadow-xl">
+                                    <iframe
+                                        class="w-full h-full"
+                                        src={`https://www.youtube.com/embed/${latestGuestAppearance.videoId}`}
+                                        title={latestGuestAppearance.title}
+                                        aria-label={`Latest guest appearance: ${latestGuestAppearance.title} - Watch the interview or podcast episode`}
+                                        style="border: none;"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                                    />
+                                </div>
+                            ) : (
+                                <a
+                                    href={latestGuestAppearance.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="block w-full aspect-video bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl overflow-hidden shadow-xl hover:opacity-90 transition-opacity"
+                                >
+                                    <div class="w-full h-full flex items-center justify-center">
+                                        <div class="text-center">
+                                            <div class="text-6xl mb-4 gradient-text">🎙️</div>
+                                            <p class="text-xl font-semibold gradient-text">{latestGuestAppearance.show || 'Guest Appearance'}</p>
+                                            <p class="text-sm text-text-muted mt-2">Click to listen</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        )
+    }
+
+    <!-- Featured Content Section -->
+    <section id="featured" class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-4">
+                <span class="scattered-letters">
+                    <span>L</span><span>a</span><span>t</span><span>e</span><span>s</span><span>t</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>C</span><span>o</span><span>n</span><span>t</span><span>e</span><span>n</span><span>t</span>
+                </span>
+            </h2>
+            <p class="text-center text-xl mb-12 max-w-3xl mx-auto text-text-muted">Recent blog posts, podcast episodes, videos, and publications</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div>
                     <h2 class="mb-8">
                         <span class="scattered-letters">
@@ -81,14 +312,69 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
                     </p>
                     <a href="/about" class="btn btn-secondary">Learn More</a>
                 </div>
-                <div class="relative">
-                    <div class="w-full h-96 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl overflow-hidden">
-                        <img
-                            src="/images/About.png"
-                            alt="Jason Hand working"
-                            class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
-                        />
-                    </div>
+                <!-- Content cards will replace the About section -->
+                {
+                    latestContent.map((item) => (
+                        <a
+                            href={item.url}
+                            target={item.url.startsWith('http') ? '_blank' : undefined}
+                            rel={item.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+                            class="project-card group hover:scale-[1.02] transition-transform duration-300"
+                        >
+                            <div class="flex items-start gap-4 mb-4">
+                                <div class="text-3xl flex-shrink-0">{item.icon || '📄'}</div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span
+                                            class={`text-xs px-2 py-1 rounded-full ${
+                                                item.type === 'blog'
+                                                    ? 'bg-primary/20 text-primary'
+                                                    : item.type === 'podcast'
+                                                      ? 'bg-secondary/20 text-secondary'
+                                                      : item.type === 'video'
+                                                        ? 'bg-accent/20 text-accent'
+                                                        : item.type === 'guest-appearance'
+                                                          ? 'bg-accent/20 text-accent'
+                                                          : 'bg-primary/20 text-primary'
+                                            }`}
+                                        >
+                                            {getTypeLabel(item.type)}
+                                        </span>
+                                        <span class="text-xs text-text-muted">{formatDate(item.date)}</span>
+                                    </div>
+                                    <h3
+                                        class={`text-lg font-bold mb-2 line-clamp-2 ${
+                                            item.type === 'blog'
+                                                ? 'gradient-text'
+                                                : item.type === 'podcast'
+                                                  ? 'gradient-text-secondary'
+                                                  : item.type === 'video'
+                                                    ? 'gradient-text'
+                                                    : item.type === 'guest-appearance'
+                                                      ? 'gradient-text'
+                                                      : 'gradient-text'
+                                        }`}
+                                    >
+                                        {item.title}
+                                    </h3>
+                                    {item.type === 'guest-appearance' && 'show' in item && item.show && <p class="text-xs text-text-muted mb-2">{item.show}</p>}
+                                    {item.description && <p class="text-sm text-text-muted line-clamp-2">{item.description}</p>}
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-primary group-hover:gap-4 transition-all">
+                                <span>Read More</span>
+                                <span>→</span>
+                            </div>
+                        </a>
+                    ))
+                }
+            </div>
+
+            <div class="text-center mt-12">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="/blog" class="btn btn-outline">All Blog Posts</a>
+                    <a href="/podcasts" class="btn btn-outline">All Podcasts</a>
+                    <a href="/content" class="btn btn-outline">All Content</a>
                 </div>
             </div>
         </div>
@@ -152,27 +438,16 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="project-card">
                     <div class="mb-4">
-                        <img src="/images/ai-devrel.jpg" alt="AI Tools Lab" class="w-full h-48 object-cover rounded-lg" />
-                    </div>
-                    <h3 class="mb-4 gradient-text">AI Tools Lab</h3>
-                    <p class="mb-4 text-text-muted">Experimental AI • Research • Innovation</p>
-                    <p class="mb-6">Exploring cutting-edge AI applications in observability through experimental tools and research initiatives.</p>
-                    <div class="flex gap-4">
-                        <a href="/datadog/ai-tools-lab" class="btn">Explore Lab</a>
-                        <a href="https://ai-tools-lab.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Visit Site</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="mb-4">
                         <img src="/images/public-speaking.jpg" alt="Conference Talks" class="w-full h-48 object-cover rounded-lg" />
                     </div>
-                    <h3 class="mb-4 gradient-text-secondary">Conference Talks</h3>
-                    <p class="mb-4 text-text-muted">Microsoft Build • Google Next • AWS re:Invent</p>
-                    <p class="mb-6">Speaking at major tech conferences about observability, AI, and modern development practices.</p>
+                    <h3 class="mb-4 gradient-text-secondary">Conference Talks & Webinars</h3>
+                    <p class="mb-4 text-text-muted">Microsoft Build • Google Next • AWS re:Invent • Partner Webinars</p>
+                    <p class="mb-6">
+                        Speaking at major tech conferences and hosting educational webinars about observability, AI, and modern development practices.
+                    </p>
                     <div class="flex gap-4">
-                        <a href="/datadog/conference-talks" class="btn btn-secondary">View Talks</a>
-                        <a href="/datadog/conference-talks" class="btn btn-outline">Speaking Topics</a>
+                        <a href="/datadog/conference-talks" class="btn btn-secondary">View Talks & Webinars</a>
+                        <a href="/datadog/conference-talks" class="btn btn-outline">Watch Playlist</a>
                     </div>
                 </div>
 
@@ -182,7 +457,7 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
                     </div>
                     <h3 class="mb-4 gradient-text">Live Streams & Content</h3>
                     <p class="mb-4 text-text-muted">AI Native DevCon • Datadog On • Webinars</p>
-                    <p class="mb-6">Creating educational content through live streams, webinars, and interactive sessions with the community.</p>
+                    <p class="mb-6">Creating educational content through live streams and interactive sessions with the community.</p>
                     <div class="flex gap-4">
                         <a href="/datadog/live-streams" class="btn">Live Streams</a>
                         <a href="/datadog/datadog-on" class="btn btn-outline">Datadog On</a>
@@ -200,7 +475,7 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
                     <p class="mb-6">Contributing to Datadog's premier user conference through speaking, content planning, and community engagement.</p>
                     <div class="flex gap-4">
                         <a href="/datadog/dash" class="btn btn-secondary">DASH Details</a>
-                        <a href="/datadog/webinars" class="btn btn-outline">Webinars</a>
+                        <a href="/datadog/dash" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -263,13 +538,18 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
                                 ))}
                             </div>
 
-                            <div class="flex gap-2">
+                            <div class="flex flex-wrap gap-2">
                                 <a href={demo.url} target="_blank" rel="noopener noreferrer" class="btn text-sm">
                                     {demo.status === 'development' ? 'Preview' : 'Try Demo'}
                                 </a>
                                 <a href={`/demos/${demo.id}`} class="btn btn-outline text-sm">
                                     Details
                                 </a>
+                                {hasBlogPostForDemo(demo.id) && (
+                                    <a href={`/blog/${demo.id}-demo`} class="btn btn-outline text-sm border-accent/50 text-accent hover:bg-accent/10">
+                                        📝 Blog Post
+                                    </a>
+                                )}
                             </div>
                         </div>
                     ))

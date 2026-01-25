@@ -20,6 +20,31 @@ import Layout from '../layouts/Layout.astro';
     <!-- Work Categories -->
     <section class="section">
         <div class="max-w-6xl mx-auto">
+            <!-- Featured: AI Tools Lab -->
+            <div class="mb-12">
+                <article class="project-card group cursor-pointer border-2 border-accent/30 hover:border-accent/50 transition-all" onclick="window.location.href='/datadog/ai-tools-lab'">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-accent/30 to-primary/30 rounded-2xl flex items-center justify-center">
+                            <span class="text-4xl">🧪</span>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs font-semibold">Featured Project</span>
+                            </div>
+                            <h3 class="mb-2 text-2xl gradient-text">AI Tools Lab</h3>
+                            <p class="text-text-muted">Experimental AI research and development • Innovation • Research</p>
+                        </div>
+                    </div>
+                    <p class="text-lg mb-4">
+                        Research and experimentation with AI tools for developers, including LLMs, automation, and observability. 
+                        AI Tools Lab consists of 15-20 minute recorded technical demonstrations of hands-on experiences with AI-related tooling.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-accent font-semibold text-lg">Explore AI Tools Lab →</span>
+                    </div>
+                </article>
+            </div>
+
             <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
                 <!-- Datadog Projects -->
                 <article class="project-card group cursor-pointer" onclick="window.location.href='/projects'">
@@ -40,22 +65,22 @@ import Layout from '../layouts/Layout.astro';
                     </div>
                 </article>
 
-                <!-- Conference Talks -->
+                <!-- Conference Talks & Webinars -->
                 <article class="project-card group cursor-pointer" onclick="window.location.href='/datadog/conference-talks'">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-16 h-16 bg-gradient-to-br from-secondary/30 to-accent/30 rounded-2xl flex items-center justify-center">
                             <span class="text-3xl">🎤</span>
                         </div>
                         <div>
-                            <h3 class="mb-2">Conference Talks</h3>
-                            <p class="text-text-muted">Speaking at major tech conferences worldwide</p>
+                            <h3 class="mb-2">Conference Talks & Webinars</h3>
+                            <p class="text-text-muted">Speaking engagements and educational sessions</p>
                         </div>
                     </div>
                     <p class="text-text-muted mb-4">
-                        Technical presentations on DevOps, observability, AI, and community building at conferences around the globe.
+                        Technical presentations and webinars on DevOps, observability, AI, and community building at conferences and with technology partners.
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-primary font-medium">View Talks →</span>
+                        <span class="text-primary font-medium">View Talks & Webinars →</span>
                     </div>
                 </article>
 
@@ -75,25 +100,6 @@ import Layout from '../layouts/Layout.astro';
                     </p>
                     <div class="flex items-center justify-between">
                         <span class="text-primary font-medium">Watch Streams →</span>
-                    </div>
-                </article>
-
-                <!-- AI Tools Lab -->
-                <article class="project-card group cursor-pointer" onclick="window.location.href='/datadog/ai-tools-lab'">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-16 h-16 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl flex items-center justify-center">
-                            <span class="text-3xl">🤖</span>
-                        </div>
-                        <div>
-                            <h3 class="mb-2">AI Tools Lab</h3>
-                            <p class="text-text-muted">Experimental AI research and development</p>
-                        </div>
-                    </div>
-                    <p class="text-text-muted mb-4">
-                        Research and experimentation with AI tools for developers, including LLMs, automation, and observability.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-primary font-medium">Explore Lab →</span>
                     </div>
                 </article>
             </div>

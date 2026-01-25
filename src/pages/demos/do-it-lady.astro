@@ -1,11 +1,14 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getDemoById } from '../../data/demos';
+import { hasBlogPostForDemo } from '../../data/blog';
 
 const demo = getDemoById('do-it-lady');
 if (!demo) {
     return Astro.redirect('/demos');
 }
+
+const hasBlogPost = hasBlogPostForDemo(demo.id);
 ---
 
 <Layout title={`${demo.title} - Demo - Jason Hand`}>
@@ -25,6 +28,11 @@ if (!demo) {
                 </a>
                 {demo.githubUrl && (
                     <a href={demo.githubUrl} target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-outline">View Code</a>
+                )}
+                {hasBlogPost && (
+                    <a href={`/blog/${demo.id}-demo`} class="btn btn-lg btn-outline border-accent/50 text-accent hover:bg-accent/10">
+                        📝 Read Blog Post
+                    </a>
                 )}
                 <a href="/demos" class="btn btn-lg btn-outline">Back to Demos</a>
             </div>

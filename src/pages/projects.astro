@@ -17,7 +17,7 @@ import Layout from '../layouts/Layout.astro';
                 </span>
             </h1>
             <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
-                My work at Datadog, building observability solutions and empowering developers with monitoring and analytics tools.
+                My work at Datadog, building observability solutions and empowering developers with observability and AI dev tools.
             </p>
         </div>
     </section>
@@ -30,29 +30,51 @@ import Layout from '../layouts/Layout.astro';
                     <span>A</span><span>c</span><span>t</span><span>i</span><span>v</span><span>i</span><span>t</span><span>i</span><span>e</span><span>s</span>
                 </span>
             </h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- AI Tools Lab -->
-                <div class="project-card group cursor-pointer" onclick="window.location.href='/datadog/ai-tools-lab'">
-                    <div class="text-4xl mb-4 gradient-text">🧪</div>
-                    <h3 class="mb-4 gradient-text">AI Tools Lab</h3>
-                    <p class="mb-4">Experimental AI tools and applications showcasing the future of observability and developer productivity.</p>
-                    <a href="/datadog/ai-tools-lab" class="btn btn-outline">Explore Lab</a>
+            <!-- Featured: AI Tools Lab -->
+            <div class="mb-12">
+                <div
+                    class="project-card group cursor-pointer border-2 border-accent/30 hover:border-accent/50 transition-all bg-gradient-to-br from-accent/5 to-primary/5"
+                    onclick="window.location.href='/datadog/ai-tools-lab'"
+                >
+                    <div class="flex items-start gap-6">
+                        <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden">
+                            <video autoplay="" loop="" muted="" playsinline="" class="w-full h-full object-cover">
+                                <source src="/images/AITL_Stinger.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs font-semibold">Featured Project</span>
+                            </div>
+                            <h3 class="mb-4 text-3xl gradient-text">AI Tools Lab</h3>
+                            <p class="mb-4 text-lg">
+                                Experimental AI tools and applications showcasing the future of observability and developer productivity.
+                            </p>
+                            <p class="mb-6 text-text-muted">
+                                AI Tools Lab consists of 15-20 minute recorded technical demonstrations of hands-on experiences with AI-related tooling for
+                                developers. Each episode explores different aspects of AI tools and their practical applications.
+                            </p>
+                            <div class="flex gap-4">
+                                <a href="/datadog/ai-tools-lab" class="btn btn-lg">Explore AI Tools Lab</a>
+                                <a href="https://youtube.com/@datadogcommunity" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-outline"
+                                    >Watch Episodes</a
+                                >
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <!-- Conference Talks -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Conference Talks & Webinars -->
                 <div class="project-card group cursor-pointer" onclick="window.location.href='/datadog/conference-talks'">
                     <div class="text-4xl mb-4 gradient-text-secondary">🎤</div>
-                    <h3 class="mb-4 gradient-text-secondary">Conference Talks</h3>
-                    <p class="mb-4">Speaking at major tech conferences including Microsoft Build, Google Next, AWS re:Invent, and more.</p>
-                    <a href="/datadog/conference-talks" class="btn btn-outline">View Talks</a>
-                </div>
-
-                <!-- Webinars -->
-                <div class="project-card group cursor-pointer" onclick="window.location.href='/datadog/webinars'">
-                    <div class="text-4xl mb-4 gradient-text">📹</div>
-                    <h3 class="mb-4 gradient-text">Webinars</h3>
-                    <p class="mb-4">Educational webinars in partnership with Google, Microsoft, AWS, and other technology leaders.</p>
-                    <a href="/datadog/webinars" class="btn btn-outline">Watch Webinars</a>
+                    <h3 class="mb-4 gradient-text-secondary">Conference Talks & Webinars</h3>
+                    <p class="mb-4">
+                        Speaking engagements and educational sessions at major tech conferences and partner webinars with Google, Microsoft, AWS, and more.
+                    </p>
+                    <a href="/datadog/conference-talks" class="btn btn-outline">View Talks & Webinars</a>
                 </div>
 
                 <!-- Datadog On -->
@@ -77,6 +99,25 @@ import Layout from '../layouts/Layout.astro';
                     <h3 class="mb-4 gradient-text-secondary">DASH</h3>
                     <p class="mb-4">Datadog's annual user conference bringing together the observability community for learning and networking.</p>
                     <a href="/datadog/dash" class="btn btn-outline">Learn More</a>
+                </div>
+
+                <!-- Developer Advocacy Videos -->
+                <div
+                    class="project-card group cursor-pointer"
+                    onclick="window.open('https://www.youtube.com/playlist?list=PLjR8CqndeyMq9NMYN_Hkto8WHr30ZZCuI', '_blank')"
+                >
+                    <div class="text-4xl mb-4 gradient-text">🎬</div>
+                    <h3 class="mb-4 gradient-text">Developer Advocacy Videos</h3>
+                    <p class="mb-4">Educational videos covering observability, AI tools, tutorials, and developer relations content.</p>
+                    <a
+                        href="https://www.youtube.com/playlist?list=PLjR8CqndeyMq9NMYN_Hkto8WHr30ZZCuI"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-outline"
+                        onclick="event.stopPropagation()"
+                    >
+                        Watch Playlist
+                    </a>
                 </div>
             </div>
         </div>
@@ -277,6 +318,69 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
+    <!-- Developer Advocacy Videos Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>A</span><span>d</span><span>v</span><span>o</span><span>c</span><span>a</span><span>c</span><span>y</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>V</span><span>i</span><span>d</span><span>e</span><span>o</span><span>s</span>
+                </span>
+            </h2>
+            <div class="project-card">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="mb-4 gradient-text text-3xl">Educational Content & Tutorials</h3>
+                        <p class="mb-6 text-lg">
+                            A collection of videos covering observability best practices, developer tools, AI applications, and hands-on tutorials to help
+                            developers build better monitoring and observability solutions.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="mb-3 font-semibold gradient-text">Topics Covered:</h4>
+                            <ul class="list-disc list-inside space-y-1 text-text-muted">
+                                <li>Observability and monitoring best practices</li>
+                                <li>AI tools and developer productivity</li>
+                                <li>Hands-on tutorials and demonstrations</li>
+                                <li>Community engagement and developer relations</li>
+                                <li>Technical deep-dives and case studies</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a
+                                href="https://www.youtube.com/playlist?list=PLjR8CqndeyMq9NMYN_Hkto8WHr30ZZCuI"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn btn-lg"
+                            >
+                                Watch Playlist
+                            </a>
+                            <a href="https://youtube.com/@jhand" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-outline"> View Channel </a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="w-full aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden">
+                            <iframe
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/videoseries?list=PLjR8CqndeyMq9NMYN_Hkto8WHr30ZZCuI"
+                                title="Developer Advocacy Videos Playlist"
+                                style="border: none;"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="section">
         <div class="max-w-4xl mx-auto text-center">
@@ -318,6 +422,21 @@ import Layout from '../layouts/Layout.astro';
                         💼 LinkedIn
                     </a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <div class="w-full max-w-sm mx-auto aspect-[9/16] bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl overflow-hidden shadow-xl">
+                <iframe
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/Nm51HJteoXk"
+                    title="Portrait Video"
+                    style="border: none;"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
             </div>
         </div>
     </section>

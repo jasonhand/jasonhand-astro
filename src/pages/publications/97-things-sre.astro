@@ -32,12 +32,18 @@ import Layout from '../../layouts/Layout.astro';
                             <span>S</span><span>R</span><span>E</span>
                         </span>
                     </h1>
-                    <p class="text-xl mb-8 text-text-muted">
-                        Collective wisdom from the site reliability engineering community, featuring insights and best practices for modern operations.
+                    <p class="text-xl mb-4 text-text-muted">
+                        Collective Wisdom from the Experts
+                    </p>
+                    <p class="mb-8">
+                        <strong>Edited by:</strong> Emil Stolarsky & Jaime Woo<br />
+                        <strong>Publisher:</strong> O'Reilly Media<br />
+                        <strong>Published:</strong> November 2020<br />
+                        <strong>Pages:</strong> 250
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#" class="btn btn-lg">View Book</a>
-                        <a href="#" class="btn btn-lg btn-outline">Purchase</a>
+                        <a href="https://www.oreilly.com/library/view/97-things-every/9781492081487/" target="_blank" rel="noopener noreferrer" class="btn btn-lg">View on O'Reilly</a>
+                        <a href="https://www.amazon.com/Things-Every-SRE-Should-Know/dp/1492081493" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-outline">Buy on Amazon</a>
                     </div>
                 </div>
                 <div class="relative">
@@ -49,100 +55,277 @@ import Layout from '../../layouts/Layout.astro';
         </div>
     </section>
 
-    <!-- Book Details Section -->
+    <!-- Book Overview Section -->
     <section class="section">
         <div class="max-w-4xl mx-auto">
             <h2 class="mb-12 gradient-text">About This Book</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="mb-6 gradient-text-secondary">Overview</h3>
-                    <p class="mb-6">
-                        "97 Things Every SRE Should Know" is a comprehensive collection of insights, tips, and best practices from experienced site reliability
-                        engineers around the world. This collaborative effort brings together the collective wisdom of the SRE community.
-                    </p>
-                    <p class="mb-6">
-                        As a contributor to this publication, I shared insights on incident management, operational excellence, and building resilient systems
-                        that can handle the demands of modern software delivery.
-                    </p>
+            <p class="text-lg mb-8">
+                <strong>"97 Things Every SRE Should Know"</strong> brings together 97 concise and actionable insights from 70+ site reliability engineers across the industry. Edited by <strong>Emil Stolarsky</strong> and <strong>Jaime Woo</strong>, co-founders of Incident Labs, this O'Reilly publication explores a broad range of conversations happening in SRE.
+            </p>
+            <p class="mb-8">
+                From foundational concepts for newcomers to advanced practices for enterprise-level teams, this collection provides practical guidance on SRE adoption, service level objectives, incident response enhancement, and the critical distinction between monitoring and observability.
+            </p>
+            <div class="project-card">
+                <h3 class="mb-4 gradient-text-secondary">What Makes This Book Special</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary text-xl">✦</span>
+                        <span><strong>Diverse Perspectives:</strong> Contributions from 70+ industry practitioners including Nicole Forsgren, Charity Majors, Liz Fong-Jones, Tanya Reilly, and Julia Evans</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary text-xl">✦</span>
+                        <span><strong>Practical & Concise:</strong> Each of the 97 chapters offers actionable advice you can apply immediately</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary text-xl">✦</span>
+                        <span><strong>Scales with You:</strong> Organized to address teams from startup to enterprise scale</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary text-xl">✦</span>
+                        <span><strong>Timeless Wisdom:</strong> Focuses on principles and practices that remain relevant despite technological changes</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Structure Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>B</span><span>o</span><span>o</span><span>k</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>S</span><span>t</span><span>r</span><span>u</span><span>c</span><span>t</span><span>u</span><span>r</span><span>e</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Part I -->
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">🌱</div>
+                    <h3 class="mb-4 gradient-text">Part I: New to SRE</h3>
+                    <p class="mb-3 text-sm text-text-muted">Chapters 1-21</p>
+                    <p>Foundational concepts and principles for those starting their SRE journey. Covers the basics of reliability engineering, essential practices, and core mindsets.</p>
                 </div>
-                <div>
-                    <h3 class="mb-6 gradient-text">Key Topics</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3">
-                            <span class="text-primary">•</span>
-                            <span>Site Reliability Engineering Principles</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-primary">•</span>
-                            <span>Incident Response and Management</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-primary">•</span>
-                            <span>Monitoring and Observability</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-primary">•</span>
-                            <span>Automation and Tooling</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-primary">•</span>
-                            <span>Team Culture and Practices</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-primary">•</span>
-                            <span>Scalability and Performance</span>
-                        </li>
-                    </ul>
+
+                <!-- Part II -->
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text-secondary">🚀</div>
+                    <h3 class="mb-4 gradient-text-secondary">Part II: Zero to One</h3>
+                    <p class="mb-3 text-sm text-text-muted">Chapters 22-35</p>
+                    <p>Implementation strategies for teams establishing their first SRE practices. Focuses on getting started, building cultural foundations, and early wins.</p>
+                </div>
+
+                <!-- Part III -->
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text">📈</div>
+                    <h3 class="mb-4 gradient-text">Part III: One to Ten</h3>
+                    <p class="mb-3 text-sm text-text-muted">Chapters 36-65</p>
+                    <p>Scaling operational practices and team dynamics as you grow. Addresses challenges of expanding SRE teams and maturing processes.</p>
+                </div>
+
+                <!-- Part IV -->
+                <div class="project-card">
+                    <div class="text-4xl mb-4 gradient-text-secondary">🏢</div>
+                    <h3 class="mb-4 gradient-text-secondary">Part IV: Ten to Hundred</h3>
+                    <p class="mb-3 text-sm text-text-muted">Chapters 66-97</p>
+                    <p>Enterprise-level practices for large-scale SRE organizations. Covers organizational structure, standardization, and sophisticated operations.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- My Contribution Section -->
+    <!-- Jason's Chapter Section -->
     <section class="section">
         <div class="max-w-4xl mx-auto">
             <h2 class="mb-12 gradient-text-secondary">My Contribution</h2>
             <div class="project-card">
-                <h3 class="mb-6 gradient-text">Incident Management Excellence</h3>
-                <p class="mb-6">
-                    My contribution focuses on building effective incident management processes that not only resolve issues quickly but also create learning
-                    opportunities for continuous improvement. I explore the human side of incident response and how to build resilient teams.
+                <div class="mb-6">
+                    <span class="inline-block px-4 py-2 bg-primary/20 rounded-full text-sm font-semibold mb-4">Chapter 38 • Part III: One to Ten</span>
+                    <h3 class="mb-6 gradient-text text-3xl">Unpacking the On-Call Divide</h3>
+                </div>
+                <p class="text-lg mb-6">
+                    My chapter explores the often-overlooked challenges and disparities in on-call practices. As teams scale from small startups to larger organizations, the on-call experience can vary dramatically, creating divides that impact team health, service reliability, and individual well-being.
                 </p>
-                <div class="grid md:grid-cols-2 gap-8">
+                <p class="mb-6">
+                    I examine how different approaches to on-call responsibilities can create inequities, leading to burnout and reduced effectiveness. The chapter provides practical strategies for creating fair, sustainable on-call practices that work for teams at this critical growth stage.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
                     <div>
-                        <h4 class="mb-4 text-lg font-semibold">Key Insights</h4>
-                        <ul class="space-y-2">
+                        <h4 class="mb-4 text-lg font-semibold gradient-text">Key Insights</h4>
+                        <ul class="space-y-3">
                             <li class="flex items-start gap-2">
-                                <span class="text-secondary">→</span>
-                                <span>Blameless post-incident reviews</span>
+                                <span class="text-secondary mt-1">→</span>
+                                <span>Understanding different on-call models and their impacts</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-secondary">→</span>
-                                <span>Effective communication during incidents</span>
+                                <span class="text-secondary mt-1">→</span>
+                                <span>Identifying and addressing on-call inequities</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-secondary">→</span>
-                                <span>Building learning cultures</span>
+                                <span class="text-secondary mt-1">→</span>
+                                <span>Building sustainable on-call rotations</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-secondary mt-1">→</span>
+                                <span>Preventing burnout in on-call engineers</span>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <h4 class="mb-4 text-lg font-semibold">Practical Applications</h4>
-                        <ul class="space-y-2">
+                        <h4 class="mb-4 text-lg font-semibold gradient-text-secondary">Practical Applications</h4>
+                        <ul class="space-y-3">
                             <li class="flex items-start gap-2">
-                                <span class="text-accent">✓</span>
-                                <span>Incident response playbooks</span>
+                                <span class="text-accent mt-1">✓</span>
+                                <span>Designing fair on-call schedules</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-accent">✓</span>
-                                <span>Team coordination strategies</span>
+                                <span class="text-accent mt-1">✓</span>
+                                <span>Compensating on-call work appropriately</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-accent">✓</span>
-                                <span>Continuous improvement processes</span>
+                                <span class="text-accent mt-1">✓</span>
+                                <span>Measuring on-call burden and impact</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-accent mt-1">✓</span>
+                                <span>Creating supportive on-call cultures</span>
                             </li>
                         </ul>
                     </div>
+                </div>
+
+                <div class="border-t border-gray-800 pt-6">
+                    <p class="text-sm text-text-muted italic">
+                        "Unpacking the On-Call Divide" appears in Part III of the book, which focuses on teams scaling from 1-10 SREs—a critical phase where on-call practices can make or break team morale and service reliability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Topics Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-16">
+                <span class="scattered-letters">
+                    <span>K</span><span>e</span><span>y</span>
+                </span>
+                <br />
+                <span class="scattered-letters">
+                    <span>T</span><span>o</span><span>p</span><span>i</span><span>c</span><span>s</span>
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="project-card">
+                    <div class="text-3xl mb-3">🎯</div>
+                    <h4 class="font-semibold mb-2">SLOs & Error Budgets</h4>
+                    <p class="text-sm text-text-muted">Service level objectives, error budgets, and reliability targets</p>
+                </div>
+                <div class="project-card">
+                    <div class="text-3xl mb-3">🚨</div>
+                    <h4 class="font-semibold mb-2">Incident Response</h4>
+                    <p class="text-sm text-text-muted">Effective incident management and post-mortem practices</p>
+                </div>
+                <div class="project-card">
+                    <div class="text-3xl mb-3">📊</div>
+                    <h4 class="font-semibold mb-2">Observability</h4>
+                    <p class="text-sm text-text-muted">Monitoring, metrics, logging, and understanding system behavior</p>
+                </div>
+                <div class="project-card">
+                    <div class="text-3xl mb-3">🔄</div>
+                    <h4 class="font-semibold mb-2">Automation</h4>
+                    <p class="text-sm text-text-muted">Toil reduction, automation strategies, and tooling</p>
+                </div>
+                <div class="project-card">
+                    <div class="text-3xl mb-3">👥</div>
+                    <h4 class="font-semibold mb-2">Team Culture</h4>
+                    <p class="text-sm text-text-muted">Building effective SRE teams and fostering collaboration</p>
+                </div>
+                <div class="project-card">
+                    <div class="text-3xl mb-3">⚡</div>
+                    <h4 class="font-semibold mb-2">Performance</h4>
+                    <p class="text-sm text-text-muted">Scalability, capacity planning, and optimization</p>
+                </div>
+                <div class="project-card">
+                    <div class="text-3xl mb-3">🔥</div>
+                    <h4 class="font-semibold mb-2">On-Call & Burnout</h4>
+                    <p class="text-sm text-text-muted">Sustainable on-call practices and preventing burnout</p>
+                </div>
+                <div class="project-card">
+                    <div class="text-3xl mb-3">🏗️</div>
+                    <h4 class="font-semibold mb-2">Infrastructure</h4>
+                    <p class="text-sm text-text-muted">Cloud infrastructure, distributed systems, and architecture</p>
+                </div>
+                <div class="project-card">
+                    <div class="text-3xl mb-3">📈</div>
+                    <h4 class="font-semibold mb-2">Continuous Improvement</h4>
+                    <p class="text-sm text-text-muted">Learning from failures and evolving practices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notable Contributors Section -->
+    <section class="section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center mb-12 gradient-text">Featured Contributors</h2>
+            <p class="text-center mb-12 max-w-3xl mx-auto">
+                This book features insights from 70+ industry leaders and practitioners who share their hard-won lessons from building and operating reliable systems at scale.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="project-card text-center">
+                    <h4 class="font-semibold mb-2">Nicole Forsgren</h4>
+                    <p class="text-sm text-text-muted">"The Best Advice I Can Give to Teams"</p>
+                </div>
+                <div class="project-card text-center">
+                    <h4 class="font-semibold mb-2">Charity Majors</h4>
+                    <p class="text-sm text-text-muted">Co-founder & CTO, Honeycomb</p>
+                </div>
+                <div class="project-card text-center">
+                    <h4 class="font-semibold mb-2">Liz Fong-Jones</h4>
+                    <p class="text-sm text-text-muted">Developer Advocate & SRE</p>
+                </div>
+                <div class="project-card text-center">
+                    <h4 class="font-semibold mb-2">Tanya Reilly</h4>
+                    <p class="text-sm text-text-muted">Senior Principal Engineer</p>
+                </div>
+                <div class="project-card text-center">
+                    <h4 class="font-semibold mb-2">Julia Evans</h4>
+                    <p class="text-sm text-text-muted">Software Engineer & Educator</p>
+                </div>
+                <div class="project-card text-center">
+                    <h4 class="font-semibold mb-2">Alex Hidalgo</h4>
+                    <p class="text-sm text-text-muted">SLO Expert & Author</p>
+                </div>
+                <div class="project-card text-center">
+                    <h4 class="font-semibold mb-2">Laura Nolan</h4>
+                    <p class="text-sm text-text-muted">SRE & Author</p>
+                </div>
+                <div class="project-card text-center">
+                    <h4 class="font-semibold mb-2">Jason Hand</h4>
+                    <p class="text-sm text-text-muted">"Unpacking the On-Call Divide"</p>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-sm text-text-muted">...and 60+ more industry practitioners</p>
+        </div>
+    </section>
+
+    <!-- Editors Section -->
+    <section class="section">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="mb-12 gradient-text-secondary text-center">About the Editors</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="project-card">
+                    <h3 class="mb-4 gradient-text">Emil Stolarsky</h3>
+                    <p class="mb-4">Co-founder of <strong>Incident Labs</strong>, Emil brings deep expertise in incident management and SRE practices. His work focuses on building tools and processes that help teams respond to and learn from incidents.</p>
+                </div>
+                <div class="project-card">
+                    <h3 class="mb-4 gradient-text-secondary">Jaime Woo</h3>
+                    <p class="mb-4">Co-founder of <strong>Incident Labs</strong>, Jaime specializes in organizational resilience and effective incident communication. Together with Emil, they curated this collection to share the SRE community's collective wisdom.</p>
                 </div>
             </div>
         </div>
@@ -156,16 +339,21 @@ import Layout from '../../layouts/Layout.astro';
                     <span>R</span><span>e</span><span>l</span><span>a</span><span>t</span><span>e</span><span>d</span>
                 </span>
             </h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <a href="/publications/post-incident-analysis" class="project-card group">
+            <div class="grid md:grid-cols-3 gap-8">
+                <a href="/publications/post-incident-reviews" class="project-card group hover:border-primary/50 transition-colors">
                     <div class="text-4xl mb-4">🔍</div>
-                    <h3 class="mb-4 gradient-text">Post Incident Analysis</h3>
-                    <p>Deep dive into effective post-incident analysis processes and learning cultures.</p>
+                    <h3 class="mb-4 gradient-text">Post-Incident Reviews</h3>
+                    <p class="text-sm">Deep dive into effective post-incident analysis processes and learning cultures.</p>
                 </a>
-                <a href="/publications/victorops-journey-sre" class="project-card group">
+                <a href="/publications/victorops-journey-sre" class="project-card group hover:border-primary/50 transition-colors">
                     <div class="text-4xl mb-4">🚀</div>
-                    <h3 class="mb-4 gradient-text-secondary">The VictorOps Journey to SRE</h3>
-                    <p>Transformation story from traditional operations to modern SRE practices.</p>
+                    <h3 class="mb-4 gradient-text-secondary">VictorOps Journey to SRE</h3>
+                    <p class="text-sm">Transformation story from traditional operations to modern SRE practices.</p>
+                </a>
+                <a href="/publications" class="project-card group hover:border-primary/50 transition-colors">
+                    <div class="text-4xl mb-4">📚</div>
+                    <h3 class="mb-4 gradient-text">All Publications</h3>
+                    <p class="text-sm">View all of my books, reports, and publications on DevOps and SRE.</p>
                 </a>
             </div>
         </div>

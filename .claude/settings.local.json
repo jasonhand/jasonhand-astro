@@ -11,7 +11,21 @@
       "mcp__playwright__browser_navigate",
       "mcp__playwright__browser_take_screenshot",
       "Bash(mv:*)",
-      "mcp__playwright__browser_wait_for"
+      "mcp__playwright__browser_wait_for",
+      "Bash(rm:*)",
+      "Bash(npm install:*)",
+      "Bash(find:*)",
+      "WebFetch(domain:www.dashcon.io)",
+      "mcp__playwright__browser_close",
+      "WebFetch(domain:datadogon.datadoghq.com)",
+      "WebSearch",
+      "WebFetch(domain:www.oreilly.com)",
+      "WebFetch(domain:www.wiley.com)",
+      "WebFetch(domain:emilyfreeman.io)",
+      "WebFetch(domain:www.dummies.com)",
+      "WebFetch(domain:www.prnewswire.com)",
+      "WebFetch(domain:softwareengineeringdaily.com)",
+      "WebFetch(domain:www.arresteddevops.com)"
     ],
     "deny": [],
     "ask": []

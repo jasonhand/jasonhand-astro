@@ -1,21 +1,35 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Markdown from '../../components/Markdown.astro';
-import { getBlogPostById, getAllBlogPosts } from '../../data/blog';
+import { getBlogPostById, getBlogPostByIdIncludingDrafts, getAllBlogPostsIncludingDrafts } from '../../data/blog';
+import { getDemoImagePath } from '../../utils/imageMapping';
 
 export async function getStaticPaths() {
-    const posts = getAllBlogPosts();
-    return posts.map((post) => ({
+    // Include both published and draft posts so draft posts can show "coming soon" page
+    const allPosts = getAllBlogPostsIncludingDrafts();
+    
+    return allPosts.map((post) => ({
         params: { id: post.id },
-        props: { post },
     }));
 }
 
 const { id } = Astro.params;
 const post = getBlogPostById(id!);
+const draftPost = getBlogPostByIdIncludingDrafts(id!);
 
-if (!post) {
+// If post doesn't exist at all, redirect to blog
+if (!draftPost) {
     return Astro.redirect('/blog');
+}
+
+// If post exists but is a draft, show "coming soon" page
+const isDraft = !post || draftPost.status === 'draft';
+
+// Check if this is a demo blog post and get the screenshot
+let demoScreenshot: string | null = null;
+if (id && id.endsWith('-demo')) {
+    const demoId = id.replace('-demo', '');
+    demoScreenshot = getDemoImagePath(demoId);
 }
 
 function formatDate(dateString: string): string {
@@ -27,7 +41,62 @@ function formatDate(dateString: string): string {
 }
 ---
 
-<Layout title={`${post.title} - Blog - Jason Hand`}>
+{isDraft ? (
+    <Layout title={`${draftPost.title} - Blog - Jason Hand`}>
+        <!-- Coming Soon Page -->
+        <section class="section-hero">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="mb-8">
+                    <a href="/blog" class="inline-flex items-center gap-2 text-primary hover:text-secondary transition-colors mb-6">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                        Back to Blog
+                    </a>
+                    
+                    <div class="mb-8">
+                        {demoScreenshot ? (
+                            <div class="mb-6 max-w-2xl mx-auto">
+                                <img
+                                    src={demoScreenshot}
+                                    alt={`Screenshot of ${draftPost.title}`}
+                                    class="rounded-xl shadow-lg w-full h-auto"
+                                    loading="lazy"
+                                />
+                            </div>
+                        ) : (
+                            <div class="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl flex items-center justify-center">
+                                <span class="text-5xl">📝</span>
+                            </div>
+                        )}
+                        <h1 class="mb-4">{draftPost.title}</h1>
+                        <p class="text-xl text-text-muted">Blog post coming soon!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-background-secondary rounded-2xl p-12 text-center">
+                    <h2 class="mb-4">This blog post is currently being written</h2>
+                    <p class="text-text-muted mb-8 max-w-2xl mx-auto">
+                        I'm working on this post and it will be published soon. Check back later or explore other blog posts in the meantime.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="/blog" class="btn">
+                            Browse All Posts
+                        </a>
+                        <a href="/demos" class="btn btn-outline">
+                            Explore Demos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </Layout>
+) : (
+    <Layout title={`${post.title} - Blog - Jason Hand`}>
     <!-- Article Header -->
     <section class="section-hero">
         <div class="max-w-4xl mx-auto">
@@ -91,11 +160,11 @@ function formatDate(dateString: string): string {
             <div class="bg-background-secondary rounded-2xl p-8 text-center">
                 <h3 class="mb-4">Thanks for Reading!</h3>
                 <p class="text-text-muted mb-6">
-                    Have thoughts on this post? I'd love to hear from you.
+                    Have thoughts on this post? Connect with me on social media.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="/contact" class="btn">
-                        Get in Touch
+                    <a href="https://youtube.com/@jhand" target="_blank" rel="noopener noreferrer" class="btn">
+                        Connect on YouTube
                     </a>
                     <a href="/blog" class="btn btn-outline">
                         More Posts
@@ -105,4 +174,5 @@ function formatDate(dateString: string): string {
         </div>
     </section>
 </Layout>
+)}
 

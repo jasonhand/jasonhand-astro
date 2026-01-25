@@ -53,7 +53,10 @@ export function getDemoImagePath(demoId: string): string {
         'ai-energy-impact': 'ai_energy_consumption',
         'robots-txt-generator': 'robot_txt_generator',
         'faulty-deployment-detection': 'faulty_deployment_detection',
-        'ecco-ocean-visualization': 'ECCO'
+        'ecco-ocean-visualization': 'ECCO',
+        'plinko-drop': 'plinko_drop',
+        'family-tree-archive': 'family_tree_archive',
+        'markov-chain': 'markov_chain'
     };
 
     const imageName = imageMapping[demoId] || demoId;
